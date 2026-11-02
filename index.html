@@ -1,0 +1,2820 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MC GESSO | Soluções Arquitetônicas & Construção a Seco</title>
+  <meta name="description" content="Soluções arquitetônicas em gesso, drywall, forros monolíticos, sancas, divisórias e acabamentos de alto padrão para projetos residenciais, comerciais e redes de franquias." />
+  <meta property="og:title" content="MC GESSO | Mais que gesso, ambientes que inspiram" />
+  <meta property="og:description" content="Soluções arquitetônicas em gesso, drywall, forros, sancas, divisórias e acabamentos de alto padrão." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/png" href="assets/brand/logo_mc_gesso_white.png" />
+  
+  <!-- Fontes Oficiais Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,600&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Montserrat', 'sans-serif'],
+            montserrat: ['Montserrat', 'sans-serif'],
+            mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'monospace']
+          },
+          colors: {
+            champagne: '#D6B58B',
+            'champagne-light': '#E8C49F',
+            beige: '#E8DED1',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #0D0D0D;
+      color: #F7F7F7;
+      font-family: 'Montserrat', sans-serif;
+      overflow-x: hidden;
+    }
+    ::selection {
+      background-color: #D6B58B;
+      color: #0D0D0D;
+    }
+    /* Estilos arquitetônicos adicionais */
+    .blueprint-grid {
+      background-size: 40px 40px;
+      background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    }
+  </style>
+</head>
+<body class="bg-[#0D0D0D] text-[#F7F7F7] font-montserrat selection:bg-[#D6B58B] selection:text-[#0D0D0D]">
+
+  <!-- =========================================================================
+       00 // CABEÇALHO FIXO
+  ========================================================================= -->
+  <header id="main-header" class="fixed top-0 left-0 right-0 z-40 transition-all duration-300 bg-gradient-to-b from-[#0D0D0D]/90 via-[#0D0D0D]/40 to-transparent py-6">
+    <div class="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
+      
+      <!-- Logo Oficial com Lettering -->
+      <a href="#inicio" class="flex items-center gap-3.5 group">
+        <img 
+          src="assets/brand/logo_mc_gesso_white.png" 
+          alt="Logomarca Oficial MC Gesso" 
+          class="h-10 md:h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+        />
+        <div class="flex flex-col">
+          <span class="text-sm font-semibold tracking-widest text-[#F7F7F7]">MC GESSO</span>
+          <span class="text-[9px] font-medium tracking-[0.25em] text-[#E8C49F]">SOLUÇÕES ARQUITETÔNICAS</span>
+        </div>
+      </a>
+
+      <!-- Lado Direito: Botão Orçamento + Botão Três Risquinhos -->
+      <div class="flex items-center gap-3 sm:gap-4">
+        
+        <!-- Botão Orçamento Quadrado e Minimalista -->
+        <a 
+          href="#orcamento"
+          class="px-3.5 py-1.5 sm:px-4 sm:py-2 border border-[#D6B58B] hover:bg-[#D6B58B] text-[#D6B58B] hover:text-[#0D0D0D] font-bold text-[10px] sm:text-[11px] rounded-none tracking-widest uppercase transition-all duration-200 active:scale-95 inline-block text-center"
+        >
+          Orçamento
+        </a>
+
+        <!-- Botão Três Risquinhos (Menu Hamburger) -->
+        <button 
+          id="menu-btn"
+          class="flex items-center gap-2.5 px-3 py-1.5 sm:px-3.5 sm:py-2 border border-[#2E2E2E] hover:border-[#D6B58B] bg-[#141414] group transition-all duration-200 rounded-none focus:outline-none cursor-pointer"
+          aria-label="Abrir Menu"
+        >
+          <span class="hidden sm:inline text-[10px] font-medium tracking-[0.2em] uppercase text-[#F7F7F7] group-hover:text-[#E8C49F] transition-colors">
+            MENU
+          </span>
+
+          <!-- Três Risquinhos -->
+          <div class="w-5 h-3.5 flex flex-col justify-between items-end">
+            <span class="h-[1px] bg-[#F7F7F7] group-hover:bg-[#E8C49F] transition-all duration-300 w-5"></span>
+            <span class="h-[1px] bg-[#D6B58B] transition-all duration-300 w-3 group-hover:w-5"></span>
+            <span class="h-[1px] bg-[#F7F7F7] group-hover:bg-[#E8C49F] transition-all duration-300 w-4 group-hover:w-5"></span>
+          </div>
+        </button>
+
+      </div>
+
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       MENU DRAWER (SLIDE-OVER ARQUITETÔNICO FULLSCREEN)
+  ========================================================================= -->
+  <div id="menu-drawer" class="fixed inset-0 z-50 flex hidden">
+    <!-- Backdrop escurecido -->
+    <div id="menu-backdrop" class="fixed inset-0 bg-[#0D0D0D]/85 backdrop-blur-md transition-opacity duration-300"></div>
+
+    <!-- Painel do Menu -->
+    <div class="relative ml-auto w-full max-w-xl bg-[#0D0D0D] border-l border-[#2E2E2E] h-full flex flex-col justify-between p-8 sm:p-12 overflow-y-auto shadow-2xl z-10">
+      
+      <!-- Topo com Logo e Fechar -->
+      <div class="flex items-center justify-between pb-8 border-b border-[#2E2E2E]">
+        <div class="flex items-center gap-3">
+          <img 
+            src="assets/brand/logo_mc_gesso_white.png" 
+            alt="MC Gesso" 
+            class="h-10 w-auto object-contain"
+          />
+          <div class="flex flex-col">
+            <span class="text-xs font-semibold tracking-widest text-[#F7F7F7]">MC GESSO</span>
+            <span class="text-[8px] font-mono tracking-widest text-[#E8C49F]">MENU INSTITUCIONAL</span>
+          </div>
+        </div>
+
+        <button 
+          id="close-menu-btn"
+          class="flex items-center gap-2 text-xs font-mono tracking-widest text-[#E8DED1]/70 hover:text-[#E8C49F] p-2 transition-colors uppercase cursor-pointer"
+        >
+          <span>FECHAR</span>
+          <span class="text-base">✕</span>
+        </button>
+      </div>
+
+      <!-- Lista Editorial de Links -->
+      <nav class="py-8 space-y-4">
+        <a href="#inicio" class="drawer-nav-link group flex items-baseline justify-between py-2 border-b border-[#2E2E2E]/40 hover:border-[#D6B58B]/80 transition-all">
+          <div class="flex items-baseline gap-4">
+            <span class="text-xs font-mono text-[#D6B58B] group-hover:text-[#E8C49F] transition-colors">01</span>
+            <div>
+              <span class="text-lg sm:text-xl font-medium tracking-wide text-[#F7F7F7] group-hover:text-[#E8C49F] transition-colors uppercase block">Início</span>
+              <span class="text-[11px] text-[#E8DED1]/50 font-light group-hover:text-[#E8DED1]/80 transition-colors hidden sm:block">Abertura monumental e animação</span>
+            </div>
+          </div>
+          <span class="text-xs text-[#2E2E2E] group-hover:text-[#D6B58B] transition-transform group-hover:translate-x-1">→</span>
+        </a>
+
+        <a href="#empresa" class="drawer-nav-link group flex items-baseline justify-between py-2 border-b border-[#2E2E2E]/40 hover:border-[#D6B58B]/80 transition-all">
+          <div class="flex items-baseline gap-4">
+            <span class="text-xs font-mono text-[#D6B58B] group-hover:text-[#E8C49F] transition-colors">02</span>
+            <div>
+              <span class="text-lg sm:text-xl font-medium tracking-wide text-[#F7F7F7] group-hover:text-[#E8C49F] transition-colors uppercase block">A Empresa</span>
+              <span class="text-[11px] text-[#E8DED1]/50 font-light group-hover:text-[#E8DED1]/80 transition-colors hidden sm:block">Precisão que transforma espaços</span>
+            </div>
+          </div>
+          <span class="text-xs text-[#2E2E2E] group-hover:text-[#D6B58B] transition-transform group-hover:translate-x-1">→</span>
+        </a>
+
+        <a href="#solucoes" class="drawer-nav-link group flex items-baseline justify-between py-2 border-b border-[#2E2E2E]/40 hover:border-[#D6B58B]/80 transition-all">
+          <div class="flex items-baseline gap-4">
+            <span class="text-xs font-mono text-[#D6B58B] group-hover:text-[#E8C49F] transition-colors">03</span>
+            <div>
+              <span class="text-lg sm:text-xl font-medium tracking-wide text-[#F7F7F7] group-hover:text-[#E8C49F] transition-colors uppercase block">Soluções Arquitetônicas</span>
+              <span class="text-[11px] text-[#E8DED1]/50 font-light group-hover:text-[#E8DED1]/80 transition-colors hidden sm:block">Forros, drywall, sancas e acabamentos</span>
+            </div>
+          </div>
+          <span class="text-xs text-[#2E2E2E] group-hover:text-[#D6B58B] transition-transform group-hover:translate-x-1">→</span>
+        </a>
+
+        <a href="#metodo" class="drawer-nav-link group flex items-baseline justify-between py-2 border-b border-[#2E2E2E]/40 hover:border-[#D6B58B]/80 transition-all">
+          <div class="flex items-baseline gap-4">
+            <span class="text-xs font-mono text-[#D6B58B] group-hover:text-[#E8C49F] transition-colors">04</span>
+            <div>
+              <span class="text-lg sm:text-xl font-medium tracking-wide text-[#F7F7F7] group-hover:text-[#E8C49F] transition-colors uppercase block">Método Construtivo</span>
+              <span class="text-[11px] text-[#E8DED1]/50 font-light group-hover:text-[#E8DED1]/80 transition-colors hidden sm:block">Do projeto ao acabamento em 4 fases</span>
+            </div>
+          </div>
+          <span class="text-xs text-[#2E2E2E] group-hover:text-[#D6B58B] transition-transform group-hover:translate-x-1">→</span>
+        </a>
+
+        <a href="#segmentos" class="drawer-nav-link group flex items-baseline justify-between py-2 border-b border-[#2E2E2E]/40 hover:border-[#D6B58B]/80 transition-all">
+          <div class="flex items-baseline gap-4">
+            <span class="text-xs font-mono text-[#D6B58B] group-hover:text-[#E8C49F] transition-colors">05</span>
+            <div>
+              <span class="text-lg sm:text-xl font-medium tracking-wide text-[#F7F7F7] group-hover:text-[#E8C49F] transition-colors uppercase block">Segmentos Atendidos</span>
+              <span class="text-[11px] text-[#E8DED1]/50 font-light group-hover:text-[#E8DED1]/80 transition-colors hidden sm:block">Residencial, comercial e corporativo</span>
+            </div>
+          </div>
+          <span class="text-xs text-[#2E2E2E] group-hover:text-[#D6B58B] transition-transform group-hover:translate-x-1">→</span>
+        </a>
+
+        <a href="#clientes" class="drawer-nav-link group flex items-baseline justify-between py-2 border-b border-[#2E2E2E]/40 hover:border-[#D6B58B]/80 transition-all">
+          <div class="flex items-baseline gap-4">
+            <span class="text-xs font-mono text-[#D6B58B] group-hover:text-[#E8C49F] transition-colors">06</span>
+            <div>
+              <span class="text-lg sm:text-xl font-medium tracking-wide text-[#F7F7F7] group-hover:text-[#E8C49F] transition-colors uppercase block">Clientes & Redes</span>
+              <span class="text-[11px] text-[#E8DED1]/50 font-light group-hover:text-[#E8DED1]/80 transition-colors hidden sm:block">Grandes farmácias, supermercados e franquias</span>
+            </div>
+          </div>
+          <span class="text-xs text-[#2E2E2E] group-hover:text-[#D6B58B] transition-transform group-hover:translate-x-1">→</span>
+        </a>
+
+        <a href="#portfolio" class="drawer-nav-link group flex items-baseline justify-between py-2 border-b border-[#2E2E2E]/40 hover:border-[#D6B58B]/80 transition-all">
+          <div class="flex items-baseline gap-4">
+            <span class="text-xs font-mono text-[#D6B58B] group-hover:text-[#E8C49F] transition-colors">07</span>
+            <div>
+              <span class="text-lg sm:text-xl font-medium tracking-wide text-[#F7F7F7] group-hover:text-[#E8C49F] transition-colors uppercase block">Portfólio de Obras</span>
+              <span class="text-[11px] text-[#E8DED1]/50 font-light group-hover:text-[#E8DED1]/80 transition-colors hidden sm:block">Acervo visual de execuções</span>
+            </div>
+          </div>
+          <span class="text-xs text-[#2E2E2E] group-hover:text-[#D6B58B] transition-transform group-hover:translate-x-1">→</span>
+        </a>
+
+        <a href="#diferenciais" class="drawer-nav-link group flex items-baseline justify-between py-2 border-b border-[#2E2E2E]/40 hover:border-[#D6B58B]/80 transition-all">
+          <div class="flex items-baseline gap-4">
+            <span class="text-xs font-mono text-[#D6B58B] group-hover:text-[#E8C49F] transition-colors">08</span>
+            <div>
+              <span class="text-lg sm:text-xl font-medium tracking-wide text-[#F7F7F7] group-hover:text-[#E8C49F] transition-colors uppercase block">Diferenciais Técnicos</span>
+              <span class="text-[11px] text-[#E8DED1]/50 font-light group-hover:text-[#E8DED1]/80 transition-colors hidden sm:block">O extraordinário está nos detalhes</span>
+            </div>
+          </div>
+          <span class="text-xs text-[#2E2E2E] group-hover:text-[#D6B58B] transition-transform group-hover:translate-x-1">→</span>
+        </a>
+
+        <a href="#orcamento" class="drawer-nav-link group flex items-baseline justify-between py-2 border-b border-[#2E2E2E]/40 hover:border-[#D6B58B]/80 transition-all">
+          <div class="flex items-baseline gap-4">
+            <span class="text-xs font-mono text-[#D6B58B] group-hover:text-[#E8C49F] transition-colors">09</span>
+            <div>
+              <span class="text-lg sm:text-xl font-medium tracking-wide text-[#F7F7F7] group-hover:text-[#E8C49F] transition-colors uppercase block">Solicitar Orçamento</span>
+              <span class="text-[11px] text-[#E8DED1]/50 font-light group-hover:text-[#E8DED1]/80 transition-colors hidden sm:block">Canal direto e atendimento consultivo</span>
+            </div>
+          </div>
+          <span class="text-xs text-[#2E2E2E] group-hover:text-[#D6B58B] transition-transform group-hover:translate-x-1">→</span>
+        </a>
+      </nav>
+
+      <!-- Rodapé do Menu com Ações -->
+      <div class="pt-6 border-t border-[#2E2E2E] flex flex-col gap-4">
+        <div class="flex flex-col sm:flex-row items-center gap-3">
+          <a 
+            href="#orcamento"
+            class="drawer-nav-link w-full sm:flex-1 py-3 bg-[#D6B58B] hover:bg-[#E8C49F] text-[#0D0D0D] font-bold text-xs tracking-wider uppercase text-center transition-colors rounded-none cursor-pointer"
+          >
+            Solicitar Orçamento
+          </a>
+
+          <a 
+            href="https://wa.me/5511986504178?text=Ol%C3%A1%2C%20equipe%20MC%20Gesso!%20Acessei%20o%20site%20oficial%20e%20gostaria%20de%20um%20atendimento%20exclusivo.%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20solu%C3%A7%C3%B5es%20em%20gesso%2C%20drywall%20e%20acabamentos%20arquitet%C3%B4nicos.%20Como%20podemos%20iniciar%3F"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="w-full sm:w-auto px-4 py-3 bg-[#25D366] hover:bg-[#1EBE5D] text-white text-xs font-bold tracking-wider uppercase text-center transition-colors rounded-none flex items-center justify-center gap-2 cursor-pointer shadow-lg"
+          >
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+              <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+            </svg>
+            <span>WhatsApp</span>
+          </a>
+
+          <button 
+            class="open-brand-guide-btn w-full sm:w-auto px-4 py-3 border border-[#2E2E2E] hover:border-[#E8C49F] text-[#E8DED1] hover:text-[#E8C49F] text-xs font-medium tracking-wider uppercase transition-colors rounded-none cursor-pointer"
+            title="Manual Tipográfico Montserrat"
+          >
+            Tipografia
+          </button>
+        </div>
+
+        <div className="flex items-center justify-between text-[11px] font-mono text-[#F7F7F7]/40 pt-2">
+          <span>São Paulo - SP & Obras Comerciais em Todo o Brasil</span>
+          <span class="text-[#E8C49F]">(11) 98650-4178</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <main>
+    <!-- =========================================================================
+         01 // HERO MONUMENTAL COM VÍDEO REAL EM FUNDO
+    ========================================================================= -->
+    <section 
+      id="inicio" 
+      class="relative min-h-screen w-full flex items-center justify-center pt-28 pb-20 px-6 md:px-12 overflow-hidden bg-[#0D0D0D]"
+    >
+      <!-- Vídeo em Alta Definição no Fundo -->
+      <div class="absolute inset-0 w-full h-full z-0 overflow-hidden">
+        <video
+          id="hero-video"
+          src="assets/videos/hero_video.mp4"
+          poster="assets/portfolio/portfolio_06.png"
+          autoplay
+          loop
+          muted
+          playsinline
+          class="w-full h-full object-cover object-center brightness-105 contrast-105 saturate-105 transition-opacity duration-700"
+        ></video>
+
+        <!-- Realce radial suave central para contraste perfeito do texto sem escurecer o vídeo -->
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(0,0,0,0.3)_0%,_rgba(0,0,0,0.05)_55%,_transparent_80%)] pointer-events-none"></div>
+        
+        <!-- Transição suave no topo e na base -->
+        <div class="absolute top-0 left-0 right-0 h-28 bg-gradient-to-b from-[#0D0D0D]/75 to-transparent pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#0D0D0D] via-[#0D0D0D]/40 to-transparent pointer-events-none"></div>
+        
+        <!-- Linha de luz indireta dourada de sanca no topo -->
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-5xl h-28 bg-gradient-to-b from-[#D6B58B]/20 to-transparent blur-2xl pointer-events-none"></div>
+      </div>
+
+      <!-- Marcações Técnicas Arquitetônicas nos Cantos da Tela -->
+      <div class="absolute top-28 left-8 hidden lg:flex flex-col gap-1 z-10 pointer-events-none border-l border-[#2E2E2E] pl-4">
+        <span class="text-[10px] font-medium tracking-[0.25em] text-[#E8C49F]">MC GESSO // PROJETO</span>
+        <span class="text-[9px] font-mono tracking-widest text-[#F7F7F7]/80">SISTEMA A-SECO & FORROS</span>
+      </div>
+
+      <div class="absolute top-28 right-8 hidden lg:flex flex-col items-end gap-1 z-10 pointer-events-none border-r border-[#2E2E2E] pr-4 text-right">
+        <span class="text-[10px] font-medium tracking-[0.25em] text-[#E8C49F]">VÍDEO OFICIAL // 1080P</span>
+        <span class="text-[9px] font-mono tracking-widest text-[#F7F7F7]/80">EXECUÇÃO REAL EM CANTEIRO</span>
+      </div>
+
+      <!-- Conteúdo Institucional & Textos Monumentais -->
+      <div class="relative z-10 max-w-5xl mx-auto text-center flex flex-col items-center">
+        
+        <!-- Identificador de Marca e Tríade Institucional -->
+        <div class="inline-flex items-center gap-2.5 py-1.5 px-4 mb-8 border border-[#2E2E2E] bg-[#0D0D0D]/85 backdrop-blur-md rounded-none shadow-2xl">
+          <span class="w-1.5 h-1.5 bg-[#D6B58B]"></span>
+          <span class="text-[10px] sm:text-[11px] font-medium tracking-[0.25em] text-[#F7F7F7] uppercase">
+            QUALIDADE <span class="text-[#D6B58B]">·</span> PRECISÃO <span class="text-[#D6B58B]">·</span> CONFIANÇA
+          </span>
+        </div>
+
+        <!-- Headline Monumental -->
+        <h1 class="text-4xl sm:text-6xl md:text-7xl lg:text-8xl tracking-tight leading-[1.06] mb-6 max-w-4xl [text-shadow:_0_2px_4px_rgba(0,0,0,0.95),_0_6px_24px_rgba(0,0,0,0.95),_0_12px_48px_rgba(0,0,0,0.9)]">
+          <span class="block font-light text-[#F7F7F7] tracking-tight">
+            MAIS QUE GESSO,
+          </span>
+          <span class="block font-semibold text-[#E8C49F] mt-1 tracking-tight">
+            AMBIENTES QUE
+          </span>
+          <span class="block font-extrabold text-[#D6B58B] tracking-tight">
+            INSPIRAM.
+          </span>
+        </h1>
+
+        <!-- Texto de Apoio Institucional -->
+        <p class="text-sm sm:text-base md:text-lg font-normal text-[#F7F7F7] max-w-2xl mx-auto leading-relaxed mb-10 [text-shadow:_0_2px_8px_rgba(0,0,0,0.95),_0_4px_20px_rgba(0,0,0,0.9)]">
+          ACABAMENTOS QUE VALORIZAM O SEU PROJETO.
+          <span class="block text-xs sm:text-sm text-[#F7F7F7]/95 mt-2 font-light [text-shadow:_0_2px_8px_rgba(0,0,0,0.9)]">
+            Soluções completas em drywall, forros monolíticos e acabamentos refinados para projetos de arquitetura e engenharia.
+          </span>
+        </p>
+
+        <!-- Dois Botões de Ação Quadrados -->
+        <div class="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
+          <a 
+            href="#orcamento"
+            class="w-full sm:w-auto px-7 py-3 bg-[#D6B58B] hover:bg-[#E8C49F] text-[#0D0D0D] font-bold text-[11px] sm:text-xs tracking-[0.2em] rounded-none uppercase transition-all duration-200 border border-[#D6B58B] shadow-2xl active:scale-95 inline-block text-center"
+          >
+            Solicitar Orçamento
+          </a>
+          
+          <a 
+            href="#solucoes"
+            class="w-full sm:w-auto px-7 py-3 border border-[#F7F7F7] hover:border-[#E8C49F] text-[#F7F7F7] hover:text-[#E8C49F] font-semibold text-[11px] sm:text-xs tracking-[0.2em] rounded-none uppercase transition-all duration-200 bg-[#0D0D0D]/80 backdrop-blur-md shadow-xl inline-block text-center"
+          >
+            Explorar Soluções
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Controles Flutuantes do Vídeo -->
+      <div class="absolute bottom-6 right-6 sm:right-10 z-20 flex items-center gap-2">
+        <button
+          id="video-toggle-play"
+          class="px-3 py-1.5 bg-[#0D0D0D]/85 backdrop-blur-md border border-[#2E2E2E] hover:border-[#D6B58B] text-[10px] font-mono text-[#E8C49F] uppercase tracking-wider rounded-none transition-colors shadow-lg cursor-pointer"
+          aria-label="Pausar ou Reproduzir Vídeo"
+        >
+          PAUSAR ❚❚
+        </button>
+
+        <button
+          id="video-toggle-mute"
+          class="px-3 py-1.5 bg-[#0D0D0D]/85 backdrop-blur-md border border-[#2E2E2E] hover:border-[#D6B58B] text-[10px] font-mono text-[#F7F7F7]/80 hover:text-[#F7F7F7] uppercase tracking-wider rounded-none transition-colors shadow-lg cursor-pointer"
+          aria-label="Silenciar ou Ativar Áudio"
+        >
+          ÁUDIO: OFF
+        </button>
+      </div>
+
+      <!-- Indicador no Canto Inferior -->
+      <div class="absolute bottom-6 left-6 sm:left-10 z-20 hidden sm:flex items-center gap-3 pointer-events-none opacity-70">
+        <div class="w-2 h-2 bg-[#D6B58B] animate-pulse"></div>
+        <span class="text-[10px] font-mono tracking-widest text-[#F7F7F7] uppercase">
+          VÍDEO DE FUNDO EM EXECUÇÃO
+        </span>
+      </div>
+
+      <a 
+        href="#empresa"
+        class="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-1.5 opacity-70 hover:opacity-100 transition-opacity"
+      >
+        <span class="text-[9px] font-medium tracking-[0.25em] text-[#F7F7F7] uppercase">Rolar</span>
+        <div class="w-[1px] h-4 bg-gradient-to-b from-[#E8C49F] to-transparent animate-pulse"></div>
+      </a>
+
+    </section>
+
+    <!-- =========================================================================
+         02 // SOBRE A MC GESSO & PRECISÃO
+    ========================================================================= -->
+    <section id="empresa" class="py-28 px-6 md:px-12 bg-[#141414] relative border-t border-[#2E2E2E]">
+      <div class="max-w-7xl mx-auto">
+        
+        <!-- Cabeçalho da Seção -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 pb-6 border-b border-[#2E2E2E]">
+          <div>
+            <div class="flex items-center gap-2 mb-3">
+              <span class="text-xs font-mono text-[#D6B58B]">02 //</span>
+              <span class="text-xs font-medium tracking-[0.25em] text-[#E8C49F] uppercase">Sobre a MC Gesso</span>
+            </div>
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-light text-[#F7F7F7] tracking-tight">
+              PRECISÃO QUE <span class="font-bold text-[#E8C49F]">TRANSFORMA ESPAÇOS.</span>
+            </h2>
+          </div>
+          <p class="mt-4 md:mt-0 text-sm font-normal text-[#E8DED1] max-w-md leading-relaxed">
+            Do detalhamento executivo à entrega da superfície perfeita.
+          </p>
+        </div>
+
+        <!-- Grade de Destaque com Fotografia Oficial e Manifesto -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-20">
+          
+          <!-- Coluna da Imagem com Anotações Técnicas -->
+          <div class="lg:col-span-7 relative">
+            <div class="relative overflow-hidden rounded-none border border-[#2E2E2E] shadow-2xl group">
+              <img 
+                src="assets/portfolio/portfolio_03.png" 
+                alt="Equipe técnica da MC Gesso alinhando projetos com arquitetos" 
+                class="w-full h-[420px] sm:h-[500px] object-cover transition-transform duration-700 group-hover:scale-102"
+              />
+              <div class="absolute bottom-0 left-0 right-0 h-28 bg-gradient-to-t from-[#0D0D0D] to-transparent pointer-events-none"></div>
+              
+              <!-- Anotação Técnica Sobreposta -->
+              <div class="absolute top-4 left-4 bg-[#0D0D0D]/85 backdrop-blur-md px-3 py-1.5 border border-[#2E2E2E] text-[10px] font-medium tracking-widest text-[#E8C49F] uppercase">
+                ALINHAMENTO TÉCNICO // ENGENHARIA & ARQUITETURA
+              </div>
+
+              <div class="absolute bottom-6 left-6 right-6 flex items-end justify-between">
+                <div>
+                  <span class="text-[10px] font-mono tracking-wider text-[#D6B58B] block">METODOLOGIA EXECUTIVA</span>
+                  <p class="text-sm font-medium text-[#F7F7F7]">Do projeto executivo à planicidade da superfície</p>
+                </div>
+                <div class="hidden sm:block text-right">
+                  <span class="text-[10px] font-mono text-[#E8DED1]/70">CONTROLE RIGOROSO</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Linha arquitetônica de cota -->
+            <div class="hidden sm:flex items-center gap-2 mt-3 text-[10px] font-mono text-[#F7F7F7]/40">
+              <div class="h-[1px] w-12 bg-[#2E2E2E]"></div>
+              <span>REF: COMPATIBILIZAÇÃO PRÉVIA</span>
+              <div class="h-[1px] flex-1 bg-[#2E2E2E]"></div>
+            </div>
+          </div>
+
+          <!-- Coluna de Texto e Apresentação -->
+          <div class="lg:col-span-5 flex flex-col justify-center">
+            <span class="text-xs font-semibold tracking-[0.2em] text-[#D6B58B] uppercase mb-4">
+              Excelência na Construção a Seco
+            </span>
+            <p class="text-base text-[#F7F7F7]/90 leading-relaxed font-normal mb-6">
+              A MC GESSO atua na intersecção entre arquitetura de excelência e engenharia de execução. Desenvolvemos soluções em gesso e drywall que não apenas atendem às exigências de projeto, mas elevam a percepção de valor de cada ambiente.
+            </p>
+            <p class="text-sm text-[#E8DED1]/80 leading-relaxed font-light mb-8">
+              Trabalhamos em estreita colaboração com escritórios de arquitetura, engenheiros e construtoras, compreendendo os desafios estruturais e luminotécnicos de cada espaço para entregar resultados sem imperfeições.
+            </p>
+
+            <!-- Posicionamento Técnico -->
+            <div class="grid grid-cols-2 gap-4 pt-6 border-t border-[#2E2E2E]">
+              <div>
+                <span class="text-[10px] font-medium tracking-widest text-[#E8C49F] uppercase block mb-1">PADRÃO DE ENTREGA</span>
+                <p class="text-xs text-[#F7F7F7]/80">Superfícies monolíticas preparadas para luz rasante</p>
+              </div>
+              <div>
+                <span class="text-[10px] font-medium tracking-widest text-[#E8C49F] uppercase block mb-1">GESTÃO DE OBRA</span>
+                <p class="text-xs text-[#F7F7F7]/80">Canteiro limpo, cronograma estrito e equipe uniformizada</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- 5 Pilares Fundamentais -->
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+          <div class="p-6 bg-[#0D0D0D] border border-[#2E2E2E] hover:border-[#D6B58B] transition-all duration-300 relative group flex flex-col justify-between">
+            <div>
+              <span class="text-xs font-mono text-[#D6B58B] block mb-3">01</span>
+              <h3 class="text-base font-semibold text-[#F7F7F7] tracking-wider uppercase mb-2 group-hover:text-[#E8C49F] transition-colors">
+                QUALIDADE
+              </h3>
+              <p class="text-xs text-[#E8DED1]/70 leading-relaxed font-normal">
+                Placas rigorosamente selecionadas, perfis normatizados e acessórios de alta performance técnica.
+              </p>
+            </div>
+            <div class="mt-6 pt-3 border-t border-[#2E2E2E]/60 flex items-center justify-between text-[10px] font-mono text-[#F7F7F7]/40">
+              <span>PADRÃO MC</span>
+              <span class="text-[#D6B58B]">✓</span>
+            </div>
+          </div>
+
+          <div class="p-6 bg-[#0D0D0D] border border-[#2E2E2E] hover:border-[#D6B58B] transition-all duration-300 relative group flex flex-col justify-between">
+            <div>
+              <span class="text-xs font-mono text-[#D6B58B] block mb-3">02</span>
+              <h3 class="text-base font-semibold text-[#F7F7F7] tracking-wider uppercase mb-2 group-hover:text-[#E8C49F] transition-colors">
+                PLANEJAMENTO
+              </h3>
+              <p class="text-xs text-[#E8DED1]/70 leading-relaxed font-normal">
+                Cronogramas integrados com arquitetos, engenheiros e demais instalações prediais.
+              </p>
+            </div>
+            <div class="mt-6 pt-3 border-t border-[#2E2E2E]/60 flex items-center justify-between text-[10px] font-mono text-[#F7F7F7]/40">
+              <span>PADRÃO MC</span>
+              <span class="text-[#D6B58B]">✓</span>
+            </div>
+          </div>
+
+          <div class="p-6 bg-[#0D0D0D] border border-[#2E2E2E] hover:border-[#D6B58B] transition-all duration-300 relative group flex flex-col justify-between">
+            <div>
+              <span class="text-xs font-mono text-[#D6B58B] block mb-3">03</span>
+              <h3 class="text-base font-semibold text-[#F7F7F7] tracking-wider uppercase mb-2 group-hover:text-[#E8C49F] transition-colors">
+                EXECUÇÃO
+              </h3>
+              <p class="text-xs text-[#E8DED1]/70 leading-relaxed font-normal">
+                Mão de obra própria, especializada e equipada para canteiros limpos e seguros.
+              </p>
+            </div>
+            <div class="mt-6 pt-3 border-t border-[#2E2E2E]/60 flex items-center justify-between text-[10px] font-mono text-[#F7F7F7]/40">
+              <span>PADRÃO MC</span>
+              <span class="text-[#D6B58B]">✓</span>
+            </div>
+          </div>
+
+          <div class="p-6 bg-[#0D0D0D] border border-[#2E2E2E] hover:border-[#D6B58B] transition-all duration-300 relative group flex flex-col justify-between">
+            <div>
+              <span class="text-xs font-mono text-[#D6B58B] block mb-3">04</span>
+              <h3 class="text-base font-semibold text-[#F7F7F7] tracking-wider uppercase mb-2 group-hover:text-[#E8C49F] transition-colors">
+                ACABAMENTO
+              </h3>
+              <p class="text-xs text-[#E8DED1]/70 leading-relaxed font-normal">
+                Emassamento com nível superior de planicidade, pronto para receber iluminação rasante.
+              </p>
+            </div>
+            <div class="mt-6 pt-3 border-t border-[#2E2E2E]/60 flex items-center justify-between text-[10px] font-mono text-[#F7F7F7]/40">
+              <span>PADRÃO MC</span>
+              <span class="text-[#D6B58B]">✓</span>
+            </div>
+          </div>
+
+          <div class="p-6 bg-[#0D0D0D] border border-[#2E2E2E] hover:border-[#D6B58B] transition-all duration-300 relative group flex flex-col justify-between">
+            <div>
+              <span class="text-xs font-mono text-[#D6B58B] block mb-3">05</span>
+              <h3 class="text-base font-semibold text-[#F7F7F7] tracking-wider uppercase mb-2 group-hover:text-[#E8C49F] transition-colors">
+                CONFIANÇA
+              </h3>
+              <p class="text-xs text-[#E8DED1]/70 leading-relaxed font-normal">
+                Respeito irrestrito a prazos, especificações técnicas e orçamentos acordados.
+              </p>
+            </div>
+            <div class="mt-6 pt-3 border-t border-[#2E2E2E]/60 flex items-center justify-between text-[10px] font-mono text-[#F7F7F7]/40">
+              <span>PADRÃO MC</span>
+              <span class="text-[#D6B58B]">✓</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         03 // SOLUÇÕES ARQUITETÔNICAS
+    ========================================================================= -->
+    <section id="solucoes" class="py-28 px-6 md:px-12 bg-[#0D0D0D] relative border-t border-[#2E2E2E]">
+      <div class="max-w-7xl mx-auto">
+        
+        <!-- Cabeçalho da Seção -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 pb-6 border-b border-[#2E2E2E]">
+          <div>
+            <div class="flex items-center gap-2 mb-3">
+              <span class="text-xs font-mono text-[#D6B58B]">03 //</span>
+              <span class="text-xs font-medium tracking-[0.25em] text-[#E8C49F] uppercase">Serviços Especializados</span>
+            </div>
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-light text-[#F7F7F7] tracking-tight">
+              SOLUÇÕES <span class="font-bold text-[#E8C49F]">ARQUITETÔNICAS.</span>
+            </h2>
+          </div>
+          <p class="mt-4 md:mt-0 text-sm font-normal text-[#E8DED1] max-w-md leading-relaxed">
+            Sistemas completos em construção a seco com acabamento de alto padrão para tetos, paredes, iluminação e isolamento acústico.
+          </p>
+        </div>
+
+        <!-- Grade de 5 Cards Premium -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          <!-- Card 01: Forros de Gesso -->
+          <div class="group relative bg-[#141414] border border-[#2E2E2E] hover:border-[#D6B58B] transition-all duration-300 flex flex-col justify-between overflow-hidden">
+            <div class="relative h-72 sm:h-80 overflow-hidden bg-black">
+              <img 
+                src="assets/portfolio/portfolio_06.png" 
+                alt="Forros de Gesso" 
+                class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
+              />
+              <div class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-[#141414] to-transparent pointer-events-none"></div>
+              <div class="absolute top-4 left-4 right-4 flex items-center justify-between">
+                <span class="px-2.5 py-1 bg-[#0D0D0D]/90 backdrop-blur-md border border-[#2E2E2E] text-[11px] font-mono text-[#D6B58B]">01</span>
+                <span class="text-[9px] font-mono tracking-widest text-[#F7F7F7]/80 bg-[#0D0D0D]/80 px-2 py-0.5 border border-[#2E2E2E]">SISTEMA MC</span>
+              </div>
+            </div>
+            <div class="p-6 flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="text-lg font-semibold text-[#F7F7F7] tracking-wider uppercase mb-1 group-hover:text-[#E8C49F] transition-colors">
+                  FORROS DE GESSO
+                </h3>
+                <p class="text-xs font-medium text-[#E8C49F] mb-3">Rebaixamento monolítico e forros acústicos</p>
+                <p class="text-xs text-[#E8DED1]/70 leading-relaxed font-normal mb-6">
+                  Sistemas de forros contínuos com juntas invisíveis, proporcionando superfícies perfeitamente planas com integração de cortineiros, caixas de som e climatização.
+                </p>
+              </div>
+              <div class="pt-4 border-t border-[#2E2E2E] flex items-center justify-between">
+                <button 
+                  class="open-service-modal-btn text-xs font-semibold text-[#D6B58B] hover:text-[#E8C49F] tracking-wider uppercase flex items-center gap-1 group/btn cursor-pointer"
+                  data-service-id="forros"
+                >
+                  Ver Detalhes Técnicos
+                  <span class="transition-transform group-hover/btn:translate-x-1">→</span>
+                </button>
+                <span class="text-[10px] font-mono text-[#F7F7F7]/40">Q4 STANDARD</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 02: Drywall e Paredes -->
+          <div class="group relative bg-[#141414] border border-[#2E2E2E] hover:border-[#D6B58B] transition-all duration-300 flex flex-col justify-between overflow-hidden">
+            <div class="relative h-72 sm:h-80 overflow-hidden bg-black">
+              <img 
+                src="assets/portfolio/portfolio_04.png" 
+                alt="Drywall e Paredes" 
+                class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
+              />
+              <div class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-[#141414] to-transparent pointer-events-none"></div>
+              <div class="absolute top-4 left-4 right-4 flex items-center justify-between">
+                <span class="px-2.5 py-1 bg-[#0D0D0D]/90 backdrop-blur-md border border-[#2E2E2E] text-[11px] font-mono text-[#D6B58B]">02</span>
+                <span class="text-[9px] font-mono tracking-widest text-[#F7F7F7]/80 bg-[#0D0D0D]/80 px-2 py-0.5 border border-[#2E2E2E]">SISTEMA MC</span>
+              </div>
+            </div>
+            <div class="p-6 flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="text-lg font-semibold text-[#F7F7F7] tracking-wider uppercase mb-1 group-hover:text-[#E8C49F] transition-colors">
+                  DRYWALL E PAREDES
+                </h3>
+                <p class="text-xs font-medium text-[#E8C49F] mb-3">Estruturas leves, versáteis e resistentes</p>
+                <p class="text-xs text-[#E8DED1]/70 leading-relaxed font-normal mb-6">
+                  Construção a seco de alta precisão para paredes internas, fechamentos acústicos e shaft técnico. Agilidade com redução drástica de entulho no canteiro.
+                </p>
+              </div>
+              <div class="pt-4 border-t border-[#2E2E2E] flex items-center justify-between">
+                <button 
+                  class="open-service-modal-btn text-xs font-semibold text-[#D6B58B] hover:text-[#E8C49F] tracking-wider uppercase flex items-center gap-1 group/btn cursor-pointer"
+                  data-service-id="drywall"
+                >
+                  Ver Detalhes Técnicos
+                  <span class="transition-transform group-hover/btn:translate-x-1">→</span>
+                </button>
+                <span class="text-[10px] font-mono text-[#F7F7F7]/40">Q4 STANDARD</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 03: Sancas e Iluminação -->
+          <div class="group relative bg-[#141414] border border-[#2E2E2E] hover:border-[#D6B58B] transition-all duration-300 flex flex-col justify-between overflow-hidden">
+            <div class="relative h-72 sm:h-80 overflow-hidden bg-black">
+              <img 
+                src="assets/portfolio/portfolio_05.png" 
+                alt="Sancas e Iluminação" 
+                class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
+              />
+              <div class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-[#141414] to-transparent pointer-events-none"></div>
+              <div class="absolute top-4 left-4 right-4 flex items-center justify-between">
+                <span class="px-2.5 py-1 bg-[#0D0D0D]/90 backdrop-blur-md border border-[#2E2E2E] text-[11px] font-mono text-[#D6B58B]">03</span>
+                <span class="text-[9px] font-mono tracking-widest text-[#F7F7F7]/80 bg-[#0D0D0D]/80 px-2 py-0.5 border border-[#2E2E2E]">SISTEMA MC</span>
+              </div>
+            </div>
+            <div class="p-6 flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="text-lg font-semibold text-[#F7F7F7] tracking-wider uppercase mb-1 group-hover:text-[#E8C49F] transition-colors">
+                  SANCAS E ILUMINAÇÃO
+                </h3>
+                <p class="text-xs font-medium text-[#E8C49F] mb-3">Rasgos de luz, sancas invertidas e perfis LED</p>
+                <p class="text-xs text-[#E8DED1]/70 leading-relaxed font-normal mb-6">
+                  Design luminotécnico integrado ao forro. Criação de cenários de luz indireta, sancas abertas, ilhas flutuantes e nichos embutidos sem imperfeições.
+                </p>
+              </div>
+              <div class="pt-4 border-t border-[#2E2E2E] flex items-center justify-between">
+                <button 
+                  class="open-service-modal-btn text-xs font-semibold text-[#D6B58B] hover:text-[#E8C49F] tracking-wider uppercase flex items-center gap-1 group/btn cursor-pointer"
+                  data-service-id="sancas"
+                >
+                  Ver Detalhes Técnicos
+                  <span class="transition-transform group-hover/btn:translate-x-1">→</span>
+                </button>
+                <span class="text-[10px] font-mono text-[#F7F7F7]/40">Q4 STANDARD</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 04: Divisórias Corporativas -->
+          <div class="group relative bg-[#141414] border border-[#2E2E2E] hover:border-[#D6B58B] transition-all duration-300 flex flex-col justify-between overflow-hidden">
+            <div class="relative h-72 sm:h-80 overflow-hidden bg-black">
+              <img 
+                src="assets/portfolio/portfolio_02.png" 
+                alt="Divisórias Corporativas" 
+                class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
+              />
+              <div class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-[#141414] to-transparent pointer-events-none"></div>
+              <div class="absolute top-4 left-4 right-4 flex items-center justify-between">
+                <span class="px-2.5 py-1 bg-[#0D0D0D]/90 backdrop-blur-md border border-[#2E2E2E] text-[11px] font-mono text-[#D6B58B]">04</span>
+                <span class="text-[9px] font-mono tracking-widest text-[#F7F7F7]/80 bg-[#0D0D0D]/80 px-2 py-0.5 border border-[#2E2E2E]">SISTEMA MC</span>
+              </div>
+            </div>
+            <div class="p-6 flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="text-lg font-semibold text-[#F7F7F7] tracking-wider uppercase mb-1 group-hover:text-[#E8C49F] transition-colors">
+                  DIVISÓRIAS CORPORATIVAS
+                </h3>
+                <p class="text-xs font-medium text-[#E8C49F] mb-3">Otimização espacial e privacidade acústica</p>
+                <p class="text-xs text-[#E8DED1]/70 leading-relaxed font-normal mb-6">
+                  Divisórias inteligentes para escritórios, clínicas e lojas. Configurações modulares que permitem reorganização rápida e excelente atenuação de ruído.
+                </p>
+              </div>
+              <div class="pt-4 border-t border-[#2E2E2E] flex items-center justify-between">
+                <button 
+                  class="open-service-modal-btn text-xs font-semibold text-[#D6B58B] hover:text-[#E8C49F] tracking-wider uppercase flex items-center gap-1 group/btn cursor-pointer"
+                  data-service-id="divisorias"
+                >
+                  Ver Detalhes Técnicos
+                  <span class="transition-transform group-hover/btn:translate-x-1">→</span>
+                </button>
+                <span class="text-[10px] font-mono text-[#F7F7F7]/40">Q4 STANDARD</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 05: Acabamentos Especiais -->
+          <div class="group relative bg-[#141414] border border-[#2E2E2E] hover:border-[#D6B58B] transition-all duration-300 flex flex-col justify-between overflow-hidden">
+            <div class="relative h-72 sm:h-80 overflow-hidden bg-black">
+              <img 
+                src="assets/portfolio/portfolio_01.png" 
+                alt="Acabamentos Especiais" 
+                class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
+              />
+              <div class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-[#141414] to-transparent pointer-events-none"></div>
+              <div class="absolute top-4 left-4 right-4 flex items-center justify-between">
+                <span class="px-2.5 py-1 bg-[#0D0D0D]/90 backdrop-blur-md border border-[#2E2E2E] text-[11px] font-mono text-[#D6B58B]">05</span>
+                <span class="text-[9px] font-mono tracking-widest text-[#F7F7F7]/80 bg-[#0D0D0D]/80 px-2 py-0.5 border border-[#2E2E2E]">SISTEMA MC</span>
+              </div>
+            </div>
+            <div class="p-6 flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="text-lg font-semibold text-[#F7F7F7] tracking-wider uppercase mb-1 group-hover:text-[#E8C49F] transition-colors">
+                  ACABAMENTOS ESPECIAIS
+                </h3>
+                <p class="text-xs font-medium text-[#E8C49F] mb-3">Superfícies de alto padrão preparadas para pintura fina</p>
+                <p class="text-xs text-[#E8DED1]/70 leading-relaxed font-normal mb-6">
+                  Tratamento meticuloso de juntas, fitamento de cantos e lixamento técnico com controle de luz rasante para garantir ausência total de sombras ou ondulações.
+                </p>
+              </div>
+              <div class="pt-4 border-t border-[#2E2E2E] flex items-center justify-between">
+                <button 
+                  class="open-service-modal-btn text-xs font-semibold text-[#D6B58B] hover:text-[#E8C49F] tracking-wider uppercase flex items-center gap-1 group/btn cursor-pointer"
+                  data-service-id="acabamentos"
+                >
+                  Ver Detalhes Técnicos
+                  <span class="transition-transform group-hover/btn:translate-x-1">→</span>
+                </button>
+                <span class="text-[10px] font-mono text-[#F7F7F7]/40">Q4 STANDARD</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         04 // MÉTODO CONSTRUTIVO
+    ========================================================================= -->
+    <section id="metodo" class="py-28 px-6 md:px-12 bg-[#141414] relative border-t border-[#2E2E2E]">
+      <div class="max-w-7xl mx-auto">
+        
+        <!-- Cabeçalho da Seção -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 pb-6 border-b border-[#2E2E2E]">
+          <div>
+            <div class="flex items-center gap-2 mb-3">
+              <span class="text-xs font-mono text-[#D6B58B]">04 //</span>
+              <span class="text-xs font-medium tracking-[0.25em] text-[#E8C49F] uppercase">Método Construtivo</span>
+            </div>
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-light text-[#F7F7F7] tracking-tight">
+              DO PROJETO AO <span class="font-bold text-[#E8C49F]">ACABAMENTO.</span>
+            </h2>
+          </div>
+          <p class="mt-4 md:mt-0 text-sm font-normal text-[#E8DED1] max-w-md leading-relaxed">
+            Metodologia em 4 etapas rigorosamente controladas para garantir previsibilidade, prazo e perfeição visual.
+          </p>
+        </div>
+
+        <!-- Seletor Horizontal de 4 Etapas -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-10">
+          <button class="process-step-btn p-5 text-left border transition-all duration-300 relative bg-[#0D0D0D] border-[#D6B58B] shadow-lg cursor-pointer">
+            <div class="flex items-center justify-between mb-2">
+              <span class="step-num text-2xl font-bold font-mono text-[#D6B58B]">01</span>
+              <span class="text-[10px] font-mono tracking-widest uppercase text-[#E8C49F]">FASE 01</span>
+            </div>
+            <h3 class="step-title text-sm font-bold uppercase tracking-wider text-[#F7F7F7]">ENTENDIMENTO</h3>
+            <p class="text-[11px] text-[#E8DED1]/60 truncate mt-1">Briefing & Compatibilização</p>
+            <div class="step-active-indicator absolute bottom-0 left-0 right-0 h-[2px] bg-[#D6B58B]"></div>
+          </button>
+
+          <button class="process-step-btn p-5 text-left border transition-all duration-300 relative bg-[#0D0D0D]/60 border-[#2E2E2E] hover:border-[#D6B58B]/50 cursor-pointer">
+            <div class="flex items-center justify-between mb-2">
+              <span class="step-num text-2xl font-bold font-mono text-[#2E2E2E]">02</span>
+              <span class="text-[10px] font-mono tracking-widest uppercase text-[#F7F7F7]/40">FASE 02</span>
+            </div>
+            <h3 class="step-title text-sm font-bold uppercase tracking-wider text-[#F7F7F7]/70">PLANEJAMENTO</h3>
+            <p class="text-[11px] text-[#E8DED1]/60 truncate mt-1">Quantitativo & Modulação</p>
+            <div class="step-active-indicator absolute bottom-0 left-0 right-0 h-[2px] bg-[#D6B58B] hidden"></div>
+          </button>
+
+          <button class="process-step-btn p-5 text-left border transition-all duration-300 relative bg-[#0D0D0D]/60 border-[#2E2E2E] hover:border-[#D6B58B]/50 cursor-pointer">
+            <div class="flex items-center justify-between mb-2">
+              <span class="step-num text-2xl font-bold font-mono text-[#2E2E2E]">03</span>
+              <span class="text-[10px] font-mono tracking-widest uppercase text-[#F7F7F7]/40">FASE 03</span>
+            </div>
+            <h3 class="step-title text-sm font-bold uppercase tracking-wider text-[#F7F7F7]/70">EXECUÇÃO</h3>
+            <p class="text-[11px] text-[#E8DED1]/60 truncate mt-1">Montagem & Fechamento</p>
+            <div class="step-active-indicator absolute bottom-0 left-0 right-0 h-[2px] bg-[#D6B58B] hidden"></div>
+          </button>
+
+          <button class="process-step-btn p-5 text-left border transition-all duration-300 relative bg-[#0D0D0D]/60 border-[#2E2E2E] hover:border-[#D6B58B]/50 cursor-pointer">
+            <div class="flex items-center justify-between mb-2">
+              <span class="step-num text-2xl font-bold font-mono text-[#2E2E2E]">04</span>
+              <span class="text-[10px] font-mono tracking-widest uppercase text-[#F7F7F7]/40">FASE 04</span>
+            </div>
+            <h3 class="step-title text-sm font-bold uppercase tracking-wider text-[#F7F7F7]/70">RESULTADO</h3>
+            <p class="text-[11px] text-[#E8DED1]/60 truncate mt-1">Acabamento & Entrega Técnica</p>
+            <div class="step-active-indicator absolute bottom-0 left-0 right-0 h-[2px] bg-[#D6B58B] hidden"></div>
+          </button>
+        </div>
+
+        <!-- Display Visual de Grande Formato da Etapa -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 bg-[#0D0D0D] border border-[#2E2E2E] p-6 sm:p-10 relative overflow-hidden">
+          <div id="process-bg-note" class="absolute top-2 right-4 text-[9px] font-mono text-[#F7F7F7]/15 select-none pointer-events-none">
+            MC_METROLOGIA_ETAPA_01
+          </div>
+
+          <!-- Coluna Visual -->
+          <div class="lg:col-span-7 relative overflow-hidden border border-[#2E2E2E]">
+            <div class="relative h-[320px] sm:h-[420px]">
+              <img 
+                id="process-image"
+                src="assets/portfolio/portfolio_03.png" 
+                alt="Processo Executivo MC Gesso" 
+                class="w-full h-full object-cover transition-transform duration-700 hover:scale-102"
+              />
+              <div class="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#0D0D0D] to-transparent pointer-events-none"></div>
+              
+              <div id="process-tag" class="absolute top-4 left-4 bg-[#0D0D0D]/90 backdrop-blur-md px-3 py-1.5 border border-[#2E2E2E] text-[10px] font-mono text-[#E8C49F]">
+                LEVANTAMENTO TÉCNICO IN LOCO
+              </div>
+
+              <div class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-[10px] font-mono bg-[#0D0D0D]/85 backdrop-blur-md p-2.5 border border-[#2E2E2E]">
+                <span id="process-annotation" class="text-[#F7F7F7]">COMPATIBILIZAÇÃO // GESSO + ELÉTRICA + CLIMATIZAÇÃO</span>
+                <span id="process-specs" class="text-[#D6B58B] hidden sm:inline">Tolerância: 0mm na modulação</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Coluna Descritiva -->
+          <div class="lg:col-span-5 flex flex-col justify-between py-2">
+            <div>
+              <div class="flex items-center gap-2 mb-3">
+                <span id="process-num-badge" class="px-2 py-0.5 bg-[#2E2E2E] text-[#E8C49F] text-[10px] font-mono">
+                  ETAPA 01
+                </span>
+                <span id="process-phase" class="text-xs font-semibold tracking-wider text-[#D6B58B] uppercase">
+                  Briefing & Compatibilização
+                </span>
+              </div>
+
+              <h3 id="process-title" class="text-2xl sm:text-3xl font-bold text-[#F7F7F7] uppercase tracking-tight mb-4">
+                ENTENDIMENTO
+              </h3>
+
+              <p id="process-description" class="text-sm text-[#E8DED1] leading-relaxed font-normal mb-8">
+                Reunião técnica inicial com arquiteto, engenheiro ou cliente. Análise rigorosa das pranchas arquitetônicas, projetos de elétrica, hidráulica e ar-condicionado.
+              </p>
+
+              <div class="space-y-3 pt-6 border-t border-[#2E2E2E]">
+                <span class="text-[10px] font-mono tracking-widest text-[#E8C49F] uppercase block">
+                  AÇÕES CRÍTICAS DESTA FASE:
+                </span>
+                <div id="process-details" class="space-y-2">
+                  <div class="flex items-start gap-3 text-xs text-[#F7F7F7]/85 font-normal">
+                    <span class="text-[#D6B58B] font-mono text-[11px] mt-0.5">01.</span>
+                    <span>Verificação de prumo e nível do suporte estrutural</span>
+                  </div>
+                  <div class="flex items-start gap-3 text-xs text-[#F7F7F7]/85 font-normal">
+                    <span class="text-[#D6B58B] font-mono text-[11px] mt-0.5">02.</span>
+                    <span>Identificação de interferências luminotécnicas e dutos</span>
+                  </div>
+                  <div class="flex items-start gap-3 text-xs text-[#F7F7F7]/85 font-normal">
+                    <span class="text-[#D6B58B] font-mono text-[11px] mt-0.5">03.</span>
+                    <span>Alinhamento das expectativas de prazo e entrega</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Navegador Anterior / Próximo -->
+            <div class="flex items-center justify-between pt-8 border-t border-[#2E2E2E] mt-6">
+              <button
+                id="process-prev"
+                class="text-xs font-semibold text-[#E8DED1]/70 hover:text-[#E8C49F] uppercase tracking-wider flex items-center gap-1 cursor-pointer"
+              >
+                ← Anterior
+              </button>
+              <span id="process-counter" class="text-xs font-mono text-[#F7F7F7]/40">
+                01 / 04
+              </span>
+              <button
+                id="process-next"
+                class="text-xs font-semibold text-[#D6B58B] hover:text-[#E8C49F] uppercase tracking-wider flex items-center gap-1 cursor-pointer"
+              >
+                Próxima Etapa →
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         05 // SEGMENTOS ATENDIDOS
+    ========================================================================= -->
+    <section id="segmentos" class="py-28 px-6 md:px-12 bg-[#0D0D0D] relative border-t border-[#2E2E2E]">
+      <div class="max-w-7xl mx-auto">
+        
+        <!-- Cabeçalho da Seção -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 pb-6 border-b border-[#2E2E2E]">
+          <div>
+            <div class="flex items-center gap-2 mb-3">
+              <span class="text-xs font-mono text-[#D6B58B]">05 //</span>
+              <span class="text-xs font-medium tracking-[0.25em] text-[#E8C49F] uppercase">Áreas de Atuação</span>
+            </div>
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-light text-[#F7F7F7] tracking-tight">
+              SEGMENTOS <span class="font-bold text-[#E8C49F]">ATENDIDOS.</span>
+            </h2>
+          </div>
+          <p class="mt-4 md:mt-0 text-sm font-normal text-[#E8DED1] max-w-md leading-relaxed">
+            Estrutura técnica dimensionada para atender desde residências autorais a grandes volumes comerciais e redes de franquias.
+          </p>
+        </div>
+
+        <!-- Grade de 4 Segmentos -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
+          <button data-segment="residencial" class="segment-btn p-6 text-left border transition-all duration-300 relative flex flex-col justify-between min-h-[160px] bg-[#141414] border-[#D6B58B] shadow-xl cursor-pointer">
+            <div>
+              <span class="text-xs font-mono text-[#D6B58B] block mb-2">01</span>
+              <h3 class="seg-title text-base font-bold uppercase tracking-wider text-[#E8C49F]">RESIDENCIAL</h3>
+              <p class="text-xs text-[#E8DED1]/70 mt-2 line-clamp-2 font-light">Casas contemporâneas & Apartamentos de alto padrão</p>
+            </div>
+            <div class="seg-status flex items-center justify-between text-[11px] font-medium tracking-wider text-[#D6B58B] mt-4">
+              <span>SELECIONADO</span><span>●</span>
+            </div>
+            <div class="seg-indicator absolute top-0 left-0 right-0 h-[2px] bg-[#D6B58B]"></div>
+          </button>
+
+          <button data-segment="comercial" class="segment-btn p-6 text-left border transition-all duration-300 relative flex flex-col justify-between min-h-[160px] bg-[#141414]/50 border-[#2E2E2E] hover:border-[#D6B58B]/50 cursor-pointer">
+            <div>
+              <span class="text-xs font-mono text-[#D6B58B] block mb-2">02</span>
+              <h3 class="seg-title text-base font-bold uppercase tracking-wider text-[#F7F7F7]">COMERCIAL</h3>
+              <p class="text-xs text-[#E8DED1]/70 mt-2 line-clamp-2 font-light">Lojas, Boutiques, Showrooms & Restaurantes</p>
+            </div>
+            <div class="seg-status flex items-center justify-between text-[11px] font-medium tracking-wider text-[#D6B58B] mt-4">
+              <span>EXPLORAR</span><span>→</span>
+            </div>
+            <div class="seg-indicator absolute top-0 left-0 right-0 h-[2px] bg-[#D6B58B] hidden"></div>
+          </button>
+
+          <button data-segment="corporativo" class="segment-btn p-6 text-left border transition-all duration-300 relative flex flex-col justify-between min-h-[160px] bg-[#141414]/50 border-[#2E2E2E] hover:border-[#D6B58B]/50 cursor-pointer">
+            <div>
+              <span class="text-xs font-mono text-[#D6B58B] block mb-2">03</span>
+              <h3 class="seg-title text-base font-bold uppercase tracking-wider text-[#F7F7F7]">CORPORATIVO</h3>
+              <p class="text-xs text-[#E8DED1]/70 mt-2 line-clamp-2 font-light">Sedes de Empresas, Coworkings & Consultórios</p>
+            </div>
+            <div class="seg-status flex items-center justify-between text-[11px] font-medium tracking-wider text-[#D6B58B] mt-4">
+              <span>EXPLORAR</span><span>→</span>
+            </div>
+            <div class="seg-indicator absolute top-0 left-0 right-0 h-[2px] bg-[#D6B58B] hidden"></div>
+          </button>
+
+          <button data-segment="construtoras" class="segment-btn p-6 text-left border transition-all duration-300 relative flex flex-col justify-between min-h-[160px] bg-[#141414]/50 border-[#2E2E2E] hover:border-[#D6B58B]/50 cursor-pointer">
+            <div>
+              <span class="text-xs font-mono text-[#D6B58B] block mb-2">04</span>
+              <h3 class="seg-title text-base font-bold uppercase tracking-wider text-[#F7F7F7]">CONSTRUTORAS & FRANQUIAS</h3>
+              <p class="text-xs text-[#E8DED1]/70 mt-2 line-clamp-2 font-light">Obras em Escala & Padronização de Redes</p>
+            </div>
+            <div class="seg-status flex items-center justify-between text-[11px] font-medium tracking-wider text-[#D6B58B] mt-4">
+              <span>EXPLORAR</span><span>→</span>
+            </div>
+            <div class="seg-indicator absolute top-0 left-0 right-0 h-[2px] bg-[#D6B58B] hidden"></div>
+          </button>
+        </div>
+
+        <!-- Detalhe do Segmento Ativo -->
+        <div class="bg-[#141414] border border-[#2E2E2E] p-8 md:p-12 relative">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            
+            <div class="lg:col-span-7">
+              <span id="segment-detail-tag" class="text-[11px] font-mono tracking-widest text-[#D6B58B] uppercase block mb-2">
+                SOLUÇÃO TAILOR-MADE // RESIDENCIAL
+              </span>
+              <h3 id="segment-detail-title" class="text-2xl sm:text-3xl font-bold text-[#F7F7F7] uppercase tracking-tight mb-4">
+                Casas contemporâneas & Apartamentos de alto padrão
+              </h3>
+              <p id="segment-detail-desc" class="text-sm text-[#E8DED1] leading-relaxed font-normal mb-8">
+                Projetos personalizados que exigem acabamento refinado, detalhes esculturais de forro, sancas orgânicas ou minimalistas e conforto acústico em dormitórios e home theaters.
+              </p>
+
+              <div class="space-y-3 pt-6 border-t border-[#2E2E2E]">
+                <span class="text-[10px] font-mono tracking-widest text-[#E8C49F] uppercase block">
+                  APLICAÇÕES PRINCIPAIS NESTE SEGMENTO:
+                </span>
+                <div id="segment-detail-focus" class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  <div class="flex items-center gap-2 p-3 bg-[#0D0D0D] border border-[#2E2E2E]/80 text-xs text-[#F7F7F7]">
+                    <span class="text-[#D6B58B]">✓</span>
+                    <span>Forros contínuos com cortineiros iluminados</span>
+                  </div>
+                  <div class="flex items-center gap-2 p-3 bg-[#0D0D0D] border border-[#2E2E2E]/80 text-xs text-[#F7F7F7]">
+                    <span class="text-[#D6B58B]">✓</span>
+                    <span>Isolamento acústico para suítes</span>
+                  </div>
+                  <div class="flex items-center gap-2 p-3 bg-[#0D0D0D] border border-[#2E2E2E]/80 text-xs text-[#F7F7F7]">
+                    <span class="text-[#D6B58B]">✓</span>
+                    <span>Sancas e nichos sob medida</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="lg:col-span-5 p-6 bg-[#0D0D0D] border border-[#2E2E2E] flex flex-col justify-between">
+              <div>
+                <span class="text-[10px] font-mono text-[#D6B58B] tracking-widest uppercase block mb-2">
+                  DADOS PARA ARQUITETOS & CONTRATANTES
+                </span>
+                <h4 class="text-base font-semibold text-[#F7F7F7] uppercase mb-4">
+                  Compatibilidade Técnica Total
+                </h4>
+                <p class="text-xs text-[#E8DED1]/70 leading-relaxed font-light mb-6">
+                  Nossa engenharia de aplicação analisa memoriais descritivos, cadernos de encargos e plantas em DWG/BIM para fornecer orçamentos analíticos precisos.
+                </p>
+              </div>
+
+              <a 
+                id="segment-detail-cta"
+                href="#orcamento"
+                class="w-full py-3 bg-[#D6B58B] hover:bg-[#E8C49F] text-[#0D0D0D] font-bold text-xs uppercase tracking-wider text-center transition-colors block"
+              >
+                Solicitar Proposta para RESIDENCIAL
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         06 // CLIENTES & REDES NACIONAIS (COM LOGOMARCAS GRANDES OFICIAIS)
+    ========================================================================= -->
+    <section id="clientes" class="py-28 px-6 md:px-12 bg-[#0D0D0D] relative border-t border-[#2E2E2E]">
+      <div class="max-w-7xl mx-auto">
+        
+        <!-- Cabeçalho da Seção -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 pb-6 border-b border-[#2E2E2E]">
+          <div>
+            <div class="flex items-center gap-2 mb-3">
+              <span class="text-xs font-mono text-[#D6B58B]">06 //</span>
+              <span class="text-xs font-medium tracking-[0.25em] text-[#E8C49F] uppercase">
+                Grandes Contas & Franquias
+              </span>
+            </div>
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-light text-[#F7F7F7] tracking-tight">
+              CLIENTES & <span class="font-bold text-[#E8C49F]">REDES NACIONAIS.</span>
+            </h2>
+          </div>
+          <p class="mt-4 md:mt-0 text-sm font-normal text-[#E8DED1] max-w-md leading-relaxed">
+            Confiabilidade executiva para as maiores marcas, redes de farmácias e supermercados do Brasil.
+          </p>
+        </div>
+
+        <!-- Estatísticas de Capacidade Operacional -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-14">
+          <div class="bg-[#141414] border border-[#2E2E2E] p-5 flex flex-col justify-between">
+            <span class="text-2xl sm:text-3xl font-extrabold text-[#D6B58B] tracking-tight font-mono mb-1">+180</span>
+            <span class="text-[11px] font-medium tracking-wider text-[#E8DED1]/70 uppercase">Obras Comerciais Entregues</span>
+          </div>
+          <div class="bg-[#141414] border border-[#2E2E2E] p-5 flex flex-col justify-between">
+            <span class="text-2xl sm:text-3xl font-extrabold text-[#D6B58B] tracking-tight font-mono mb-1">Nacional</span>
+            <span class="text-[11px] font-medium tracking-wider text-[#E8DED1]/70 uppercase">Cobertura Operacional</span>
+          </div>
+          <div class="bg-[#141414] border border-[#2E2E2E] p-5 flex flex-col justify-between">
+            <span class="text-2xl sm:text-3xl font-extrabold text-[#D6B58B] tracking-tight font-mono mb-1">100% Norma</span>
+            <span class="text-[11px] font-medium tracking-wider text-[#E8DED1]/70 uppercase">Manuais de Franquia</span>
+          </div>
+          <div class="bg-[#141414] border border-[#2E2E2E] p-5 flex flex-col justify-between">
+            <span class="text-2xl sm:text-3xl font-extrabold text-[#D6B58B] tracking-tight font-mono mb-1">Shoppings & Lojas</span>
+            <span class="text-[11px] font-medium tracking-wider text-[#E8DED1]/70 uppercase">Turnos Noturnos</span>
+          </div>
+        </div>
+
+        <!-- Filtros de Categoria -->
+        <div class="flex flex-wrap items-center gap-2 mb-10">
+          <button data-cat="Todos" class="client-filter-btn px-5 py-2 text-xs font-medium tracking-wider uppercase transition-all duration-200 border rounded-none cursor-pointer bg-[#D6B58B] text-[#0D0D0D] border-[#D6B58B] font-bold shadow-md">
+            Todos
+          </button>
+          <button data-cat="Farmácias" class="client-filter-btn px-5 py-2 text-xs font-medium tracking-wider uppercase transition-all duration-200 border rounded-none cursor-pointer bg-[#141414] text-[#F7F7F7]/70 border-[#2E2E2E] hover:border-[#E8C49F] hover:text-[#F7F7F7]">
+            Farmácias
+          </button>
+          <button data-cat="Supermercados" class="client-filter-btn px-5 py-2 text-xs font-medium tracking-wider uppercase transition-all duration-200 border rounded-none cursor-pointer bg-[#141414] text-[#F7F7F7]/70 border-[#2E2E2E] hover:border-[#E8C49F] hover:text-[#F7F7F7]">
+            Supermercados
+          </button>
+          <button data-cat="Franquias" class="client-filter-btn px-5 py-2 text-xs font-medium tracking-wider uppercase transition-all duration-200 border rounded-none cursor-pointer bg-[#141414] text-[#F7F7F7]/70 border-[#2E2E2E] hover:border-[#E8C49F] hover:text-[#F7F7F7]">
+            Franquias
+          </button>
+        </div>
+
+        <!-- Grade de Clientes & Franquias (Com Logomarcas Grandes em cima do texto) -->
+        <div id="clients-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          <!-- 1. Droga Raia / Drogasil -->
+          <div data-cat="Farmácias" data-client-id="raia-drogasil" class="client-card group bg-[#141414] border border-[#2E2E2E] hover:border-[#D6B58B] p-6 sm:p-7 flex flex-col transition-all duration-300 cursor-pointer relative overflow-hidden">
+            <div class="h-32 flex items-center justify-center mb-6 bg-white p-4 rounded-sm overflow-hidden shadow-inner">
+              <div class="flex flex-col items-center justify-center text-center">
+                <span class="text-2xl font-black tracking-tight text-[#006837]">DROGA RAIA</span>
+                <span class="text-xs font-bold tracking-widest text-[#E31B23]">DROGASIL // RD</span>
+              </div>
+            </div>
+            <div>
+              <div class="flex items-center justify-between mb-4 pb-3 border-b border-[#2E2E2E]">
+                <span class="text-[10px] font-mono tracking-widest text-[#D6B58B] uppercase">RD // REDE NACIONAL</span>
+                <span class="text-[9px] font-mono text-[#F7F7F7]/50 uppercase bg-[#0D0D0D] px-2 py-0.5 border border-[#2E2E2E]">Farmácias</span>
+              </div>
+              <h3 class="text-xl font-bold text-[#F7F7F7] uppercase tracking-wide group-hover:text-[#E8C49F] transition-colors mb-1">Droga Raia / Drogasil</h3>
+              <span class="text-xs font-medium text-[#E8C49F] block mb-4">Rede Farmacêutica Líder</span>
+              <p class="text-xs text-[#E8DED1]/80 leading-relaxed font-light mb-6">Forros tabicados, iluminação embutida de alto IRC e divisórias acústicas para consultórios farmacêuticos.</p>
+              <div class="space-y-1.5 mb-6 bg-[#0D0D0D]/60 p-3 border border-[#2E2E2E]/60">
+                <div class="text-[11px] text-[#F7F7F7]/70 flex items-center gap-2"><span class="text-[#D6B58B]">▪</span><span>Padronização executiva</span></div>
+                <div class="text-[11px] text-[#F7F7F7]/70 flex items-center gap-2"><span class="text-[#D6B58B]">▪</span><span>Forros com isolamento termoacústico</span></div>
+                <div class="text-[11px] text-[#F7F7F7]/70 flex items-center gap-2"><span class="text-[#D6B58B]">▪</span><span>Cumprimento ágil de inaugurações</span></div>
+              </div>
+            </div>
+            <div class="mt-auto pt-4 border-t border-[#2E2E2E] flex items-center justify-between text-xs font-semibold text-[#D6B58B]">
+              <span>VER ESCOPO EXECUTIVO</span><span class="transition-transform group-hover:translate-x-1">→</span>
+            </div>
+          </div>
+
+          <!-- 2. Drogarias Pacheco -->
+          <div data-cat="Farmácias" data-client-id="drogarias-pacheco" class="client-card group bg-[#141414] border border-[#2E2E2E] hover:border-[#D6B58B] p-6 sm:p-7 flex flex-col transition-all duration-300 cursor-pointer relative overflow-hidden">
+            <div class="h-32 flex items-center justify-center mb-6 bg-white p-4 rounded-sm overflow-hidden shadow-inner">
+              <div class="flex flex-col items-center justify-center text-center">
+                <span class="text-2xl font-black tracking-tight text-[#E31B23]">PACHECO</span>
+                <span class="text-[10px] font-bold tracking-widest text-[#141414] uppercase">Drogarias Pacheco</span>
+              </div>
+            </div>
+            <div>
+              <div class="flex items-center justify-between mb-4 pb-3 border-b border-[#2E2E2E]">
+                <span class="text-[10px] font-mono tracking-widest text-[#D6B58B] uppercase">PACHECO // EXPANSÃO</span>
+                <span class="text-[9px] font-mono text-[#F7F7F7]/50 uppercase bg-[#0D0D0D] px-2 py-0.5 border border-[#2E2E2E]">Farmácias</span>
+              </div>
+              <h3 class="text-xl font-bold text-[#F7F7F7] uppercase tracking-wide group-hover:text-[#E8C49F] transition-colors mb-1">Drogarias Pacheco</h3>
+              <span class="text-xs font-medium text-[#E8C49F] block mb-4">Rede Tradicional Farmacêutica</span>
+              <p class="text-xs text-[#E8DED1]/80 leading-relaxed font-light mb-6">Montagem em drywall para fachadas internas, forros monolíticos e fechamento de salas de atendimento.</p>
+              <div class="space-y-1.5 mb-6 bg-[#0D0D0D]/60 p-3 border border-[#2E2E2E]/60">
+                <div class="text-[11px] text-[#F7F7F7]/70 flex items-center gap-2"><span class="text-[#D6B58B]">▪</span><span>Turnos rápidos</span></div>
+                <div class="text-[11px] text-[#F7F7F7]/70 flex items-center gap-2"><span class="text-[#D6B58B]">▪</span><span>Redução drástica de resíduos</span></div>
+                <div class="text-[11px] text-[#F7F7F7]/70 flex items-center gap-2"><span class="text-[#D6B58B]">▪</span><span>Planicidade perfeita para iluminação de prateleira</span></div>
+              </div>
+            </div>
+            <div class="mt-auto pt-4 border-t border-[#2E2E2E] flex items-center justify-between text-xs font-semibold text-[#D6B58B]">
+              <span>VER ESCOPO EXECUTIVO</span><span class="transition-transform group-hover:translate-x-1">→</span>
+            </div>
+          </div>
+
+          <!-- 3. Farmácias Pague Menos -->
+          <div data-cat="Farmácias" data-client-id="pague-menos" class="client-card group bg-[#141414] border border-[#2E2E2E] hover:border-[#D6B58B] p-6 sm:p-7 flex flex-col transition-all duration-300 cursor-pointer relative overflow-hidden">
+            <div class="h-32 flex items-center justify-center mb-6 bg-white p-4 rounded-sm overflow-hidden shadow-inner">
+              <div class="flex flex-col items-center justify-center text-center">
+                <span class="text-2xl font-black tracking-tight text-[#004A99]">PAGUE MENOS</span>
+                <span class="text-[10px] font-bold tracking-widest text-[#E31B23] uppercase">Farmácias Sempre Presentes</span>
+              </div>
+            </div>
+            <div>
+              <div class="flex items-center justify-between mb-4 pb-3 border-b border-[#2E2E2E]">
+                <span class="text-[10px] font-mono tracking-widest text-[#D6B58B] uppercase">PAGUE MENOS // BRASIL</span>
+                <span class="text-[9px] font-mono text-[#F7F7F7]/50 uppercase bg-[#0D0D0D] px-2 py-0.5 border border-[#2E2E2E]">Farmácias</span>
+              </div>
+              <h3 class="text-xl font-bold text-[#F7F7F7] uppercase tracking-wide group-hover:text-[#E8C49F] transition-colors mb-1">Farmácias Pague Menos</h3>
+              <span class="text-xs font-medium text-[#E8C49F] block mb-4">Rede Farmacêutica Nacional</span>
+              <p class="text-xs text-[#E8DED1]/80 leading-relaxed font-light mb-6">Fechamentos modulares, sancas técnicas e forros contínuos com shafts de climatização integrados.</p>
+              <div class="space-y-1.5 mb-6 bg-[#0D0D0D]/60 p-3 border border-[#2E2E2E]/60">
+                <div class="text-[11px] text-[#F7F7F7]/70 flex items-center gap-2"><span class="text-[#D6B58B]">▪</span><span>Canteiro seguro e limpo</span></div>
+                <div class="text-[11px] text-[#F7F7F7]/70 flex items-center gap-2"><span class="text-[#D6B58B]">▪</span><span>Respeito às normas ANVISA</span></div>
+                <div class="text-[11px] text-[#F7F7F7]/70 flex items-center gap-2"><span class="text-[#D6B58B]">▪</span><span>Agilidade em retrofit de lojas</span></div>
+              </div>
+            </div>
+            <div class="mt-auto pt-4 border-t border-[#2E2E2E] flex items-center justify-between text-xs font-semibold text-[#D6B58B]">
+              <span>VER ESCOPO EXECUTIVO</span><span class="transition-transform group-hover:translate-x-1">→</span>
+            </div>
+          </div>
+
+          <!-- 4. Drogaria São Paulo (DPSP) -->
+          <div data-cat="Farmácias" data-client-id="drogaria-sao-paulo" class="client-card group bg-[#141414] border border-[#2E2E2E] hover:border-[#D6B58B] p-6 sm:p-7 flex flex-col transition-all duration-300 cursor-pointer relative overflow-hidden">
+            <div class="h-32 flex items-center justify-center mb-6 bg-white p-4 rounded-sm overflow-hidden shadow-inner">
+              <div class="flex flex-col items-center justify-center text-center">
+                <span class="text-2xl font-black tracking-tight text-[#E31B23]">DROGARIA SÃO PAULO</span>
+                <span class="text-[10px] font-bold tracking-widest text-[#141414] uppercase">Grupo DPSP</span>
+              </div>
+            </div>
+            <div>
+              <div class="flex items-center justify-between mb-4 pb-3 border-b border-[#2E2E2E]">
+                <span class="text-[10px] font-mono tracking-widest text-[#D6B58B] uppercase">DPSP // VAREJO FARMA</span>
+                <span class="text-[9px] font-mono text-[#F7F7F7]/50 uppercase bg-[#0D0D0D] px-2 py-0.5 border border-[#2E2E2E]">Farmácias</span>
+              </div>
+              <h3 class="text-xl font-bold text-[#F7F7F7] uppercase tracking-wide group-hover:text-[#E8C49F] transition-colors mb-1">Drogaria São Paulo (DPSP)</h3>
+              <span class="text-xs font-medium text-[#E8C49F] block mb-4">Grupo DPSP</span>
+              <p class="text-xs text-[#E8DED1]/80 leading-relaxed font-light mb-6">Instalação de forros acústicos e paredes em drywall resistente a impactos para grande circulação.</p>
+              <div class="space-y-1.5 mb-6 bg-[#0D0D0D]/60 p-3 border border-[#2E2E2E]/60">
+                <div class="text-[11px] text-[#F7F7F7]/70 flex items-center gap-2"><span class="text-[#D6B58B]">▪</span><span>Placas de alta densidade</span></div>
+                <div class="text-[11px] text-[#F7F7F7]/70 flex items-center gap-2"><span class="text-[#D6B58B]">▪</span><span>Tratamento de juntas Q4</span></div>
+                <div class="text-[11px] text-[#F7F7F7]/70 flex items-center gap-2"><span class="text-[#D6B58B]">▪</span><span>Integração luminotécnica</span></div>
+              </div>
+            </div>
+            <div class="mt-auto pt-4 border-t border-[#2E2E2E] flex items-center justify-between text-xs font-semibold text-[#D6B58B]">
+              <span>VER ESCOPO EXECUTIVO</span><span class="transition-transform group-hover:translate-x-1">→</span>
+            </div>
+          </div>
+
+          <!-- 5. Ultrafarma -->
+          <div data-cat="Farmácias" data-client-id="ultrafarma" class="client-card group bg-[#141414] border border-[#2E2E2E] hover:border-[#D6B58B] p-6 sm:p-7 flex flex-col transition-all duration-300 cursor-pointer relative overflow-hidden">
+            <div class="h-32 flex items-center justify-center mb-6 bg-white p-4 rounded-sm overflow-hidden shadow-inner">
+              <div class="flex flex-col items-center justify-center text-center">
+                <span class="text-3xl font-black tracking-tighter text-[#00529C]">ULTRAFARMA</span>
+                <span class="text-[10px] font-bold tracking-widest text-[#E31B23] uppercase">Mega Stores & Saúde</span>
+              </div>
+            </div>
+            <div>
+              <div class="flex items-center justify-between mb-4 pb-3 border-b border-[#2E2E2E]">
+                <span class="text-[10px] font-mono tracking-widest text-[#D6B58B] uppercase">ULTRAFARMA // MEGA STORE</span>
+                <span class="text-[9px] font-mono text-[#F7F7F7]/50 uppercase bg-[#0D0D0D] px-2 py-0.5 border border-[#2E2E2E]">Farmácias</span>
+              </div>
+              <h3 class="text-xl font-bold text-[#F7F7F7] uppercase tracking-wide group-hover:text-[#E8C49F] transition-colors mb-1">Ultrafarma</h3>
+              <span class="text-xs font-medium text-[#E8C49F] block mb-4">Mega Lojas & Atendimento</span>
+              <p class="text-xs text-[#E8DED1]/80 leading-relaxed font-light mb-6">Grandes vãos de forro estruturado, sancas iluminadas e setores administrativos com paredes acústicas.</p>
+              <div class="space-y-1.5 mb-6 bg-[#0D0D0D]/60 p-3 border border-[#2E2E2E]/60">
+                <div class="text-[11px] text-[#F7F7F7]/70 flex items-center gap-2"><span class="text-[#D6B58B]">▪</span><span>Grandes metragens</span></div>
+                <div class="text-[11px] text-[#F7F7F7]/70 flex items-center gap-2"><span class="text-[#D6B58B]">▪</span><span>Agilidade de montagem</span></div>
+                <div class="text-[11px] text-[#F7F7F7]/70 flex items-center gap-2"><span class="text-[#D6B58B]">▪</span><span>Alinhamento milimétrico a laser</span></div>
+              </div>
+            </div>
+            <div class="mt-auto pt-4 border-t border-[#2E2E2E] flex items-center justify-between text-xs font-semibold text-[#D6B58B]">
+              <span>VER ESCOPO EXECUTIVO</span><span class="transition-transform group-hover:translate-x-1">→</span>
+            </div>
+          </div>
+
+          <!-- 6. Carrefour -->
+          <div data-cat="Supermercados" data-client-id="carrefour" class="client-card group bg-[#141414] border border-[#2E2E2E] hover:border-[#D6B58B] p-6 sm:p-7 flex flex-col transition-all duration-300 cursor-pointer relative overflow-hidden">
+            <div class="h-32 flex items-center justify-center mb-6 bg-white p-4 rounded-sm overflow-hidden shadow-inner">
+              <div class="flex items-center justify-center gap-3">
+                <div class="w-10 h-10 border-2 border-[#004A99] flex items-center justify-center font-bold text-[#E31B23] text-xl">C</div>
+                <span class="text-2xl font-black tracking-tight text-[#004A99]">Carrefour</span>
+              </div>
+            </div>
+            <div>
+              <div class="flex items-center justify-between mb-4 pb-3 border-b border-[#2E2E2E]">
+                <span class="text-[10px] font-mono tracking-widest text-[#D6B58B] uppercase">CARREFOUR // GALERIAS</span>
+                <span class="text-[9px] font-mono text-[#F7F7F7]/50 uppercase bg-[#0D0D0D] px-2 py-0.5 border border-[#2E2E2E]">Supermercados</span>
+              </div>
+              <h3 class="text-xl font-bold text-[#F7F7F7] uppercase tracking-wide group-hover:text-[#E8C49F] transition-colors mb-1">Carrefour</h3>
+              <span class="text-xs font-medium text-[#E8C49F] block mb-4">Hipermercados & Galerias</span>
+              <p class="text-xs text-[#E8DED1]/80 leading-relaxed font-light mb-6">Forros técnicos para galerias comerciais, fechamentos corta-fogo em drywall e áreas de checkout.</p>
+              <div class="space-y-1.5 mb-6 bg-[#0D0D0D]/60 p-3 border border-[#2E2E2E]/60">
+                <div class="text-[11px] text-[#F7F7F7]/70 flex items-center gap-2"><span class="text-[#D6B58B]">▪</span><span>Paredes resistentes ao fogo</span></div>
+                <div class="text-[11px] text-[#F7F7F7]/70 flex items-center gap-2"><span class="text-[#D6B58B]">▪</span><span>Forros para grandes áreas</span></div>
+                <div class="text-[11px] text-[#F7F7F7]/70 flex items-center gap-2"><span class="text-[#D6B58B]">▪</span><span>Segurança do trabalho padrão industrial</span></div>
+              </div>
+            </div>
+            <div class="mt-auto pt-4 border-t border-[#2E2E2E] flex items-center justify-between text-xs font-semibold text-[#D6B58B]">
+              <span>VER ESCOPO EXECUTIVO</span><span class="transition-transform group-hover:translate-x-1">→</span>
+            </div>
+          </div>
+
+          <!-- 7. Pão de Açúcar -->
+          <div data-cat="Supermercados" data-client-id="pao-de-acucar" class="client-card group bg-[#141414] border border-[#2E2E2E] hover:border-[#D6B58B] p-6 sm:p-7 flex flex-col transition-all duration-300 cursor-pointer relative overflow-hidden">
+            <div class="h-32 flex items-center justify-center mb-6 bg-white p-4 rounded-sm overflow-hidden shadow-inner">
+              <div class="flex flex-col items-center justify-center text-center">
+                <span class="text-2xl font-black tracking-tight text-[#006837]">PÃO DE AÇÚCAR</span>
+                <span class="text-[10px] font-bold tracking-widest text-[#E8C49F] uppercase bg-[#006837] px-2 py-0.5 text-white mt-1">GPA GOURMET</span>
+              </div>
+            </div>
+            <div>
+              <div class="flex items-center justify-between mb-4 pb-3 border-b border-[#2E2E2E]">
+                <span class="text-[10px] font-mono tracking-widest text-[#D6B58B] uppercase">GPA // GOURMET & RETAIL</span>
+                <span class="text-[9px] font-mono text-[#F7F7F7]/50 uppercase bg-[#0D0D0D] px-2 py-0.5 border border-[#2E2E2E]">Supermercados</span>
+              </div>
+              <h3 class="text-xl font-bold text-[#F7F7F7] uppercase tracking-wide group-hover:text-[#E8C49F] transition-colors mb-1">Pão de Açúcar</h3>
+              <span class="text-xs font-medium text-[#E8C49F] block mb-4">Supermercados Premium & Gourmet</span>
+              <p class="text-xs text-[#E8DED1]/80 leading-relaxed font-light mb-6">Sancas decorativas, forros rebaixados em ilhas de frios/vinhos e iluminação cênica de alta sofisticação.</p>
+              <div class="space-y-1.5 mb-6 bg-[#0D0D0D]/60 p-3 border border-[#2E2E2E]/60">
+                <div class="text-[11px] text-[#F7F7F7]/70 flex items-center gap-2"><span class="text-[#D6B58B]">▪</span><span>Acabamento visual refinado</span></div>
+                <div class="text-[11px] text-[#F7F7F7]/70 flex items-center gap-2"><span class="text-[#D6B58B]">▪</span><span>Sancas invertidas e luz difusa</span></div>
+                <div class="text-[11px] text-[#F7F7F7]/70 flex items-center gap-2"><span class="text-[#D6B58B]">▪</span><span>Compatibilização arquitetônica de ponta</span></div>
+              </div>
+            </div>
+            <div class="mt-auto pt-4 border-t border-[#2E2E2E] flex items-center justify-between text-xs font-semibold text-[#D6B58B]">
+              <span>VER ESCOPO EXECUTIVO</span><span class="transition-transform group-hover:translate-x-1">→</span>
+            </div>
+          </div>
+
+          <!-- 8. Assaí Atacadista -->
+          <div data-cat="Supermercados" data-client-id="assai-atacadista" class="client-card group bg-[#141414] border border-[#2E2E2E] hover:border-[#D6B58B] p-6 sm:p-7 flex flex-col transition-all duration-300 cursor-pointer relative overflow-hidden">
+            <div class="h-32 flex items-center justify-center mb-6 bg-white p-4 rounded-sm overflow-hidden shadow-inner">
+              <div class="flex flex-col items-center justify-center text-center">
+                <span class="text-3xl font-black tracking-tight text-[#004A99]">Assaí</span>
+                <span class="text-[11px] font-extrabold tracking-widest text-[#E31B23] uppercase">ATACADISTA</span>
+              </div>
+            </div>
+            <div>
+              <div class="flex items-center justify-between mb-4 pb-3 border-b border-[#2E2E2E]">
+                <span class="text-[10px] font-mono tracking-widest text-[#D6B58B] uppercase">ASSAÍ // ATACAREJO</span>
+                <span class="text-[9px] font-mono text-[#F7F7F7]/50 uppercase bg-[#0D0D0D] px-2 py-0.5 border border-[#2E2E2E]">Supermercados</span>
+              </div>
+              <h3 class="text-xl font-bold text-[#F7F7F7] uppercase tracking-wide group-hover:text-[#E8C49F] transition-colors mb-1">Assaí Atacadista</h3>
+              <span class="text-xs font-medium text-[#E8C49F] block mb-4">Atacarejo Líder</span>
+              <p class="text-xs text-[#E8DED1]/80 leading-relaxed font-light mb-6">Montagem de divisórias de drywall para salas operacionais, refeitórios, tesouraria e forros de escritórios.</p>
+              <div class="space-y-1.5 mb-6 bg-[#0D0D0D]/60 p-3 border border-[#2E2E2E]/60">
+                <div class="text-[11px] text-[#F7F7F7]/70 flex items-center gap-2"><span class="text-[#D6B58B]">▪</span><span>Execução em grande porte</span></div>
+                <div class="text-[11px] text-[#F7F7F7]/70 flex items-center gap-2"><span class="text-[#D6B58B]">▪</span><span>Isolamento acústico</span></div>
+                <div class="text-[11px] text-[#F7F7F7]/70 flex items-center gap-2"><span class="text-[#D6B58B]">▪</span><span>Prazos rigorosos de entrega</span></div>
+              </div>
+            </div>
+            <div class="mt-auto pt-4 border-t border-[#2E2E2E] flex items-center justify-between text-xs font-semibold text-[#D6B58B]">
+              <span>VER ESCOPO EXECUTIVO</span><span class="transition-transform group-hover:translate-x-1">→</span>
+            </div>
+          </div>
+
+          <!-- 9. Atacadão -->
+          <div data-cat="Supermercados" data-client-id="atacadao" class="client-card group bg-[#141414] border border-[#2E2E2E] hover:border-[#D6B58B] p-6 sm:p-7 flex flex-col transition-all duration-300 cursor-pointer relative overflow-hidden">
+            <div class="h-32 flex items-center justify-center mb-6 bg-white p-4 rounded-sm overflow-hidden shadow-inner">
+              <div class="flex flex-col items-center justify-center text-center">
+                <span class="text-3xl font-black tracking-tight text-[#E31B23]">ATACADÃO</span>
+                <span class="text-[10px] font-bold tracking-widest text-[#141414] uppercase">Lugar de Comprar Barato</span>
+              </div>
+            </div>
+            <div>
+              <div class="flex items-center justify-between mb-4 pb-3 border-b border-[#2E2E2E]">
+                <span class="text-[10px] font-mono tracking-widest text-[#D6B58B] uppercase">ATACADÃO // EXPANSÃO</span>
+                <span class="text-[9px] font-mono text-[#F7F7F7]/50 uppercase bg-[#0D0D0D] px-2 py-0.5 border border-[#2E2E2E]">Supermercados</span>
+              </div>
+              <h3 class="text-xl font-bold text-[#F7F7F7] uppercase tracking-wide group-hover:text-[#E8C49F] transition-colors mb-1">Atacadão</h3>
+              <span class="text-xs font-medium text-[#E8C49F] block mb-4">Rede Atacadista Nacional</span>
+              <p class="text-xs text-[#E8DED1]/80 leading-relaxed font-light mb-6">Estruturas leves em drywall para fechamentos prediais internos, sanitários e áreas administrativas.</p>
+              <div class="space-y-1.5 mb-6 bg-[#0D0D0D]/60 p-3 border border-[#2E2E2E]/60">
+                <div class="text-[11px] text-[#F7F7F7]/70 flex items-center gap-2"><span class="text-[#D6B58B]">▪</span><span>Alta produtividade diária</span></div>
+                <div class="text-[11px] text-[#F7F7F7]/70 flex items-center gap-2"><span class="text-[#D6B58B]">▪</span><span>Normas de canteiro</span></div>
+                <div class="text-[11px] text-[#F7F7F7]/70 flex items-center gap-2"><span class="text-[#D6B58B]">▪</span><span>Soluções técnicas duráveis</span></div>
+              </div>
+            </div>
+            <div class="mt-auto pt-4 border-t border-[#2E2E2E] flex items-center justify-between text-xs font-semibold text-[#D6B58B]">
+              <span>VER ESCOPO EXECUTIVO</span><span class="transition-transform group-hover:translate-x-1">→</span>
+            </div>
+          </div>
+
+          <!-- 10. St. Marche -->
+          <div data-cat="Supermercados" data-client-id="st-marche" class="client-card group bg-[#141414] border border-[#2E2E2E] hover:border-[#D6B58B] p-6 sm:p-7 flex flex-col transition-all duration-300 cursor-pointer relative overflow-hidden">
+            <div class="h-32 flex items-center justify-center mb-6 bg-white p-4 rounded-sm overflow-hidden shadow-inner">
+              <div class="flex flex-col items-center justify-center text-center">
+                <span class="text-2xl font-bold tracking-widest text-[#1B3624]">ST. MARCHE</span>
+                <span class="text-[9px] font-medium tracking-[0.2em] text-[#D6B58B] uppercase">SUPERMERCADO BOUTIQUE</span>
+              </div>
+            </div>
+            <div>
+              <div class="flex items-center justify-between mb-4 pb-3 border-b border-[#2E2E2E]">
+                <span class="text-[10px] font-mono tracking-widest text-[#D6B58B] uppercase">ST. MARCHE // PREMIUM</span>
+                <span class="text-[9px] font-mono text-[#F7F7F7]/50 uppercase bg-[#0D0D0D] px-2 py-0.5 border border-[#2E2E2E]">Supermercados</span>
+              </div>
+              <h3 class="text-xl font-bold text-[#F7F7F7] uppercase tracking-wide group-hover:text-[#E8C49F] transition-colors mb-1">St. Marche</h3>
+              <span class="text-xs font-medium text-[#E8C49F] block mb-4">Boutique de Alimentos & Experiência</span>
+              <p class="text-xs text-[#E8DED1]/80 leading-relaxed font-light mb-6">Forros com design personalizado, nichos arquitetônicos em gesso e integração luminotécnica com perfis LED.</p>
+              <div class="space-y-1.5 mb-6 bg-[#0D0D0D]/60 p-3 border border-[#2E2E2E]/60">
+                <div class="text-[11px] text-[#F7F7F7]/70 flex items-center gap-2"><span class="text-[#D6B58B]">▪</span><span>Atenção extrema aos detalhes</span></div>
+                <div class="text-[11px] text-[#F7F7F7]/70 flex items-center gap-2"><span class="text-[#D6B58B]">▪</span><span>Forros monolíticos impecáveis</span></div>
+                <div class="text-[11px] text-[#F7F7F7]/70 flex items-center gap-2"><span class="text-[#D6B58B]">▪</span><span>Ambientes que valorizam o cliente</span></div>
+              </div>
+            </div>
+            <div class="mt-auto pt-4 border-t border-[#2E2E2E] flex items-center justify-between text-xs font-semibold text-[#D6B58B]">
+              <span>VER ESCOPO EXECUTIVO</span><span class="transition-transform group-hover:translate-x-1">→</span>
+            </div>
+          </div>
+
+          <!-- 11. Cacau Show -->
+          <div data-cat="Franquias" data-client-id="cacau-show" class="client-card group bg-[#141414] border border-[#2E2E2E] hover:border-[#D6B58B] p-6 sm:p-7 flex flex-col transition-all duration-300 cursor-pointer relative overflow-hidden">
+            <div class="h-32 flex items-center justify-center mb-6 bg-white p-4 rounded-sm overflow-hidden shadow-inner">
+              <div class="flex flex-col items-center justify-center text-center">
+                <span class="text-2xl font-black tracking-tight text-[#3E2723]">CACAU SHOW</span>
+                <span class="text-[9px] font-bold tracking-widest text-[#D6B58B] uppercase">Chocolates Finos</span>
+              </div>
+            </div>
+            <div>
+              <div class="flex items-center justify-between mb-4 pb-3 border-b border-[#2E2E2E]">
+                <span class="text-[10px] font-mono tracking-widest text-[#D6B58B] uppercase">FRANQUIA // SHOPPING & RUA</span>
+                <span class="text-[9px] font-mono text-[#F7F7F7]/50 uppercase bg-[#0D0D0D] px-2 py-0.5 border border-[#2E2E2E]">Franquias</span>
+              </div>
+              <h3 class="text-xl font-bold text-[#F7F7F7] uppercase tracking-wide group-hover:text-[#E8C49F] transition-colors mb-1">Cacau Show</h3>
+              <span class="text-xs font-medium text-[#E8C49F] block mb-4">Maior Rede de Chocolates Finos</span>
+              <p class="text-xs text-[#E8DED1]/80 leading-relaxed font-light mb-6">Padronização de forros tabicados e sancas luminosas em conformidade exata com o manual da franquia.</p>
+              <div class="space-y-1.5 mb-6 bg-[#0D0D0D]/60 p-3 border border-[#2E2E2E]/60">
+                <div class="text-[11px] text-[#F7F7F7]/70 flex items-center gap-2"><span class="text-[#D6B58B]">▪</span><span>Obras em tempo recorde</span></div>
+                <div class="text-[11px] text-[#F7F7F7]/70 flex items-center gap-2"><span class="text-[#D6B58B]">▪</span><span>Padronização nacional de lojas</span></div>
+                <div class="text-[11px] text-[#F7F7F7]/70 flex items-center gap-2"><span class="text-[#D6B58B]">▪</span><span>Execução noturna em shoppings</span></div>
+              </div>
+            </div>
+            <div class="mt-auto pt-4 border-t border-[#2E2E2E] flex items-center justify-between text-xs font-semibold text-[#D6B58B]">
+              <span>VER ESCOPO EXECUTIVO</span><span class="transition-transform group-hover:translate-x-1">→</span>
+            </div>
+          </div>
+
+          <!-- 12. Smart Fit -->
+          <div data-cat="Franquias" data-client-id="smart-fit" class="client-card group bg-[#141414] border border-[#2E2E2E] hover:border-[#D6B58B] p-6 sm:p-7 flex flex-col transition-all duration-300 cursor-pointer relative overflow-hidden">
+            <div class="h-32 flex items-center justify-center mb-6 bg-white p-4 rounded-sm overflow-hidden shadow-inner">
+              <div class="flex items-center justify-center gap-2">
+                <div class="w-8 h-8 rounded-full bg-[#FFD100] flex items-center justify-center font-black text-black text-sm">sf</div>
+                <span class="text-2xl font-black tracking-tight text-black">smart fit</span>
+              </div>
+            </div>
+            <div>
+              <div class="flex items-center justify-between mb-4 pb-3 border-b border-[#2E2E2E]">
+                <span class="text-[10px] font-mono tracking-widest text-[#D6B58B] uppercase">SMART FIT // FITNESS</span>
+                <span class="text-[9px] font-mono text-[#F7F7F7]/50 uppercase bg-[#0D0D0D] px-2 py-0.5 border border-[#2E2E2E]">Franquias</span>
+              </div>
+              <h3 class="text-xl font-bold text-[#F7F7F7] uppercase tracking-wide group-hover:text-[#E8C49F] transition-colors mb-1">Smart Fit</h3>
+              <span class="text-xs font-medium text-[#E8C49F] block mb-4">Maior Rede de Academias da América Latina</span>
+              <p class="text-xs text-[#E8DED1]/80 leading-relaxed font-light mb-6">Divisórias com tratamento termoacústico de alto desempenho, forros modulares e reforços para espelhos.</p>
+              <div class="space-y-1.5 mb-6 bg-[#0D0D0D]/60 p-3 border border-[#2E2E2E]/60">
+                <div class="text-[11px] text-[#F7F7F7]/70 flex items-center gap-2"><span class="text-[#D6B58B]">▪</span><span>Atenuação sonora pesada</span></div>
+                <div class="text-[11px] text-[#F7F7F7]/70 flex items-center gap-2"><span class="text-[#D6B58B]">▪</span><span>Paredes com lã mineral</span></div>
+                <div class="text-[11px] text-[#F7F7F7]/70 flex items-center gap-2"><span class="text-[#D6B58B]">▪</span><span>Resistência estrutural comprovada</span></div>
+              </div>
+            </div>
+            <div class="mt-auto pt-4 border-t border-[#2E2E2E] flex items-center justify-between text-xs font-semibold text-[#D6B58B]">
+              <span>VER ESCOPO EXECUTIVO</span><span class="transition-transform group-hover:translate-x-1">→</span>
+            </div>
+          </div>
+
+          <!-- 13. Outback Steakhouse -->
+          <div data-cat="Franquias" data-client-id="outback" class="client-card group bg-[#141414] border border-[#2E2E2E] hover:border-[#D6B58B] p-6 sm:p-7 flex flex-col transition-all duration-300 cursor-pointer relative overflow-hidden">
+            <div class="h-32 flex items-center justify-center mb-6 bg-white p-4 rounded-sm overflow-hidden shadow-inner">
+              <div class="flex flex-col items-center justify-center text-center">
+                <span class="text-2xl font-black tracking-wider text-[#A62B2B]">OUTBACK</span>
+                <span class="text-[9px] font-bold tracking-[0.2em] text-[#141414] uppercase">STEAKHOUSE</span>
+              </div>
+            </div>
+            <div>
+              <div class="flex items-center justify-between mb-4 pb-3 border-b border-[#2E2E2E]">
+                <span class="text-[10px] font-mono tracking-widest text-[#D6B58B] uppercase">OUTBACK // CASUAL DINING</span>
+                <span class="text-[9px] font-mono text-[#F7F7F7]/50 uppercase bg-[#0D0D0D] px-2 py-0.5 border border-[#2E2E2E]">Franquias</span>
+              </div>
+              <h3 class="text-xl font-bold text-[#F7F7F7] uppercase tracking-wide group-hover:text-[#E8C49F] transition-colors mb-1">Outback Steakhouse</h3>
+              <span class="text-xs font-medium text-[#E8C49F] block mb-4">Restaurantes & Hospitalidade</span>
+              <p class="text-xs text-[#E8DED1]/80 leading-relaxed font-light mb-6">Cenários luminotécnicos com sancas indiretas, forros acústicos para conforto conversacional e drywall técnico.</p>
+              <div class="space-y-1.5 mb-6 bg-[#0D0D0D]/60 p-3 border border-[#2E2E2E]/60">
+                <div class="text-[11px] text-[#F7F7F7]/70 flex items-center gap-2"><span class="text-[#D6B58B]">▪</span><span>Conforto acústico</span></div>
+                <div class="text-[11px] text-[#F7F7F7]/70 flex items-center gap-2"><span class="text-[#D6B58B]">▪</span><span>Iluminação intimista</span></div>
+                <div class="text-[11px] text-[#F7F7F7]/70 flex items-center gap-2"><span class="text-[#D6B58B]">▪</span><span>Entrega sem poeira pronta para mobiliário</span></div>
+              </div>
+            </div>
+            <div class="mt-auto pt-4 border-t border-[#2E2E2E] flex items-center justify-between text-xs font-semibold text-[#D6B58B]">
+              <span>VER ESCOPO EXECUTIVO</span><span class="transition-transform group-hover:translate-x-1">→</span>
+            </div>
+          </div>
+
+          <!-- 14. Vivara -->
+          <div data-cat="Franquias" data-client-id="vivara" class="client-card group bg-[#141414] border border-[#2E2E2E] hover:border-[#D6B58B] p-6 sm:p-7 flex flex-col transition-all duration-300 cursor-pointer relative overflow-hidden">
+            <div class="h-32 flex items-center justify-center mb-6 bg-white p-4 rounded-sm overflow-hidden shadow-inner">
+              <span class="text-3xl font-light tracking-[0.25em] text-[#141414] uppercase">VIVARA</span>
+            </div>
+            <div>
+              <div class="flex items-center justify-between mb-4 pb-3 border-b border-[#2E2E2E]">
+                <span class="text-[10px] font-mono tracking-widest text-[#D6B58B] uppercase">VIVARA // ALTO LUXO</span>
+                <span class="text-[9px] font-mono text-[#F7F7F7]/50 uppercase bg-[#0D0D0D] px-2 py-0.5 border border-[#2E2E2E]">Franquias</span>
+              </div>
+              <h3 class="text-xl font-bold text-[#F7F7F7] uppercase tracking-wide group-hover:text-[#E8C49F] transition-colors mb-1">Vivara</h3>
+              <span class="text-xs font-medium text-[#E8C49F] block mb-4">Joalheria & Luxo</span>
+              <p class="text-xs text-[#E8DED1]/80 leading-relaxed font-light mb-6">Nível de acabamento Q4 com controle sob luz rasante, rasgos milimétricos para iluminação de joias.</p>
+              <div class="space-y-1.5 mb-6 bg-[#0D0D0D]/60 p-3 border border-[#2E2E2E]/60">
+                <div class="text-[11px] text-[#F7F7F7]/70 flex items-center gap-2"><span class="text-[#D6B58B]">▪</span><span>Tolerância zero de imperfeições</span></div>
+                <div class="text-[11px] text-[#F7F7F7]/70 flex items-center gap-2"><span class="text-[#D6B58B]">▪</span><span>Sancas ultrafinas</span></div>
+                <div class="text-[11px] text-[#F7F7F7]/70 flex items-center gap-2"><span class="text-[#D6B58B]">▪</span><span>Superfície pronta para pintura acetinada</span></div>
+              </div>
+            </div>
+            <div class="mt-auto pt-4 border-t border-[#2E2E2E] flex items-center justify-between text-xs font-semibold text-[#D6B58B]">
+              <span>VER ESCOPO EXECUTIVO</span><span class="transition-transform group-hover:translate-x-1">→</span>
+            </div>
+          </div>
+
+          <!-- 15. Burger King -->
+          <div data-cat="Franquias" data-client-id="burger-king" class="client-card group bg-[#141414] border border-[#2E2E2E] hover:border-[#D6B58B] p-6 sm:p-7 flex flex-col transition-all duration-300 cursor-pointer relative overflow-hidden">
+            <div class="h-32 flex items-center justify-center mb-6 bg-white p-4 rounded-sm overflow-hidden shadow-inner">
+              <div class="flex flex-col items-center justify-center text-center">
+                <span class="text-2xl font-black tracking-tight text-[#D62300]">BURGER KING</span>
+                <span class="text-[9px] font-bold tracking-widest text-[#502314] uppercase">Fast Food Internacional</span>
+              </div>
+            </div>
+            <div>
+              <div class="flex items-center justify-between mb-4 pb-3 border-b border-[#2E2E2E]">
+                <span class="text-[10px] font-mono tracking-widest text-[#D6B58B] uppercase">BK // PRAÇAS DE ALIMENTAÇÃO</span>
+                <span class="text-[9px] font-mono text-[#F7F7F7]/50 uppercase bg-[#0D0D0D] px-2 py-0.5 border border-[#2E2E2E]">Franquias</span>
+              </div>
+              <h3 class="text-xl font-bold text-[#F7F7F7] uppercase tracking-wide group-hover:text-[#E8C49F] transition-colors mb-1">Burger King</h3>
+              <span class="text-xs font-medium text-[#E8C49F] block mb-4">Fast Food Internacional</span>
+              <p class="text-xs text-[#E8DED1]/80 leading-relaxed font-light mb-6">Execução noturna em praças de alimentação de shoppings, forros resistentes a gordura e vapor e drywall corta-fogo.</p>
+              <div class="space-y-1.5 mb-6 bg-[#0D0D0D]/60 p-3 border border-[#2E2E2E]/60">
+                <div class="text-[11px] text-[#F7F7F7]/70 flex items-center gap-2"><span class="text-[#D6B58B]">▪</span><span>Turnos 100% noturnos</span></div>
+                <div class="text-[11px] text-[#F7F7F7]/70 flex items-center gap-2"><span class="text-[#D6B58B]">▪</span><span>Velocidade extrema de montagem</span></div>
+                <div class="text-[11px] text-[#F7F7F7]/70 flex items-center gap-2"><span class="text-[#D6B58B]">▪</span><span>Conformidade com Corpo de Bombeiros</span></div>
+              </div>
+            </div>
+            <div class="mt-auto pt-4 border-t border-[#2E2E2E] flex items-center justify-between text-xs font-semibold text-[#D6B58B]">
+              <span>VER ESCOPO EXECUTIVO</span><span class="transition-transform group-hover:translate-x-1">→</span>
+            </div>
+          </div>
+
+          <!-- 16. O Boticário -->
+          <div data-cat="Franquias" data-client-id="boticario" class="client-card group bg-[#141414] border border-[#2E2E2E] hover:border-[#D6B58B] p-6 sm:p-7 flex flex-col transition-all duration-300 cursor-pointer relative overflow-hidden">
+            <div class="h-32 flex items-center justify-center mb-6 bg-white p-4 rounded-sm overflow-hidden shadow-inner">
+              <div class="flex flex-col items-center justify-center text-center">
+                <span class="text-2xl font-bold tracking-wider text-[#141414]">O BOTICÁRIO</span>
+                <span class="text-[9px] font-medium tracking-[0.2em] text-[#006837] uppercase">COSMÉTICOS & PERFUMARIA</span>
+              </div>
+            </div>
+            <div>
+              <div class="flex items-center justify-between mb-4 pb-3 border-b border-[#2E2E2E]">
+                <span class="text-[10px] font-mono tracking-widest text-[#D6B58B] uppercase">BOTICÁRIO // FRANQUIAS</span>
+                <span class="text-[9px] font-mono text-[#F7F7F7]/50 uppercase bg-[#0D0D0D] px-2 py-0.5 border border-[#2E2E2E]">Franquias</span>
+              </div>
+              <h3 class="text-xl font-bold text-[#F7F7F7] uppercase tracking-wide group-hover:text-[#E8C49F] transition-colors mb-1">O Boticário</h3>
+              <span class="text-xs font-medium text-[#E8C49F] block mb-4">Rede de Cosméticos e Perfumaria</span>
+              <p class="text-xs text-[#E8DED1]/80 leading-relaxed font-light mb-6">Forros contínuos com cortineiros e sancas invertidas que valorizam os expositores e frascos de produtos.</p>
+              <div class="space-y-1.5 mb-6 bg-[#0D0D0D]/60 p-3 border border-[#2E2E2E]/60">
+                <div class="text-[11px] text-[#F7F7F7]/70 flex items-center gap-2"><span class="text-[#D6B58B]">▪</span><span>Fidelidade ao projeto luminotécnico</span></div>
+                <div class="text-[11px] text-[#F7F7F7]/70 flex items-center gap-2"><span class="text-[#D6B58B]">▪</span><span>Entrega impecável</span></div>
+                <div class="text-[11px] text-[#F7F7F7]/70 flex items-center gap-2"><span class="text-[#D6B58B]">▪</span><span>Padronização em diversas cidades</span></div>
+              </div>
+            </div>
+            <div class="mt-auto pt-4 border-t border-[#2E2E2E] flex items-center justify-between text-xs font-semibold text-[#D6B58B]">
+              <span>VER ESCOPO EXECUTIVO</span><span class="transition-transform group-hover:translate-x-1">→</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Faixa de CTA para Gerentes de Expansão e Franquias -->
+        <div class="mt-14 bg-[#141414] border border-[#D6B58B]/50 p-8 sm:p-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+          <div>
+            <div class="inline-flex items-center gap-2 mb-2">
+              <span class="w-1.5 h-1.5 bg-[#D6B58B]"></span>
+              <span class="text-[10px] font-mono tracking-widest text-[#E8C49F] uppercase">
+                EXPANSÃO DE REDES & FRANQUIAS
+              </span>
+            </div>
+            <h3 class="text-xl sm:text-2xl font-bold text-[#F7F7F7] uppercase tracking-tight mb-2">
+              Você gerencia obras de expansão, lojas de shopping ou redes de farmácia?
+            </h3>
+            <p class="text-xs sm:text-sm text-[#E8DED1]/80 max-w-2xl font-light">
+              Temos estrutura técnica, turnos noturnos e mão de obra homologada para atender múltiplas praças com total pontualidade na inauguração.
+            </p>
+          </div>
+
+          <div class="flex flex-col sm:flex-row items-center gap-3 shrink-0 w-full sm:w-auto">
+            <a
+              href="https://wa.me/5511986504178?text=Ol%C3%A1%2C%20equipe%20MC%20Gesso!%20Sou%20respons%C3%A1vel%20por%20expans%C3%A3o%20comercial%2Ffranquias%20e%20gostaria%20de%20conversar%20sobre%20atendimento%20para%20obras%20de%20lojas%20e%20unidades%20de%20rede."
+              target="_blank"
+              rel="noopener noreferrer"
+              class="w-full sm:w-auto px-6 py-3 bg-[#D6B58B] hover:bg-[#E8C49F] text-[#0D0D0D] font-bold text-xs uppercase tracking-wider text-center transition-colors border border-[#D6B58B] rounded-none cursor-pointer inline-block"
+            >
+              Falar com Gerência de Obras
+            </a>
+
+            <a
+              href="#orcamento"
+              class="w-full sm:w-auto px-6 py-3 border border-[#2E2E2E] hover:border-[#E8C49F] text-[#F7F7F7] text-xs font-semibold uppercase tracking-wider text-center transition-colors bg-[#0D0D0D] rounded-none cursor-pointer inline-block"
+            >
+              Solicitar Proposta Técnica
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         07 // DEPOIMENTOS DE CLIENTES
+    ========================================================================= -->
+    <section id="depoimentos" class="py-28 px-6 md:px-12 bg-[#0D0D0D] relative border-t border-[#2E2E2E]">
+      <div class="max-w-4xl mx-auto text-center">
+        
+        <div class="flex items-center justify-center gap-2 mb-6">
+          <span class="text-xs font-mono text-[#D6B58B]">07 //</span>
+          <span class="text-xs font-medium tracking-[0.25em] text-[#E8C49F] uppercase">
+            Depoimentos
+          </span>
+        </div>
+
+        <h2 class="text-3xl sm:text-4xl font-light text-[#F7F7F7] tracking-tight mb-16">
+          O QUE DIZEM SOBRE <span class="font-bold text-[#E8C49F]">NOSSA ENTREGA.</span>
+        </h2>
+
+        <div class="relative bg-[#141414] border border-[#2E2E2E] p-10 md:p-16 min-h-[300px] flex flex-col items-center justify-center">
+          <p id="testimonial-text" class="text-xl md:text-2xl font-light text-[#F7F7F7] italic mb-10 leading-relaxed">
+            "A precisão da MC Gesso é um diferencial fundamental para nossos projetos de alto padrão. O nível de acabamento, especialmente na preparação para iluminação, é impecável."
+          </p>
+          
+          <div class="flex flex-col items-center">
+            <h4 id="testimonial-name" class="text-lg font-bold text-[#D6B58B] uppercase tracking-wide">Ana Beatriz</h4>
+            <p id="testimonial-role" class="text-xs font-medium text-[#E8DED1]/70 uppercase tracking-widest">Arquiteta Sênior · Estúdio Arquitetura & Design</p>
+          </div>
+
+          <div class="absolute bottom-8 flex gap-4">
+            <button id="testimonial-prev" class="p-2 border border-[#2E2E2E] hover:border-[#E8C49F] text-[#F7F7F7] transition-colors cursor-pointer" aria-label="Depoimento Anterior">
+              ←
+            </button>
+            <button id="testimonial-next" class="p-2 border border-[#2E2E2E] hover:border-[#E8C49F] text-[#F7F7F7] transition-colors cursor-pointer" aria-label="Próximo Depoimento">
+              →
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         08 // DIREÇÃO TÉCNICA - CONHEÇA NOSSO FUNDADOR
+    ========================================================================= -->
+    <section id="fundador" class="py-28 px-6 md:px-12 bg-[#0D0D0D] relative border-t border-[#2E2E2E]">
+      <div class="max-w-7xl mx-auto">
+        
+        <!-- Cabeçalho da Seção -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 pb-6 border-b border-[#2E2E2E]">
+          <div>
+            <div class="flex items-center gap-2 mb-3">
+              <span class="text-xs font-mono text-[#D6B58B]">08 //</span>
+              <span class="text-xs font-medium tracking-[0.25em] text-[#E8C49F] uppercase">
+                Direção Técnica
+              </span>
+            </div>
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-light text-[#F7F7F7] tracking-tight">
+              CONHEÇA NOSSO <span class="font-bold text-[#E8C49F]">FUNDADOR.</span>
+            </h2>
+          </div>
+        </div>
+
+        <!-- Grade com Fotos e Manifesto -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          
+          <!-- Manifesto -->
+          <div class="flex flex-col justify-center">
+            <h3 class="text-2xl font-bold text-[#F7F7F7] mb-6">
+              "A precisão na execução não é um diferencial, é nossa obrigação."
+            </h3>
+            <div class="space-y-4 text-base font-light text-[#E8DED1] leading-relaxed">
+              <p>
+                Com mais de 15 anos de experiência no setor de construção a seco e acabamentos de alto padrão, nosso fundador consolidou a MC Gesso como uma referência nacional. Sua visão uniu o rigor técnico da engenharia com a sensibilidade estética da arquitetura contemporânea.
+              </p>
+              <p>
+                Cada projeto realizado pela MC Gesso carrega o selo de sua supervisão direta. A busca incansável pela perfeição no emassamento, no alinhamento de perfis e na integração luminotécnica reflete o compromisso com a entrega final impecável.
+              </p>
+              <p>
+                Liderar uma equipe técnica que entende as nuances de um detalhe arquitetônico é o que nos permite executar, com segurança e agilidade, as demandas das maiores marcas e franquias do país.
+              </p>
+            </div>
+          </div>
+
+          <!-- Grade de 6 Fotos do Fundador -->
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+            <div class="overflow-hidden border border-[#2E2E2E] bg-[#141414]">
+              <img src="assets/about/founder.png" alt="Fundador MC Gesso 1" class="w-full h-48 object-cover transition-transform duration-500 hover:scale-105" />
+            </div>
+            <div class="overflow-hidden border border-[#2E2E2E] bg-[#141414]">
+              <img src="assets/about/founder_1.png" alt="Fundador MC Gesso 2" class="w-full h-48 object-cover transition-transform duration-500 hover:scale-105" />
+            </div>
+            <div class="overflow-hidden border border-[#2E2E2E] bg-[#141414]">
+              <img src="assets/about/founder_2.png" alt="Fundador MC Gesso 3" class="w-full h-48 object-cover transition-transform duration-500 hover:scale-105" />
+            </div>
+            <div class="overflow-hidden border border-[#2E2E2E] bg-[#141414]">
+              <img src="assets/about/founder_3.png" alt="Fundador MC Gesso 4" class="w-full h-48 object-cover transition-transform duration-500 hover:scale-105" />
+            </div>
+            <div class="overflow-hidden border border-[#2E2E2E] bg-[#141414]">
+              <img src="assets/about/founder_4.png" alt="Fundador MC Gesso 5" class="w-full h-48 object-cover transition-transform duration-500 hover:scale-105" />
+            </div>
+            <div class="overflow-hidden border border-[#2E2E2E] bg-[#141414]">
+              <img src="assets/about/founder_5.png" alt="Fundador MC Gesso 6" class="w-full h-48 object-cover transition-transform duration-500 hover:scale-105" />
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         09 // INDICADORES DE PERFORMANCE (CONTADORES COM ANIMAÇÃO VANILLA JS)
+    ========================================================================= -->
+    <section id="counters-section" class="py-20 px-6 md:px-12 bg-[#0D0D0D] border-t border-[#2E2E2E]">
+      <div class="max-w-7xl mx-auto">
+        
+        <!-- Cabeçalho da Seção -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 pb-6 border-b border-[#2E2E2E]">
+          <div>
+            <div class="flex items-center gap-2 mb-3">
+              <span class="text-xs font-mono text-[#D6B58B]">09 //</span>
+              <span class="text-xs font-medium tracking-[0.25em] text-[#E8C49F] uppercase">
+                Indicadores de Performance
+              </span>
+            </div>
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-light text-[#F7F7F7] tracking-tight">
+              NOSSA EXPERIÊNCIA <span class="font-bold text-[#E8C49F]">EM NÚMEROS.</span>
+            </h2>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="flex flex-col items-center justify-center p-8 bg-[#141414] border border-[#2E2E2E]">
+            <div class="flex items-baseline">
+              <span id="counter-years" class="text-4xl sm:text-5xl font-extrabold text-[#D6B58B] tracking-tight font-mono">0</span>
+              <span class="text-2xl font-bold text-[#E8C49F]">+</span>
+            </div>
+            <span class="text-xs font-medium tracking-[0.2em] text-[#F7F7F7] uppercase mt-3">Anos de Experiência</span>
+          </div>
+
+          <div class="flex flex-col items-center justify-center p-8 bg-[#141414] border border-[#2E2E2E]">
+            <div class="flex items-baseline">
+              <span id="counter-projects" class="text-4xl sm:text-5xl font-extrabold text-[#D6B58B] tracking-tight font-mono">0</span>
+              <span class="text-2xl font-bold text-[#E8C49F]">+</span>
+            </div>
+            <span class="text-xs font-medium tracking-[0.2em] text-[#F7F7F7] uppercase mt-3">Projetos Concluídos</span>
+          </div>
+
+          <div class="flex flex-col items-center justify-center p-8 bg-[#141414] border border-[#2E2E2E]">
+            <div class="flex items-baseline">
+              <span id="counter-clients" class="text-4xl sm:text-5xl font-extrabold text-[#D6B58B] tracking-tight font-mono">0</span>
+              <span class="text-2xl font-bold text-[#E8C49F]">+</span>
+            </div>
+            <span class="text-xs font-medium tracking-[0.2em] text-[#F7F7F7] uppercase mt-3">Clientes Satisfeitos</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         10 // PORTFÓLIO IMERSIVO
+    ========================================================================= -->
+    <section id="portfolio" class="py-28 px-6 md:px-12 bg-[#141414] relative border-t border-[#2E2E2E]">
+      <div class="max-w-7xl mx-auto">
+        
+        <!-- Cabeçalho da Seção -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 pb-6 border-b border-[#2E2E2E]">
+          <div>
+            <div class="flex items-center gap-2 mb-3">
+              <span class="text-xs font-mono text-[#D6B58B]">10 //</span>
+              <span class="text-xs font-medium tracking-[0.25em] text-[#E8C49F] uppercase">Acervo & Obras</span>
+            </div>
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-light text-[#F7F7F7] tracking-tight">
+              PORTFÓLIO <span class="font-bold text-[#E8C49F]">IMERSIVO.</span>
+            </h2>
+          </div>
+          <p class="mt-4 md:mt-0 text-sm font-normal text-[#E8DED1] max-w-md leading-relaxed">
+            Galeria visual de projetos com rigor arquitetônico, obras executadas e acabamentos de alto nível.
+          </p>
+        </div>
+
+        <!-- Filtros em Segmented Control Discreto -->
+        <div class="flex flex-wrap items-center gap-2 mb-12">
+          <button data-cat="Todos" class="portfolio-filter-btn px-5 py-2 text-xs font-medium tracking-wider uppercase transition-all duration-200 border bg-[#D6B58B] text-[#0D0D0D] border-[#D6B58B] font-bold shadow-md cursor-pointer">
+            Todos
+          </button>
+          <button data-cat="Obras" class="portfolio-filter-btn px-5 py-2 text-xs font-medium tracking-wider uppercase transition-all duration-200 border bg-[#0D0D0D] text-[#F7F7F7]/70 border-[#2E2E2E] hover:border-[#E8C49F] hover:text-[#F7F7F7] cursor-pointer">
+            Obras
+          </button>
+          <button data-cat="Drywall" class="portfolio-filter-btn px-5 py-2 text-xs font-medium tracking-wider uppercase transition-all duration-200 border bg-[#0D0D0D] text-[#F7F7F7]/70 border-[#2E2E2E] hover:border-[#E8C49F] hover:text-[#F7F7F7] cursor-pointer">
+            Drywall
+          </button>
+          <button data-cat="Forros" class="portfolio-filter-btn px-5 py-2 text-xs font-medium tracking-wider uppercase transition-all duration-200 border bg-[#0D0D0D] text-[#F7F7F7]/70 border-[#2E2E2E] hover:border-[#E8C49F] hover:text-[#F7F7F7] cursor-pointer">
+            Forros
+          </button>
+          <button data-cat="Acabamentos" class="portfolio-filter-btn px-5 py-2 text-xs font-medium tracking-wider uppercase transition-all duration-200 border bg-[#0D0D0D] text-[#F7F7F7]/70 border-[#2E2E2E] hover:border-[#E8C49F] hover:text-[#F7F7F7] cursor-pointer">
+            Acabamentos
+          </button>
+          <button data-cat="Corporativo" class="portfolio-filter-btn px-5 py-2 text-xs font-medium tracking-wider uppercase transition-all duration-200 border bg-[#0D0D0D] text-[#F7F7F7]/70 border-[#2E2E2E] hover:border-[#E8C49F] hover:text-[#F7F7F7] cursor-pointer">
+            Corporativo
+          </button>
+        </div>
+
+        <!-- Grade de Portfólio -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          
+          <div data-cat="Obras" data-portfolio-id="p1" class="portfolio-item group relative bg-[#0D0D0D] border border-[#2E2E2E] hover:border-[#D6B58B] transition-all duration-300 cursor-pointer overflow-hidden flex flex-col justify-between rounded-none">
+            <div class="relative h-80 sm:h-96 overflow-hidden bg-black">
+              <img src="assets/portfolio/portfolio_01.png" alt="Supervisão Técnica e Controle em Canteiro" class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-103" />
+              <div class="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-[#0D0D0D] to-transparent pointer-events-none"></div>
+              <div class="absolute bottom-3 right-3">
+                <span class="text-[10px] font-mono tracking-widest text-[#E8C49F] uppercase bg-[#0D0D0D]/90 px-2 py-0.5 border border-[#2E2E2E]">Obras</span>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-base font-bold text-[#F7F7F7] uppercase tracking-wide group-hover:text-[#E8C49F] transition-colors mb-2">Supervisão Técnica e Controle em Canteiro</h3>
+              <p class="text-xs text-[#E8DED1]/70 line-clamp-2 font-light leading-relaxed mb-4">Acompanhamento rigoroso de montagem de forros e divisórias com alinhamento a laser e supervisão executiva contínua.</p>
+              <div class="pt-3 border-t border-[#2E2E2E] flex items-center justify-between text-[11px] font-semibold text-[#D6B58B]">
+                <span>AMPLIAR DETALHES</span><span class="transition-transform group-hover:translate-x-1">→</span>
+              </div>
+            </div>
+          </div>
+
+          <div data-cat="Corporativo" data-portfolio-id="p2" class="portfolio-item group relative bg-[#0D0D0D] border border-[#2E2E2E] hover:border-[#D6B58B] transition-all duration-300 cursor-pointer overflow-hidden flex flex-col justify-between rounded-none">
+            <div class="relative h-80 sm:h-96 overflow-hidden bg-black">
+              <img src="assets/portfolio/portfolio_02.png" alt="Soluções para Operações Comerciais & Lojas" class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-103" />
+              <div class="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-[#0D0D0D] to-transparent pointer-events-none"></div>
+              <div class="absolute bottom-3 right-3">
+                <span class="text-[10px] font-mono tracking-widest text-[#E8C49F] uppercase bg-[#0D0D0D]/90 px-2 py-0.5 border border-[#2E2E2E]">Corporativo</span>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-base font-bold text-[#F7F7F7] uppercase tracking-wide group-hover:text-[#E8C49F] transition-colors mb-2">Soluções para Operações Comerciais & Lojas</h3>
+              <p class="text-xs text-[#E8DED1]/70 line-clamp-2 font-light leading-relaxed mb-4">Padrão, agilidade e acabamento para redes, lojas, consultórios e franquias com sancas iluminadas e drywall técnico.</p>
+              <div class="pt-3 border-t border-[#2E2E2E] flex items-center justify-between text-[11px] font-semibold text-[#D6B58B]">
+                <span>AMPLIAR DETALHES</span><span class="transition-transform group-hover:translate-x-1">→</span>
+              </div>
+            </div>
+          </div>
+
+          <div data-cat="Drywall" data-portfolio-id="p3" class="portfolio-item group relative bg-[#0D0D0D] border border-[#2E2E2E] hover:border-[#D6B58B] transition-all duration-300 cursor-pointer overflow-hidden flex flex-col justify-between rounded-none">
+            <div class="relative h-80 sm:h-96 overflow-hidden bg-black">
+              <img src="assets/portfolio/portfolio_03.png" alt="Alinhamento de Projetos e Engenharia" class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-103" />
+              <div class="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-[#0D0D0D] to-transparent pointer-events-none"></div>
+              <div class="absolute bottom-3 right-3">
+                <span class="text-[10px] font-mono tracking-widest text-[#E8C49F] uppercase bg-[#0D0D0D]/90 px-2 py-0.5 border border-[#2E2E2E]">Drywall</span>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-base font-bold text-[#F7F7F7] uppercase tracking-wide group-hover:text-[#E8C49F] transition-colors mb-2">Alinhamento de Projetos e Engenharia</h3>
+              <p class="text-xs text-[#E8DED1]/70 line-clamp-2 font-light leading-relaxed mb-4">Planejamento colaborativo entre nossa liderança técnica e o escritório de arquitetura sobre as pranchas executivas.</p>
+              <div class="pt-3 border-t border-[#2E2E2E] flex items-center justify-between text-[11px] font-semibold text-[#D6B58B]">
+                <span>AMPLIAR DETALHES</span><span class="transition-transform group-hover:translate-x-1">→</span>
+              </div>
+            </div>
+          </div>
+
+          <div data-cat="Acabamentos" data-portfolio-id="p4" class="portfolio-item group relative bg-[#0D0D0D] border border-[#2E2E2E] hover:border-[#D6B58B] transition-all duration-300 cursor-pointer overflow-hidden flex flex-col justify-between rounded-none">
+            <div class="relative h-80 sm:h-96 overflow-hidden bg-black">
+              <img src="assets/portfolio/portfolio_04.png" alt="Materiais Certificados e Perfis Normatizados" class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-103" />
+              <div class="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-[#0D0D0D] to-transparent pointer-events-none"></div>
+              <div class="absolute bottom-3 right-3">
+                <span class="text-[10px] font-mono tracking-widest text-[#E8C49F] uppercase bg-[#0D0D0D]/90 px-2 py-0.5 border border-[#2E2E2E]">Acabamentos</span>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-base font-bold text-[#F7F7F7] uppercase tracking-wide group-hover:text-[#E8C49F] transition-colors mb-2">Materiais Certificados e Perfis Normatizados</h3>
+              <p class="text-xs text-[#E8DED1]/70 line-clamp-2 font-light leading-relaxed mb-4">Placas em drywall de primeira linha, perfis galvanizados estruturais, fitas de alta tenacidade e ferramentas de precisão.</p>
+              <div class="pt-3 border-t border-[#2E2E2E] flex items-center justify-between text-[11px] font-semibold text-[#D6B58B]">
+                <span>AMPLIAR DETALHES</span><span class="transition-transform group-hover:translate-x-1">→</span>
+              </div>
+            </div>
+          </div>
+
+          <div data-cat="Forros" data-portfolio-id="p5" class="portfolio-item group relative bg-[#0D0D0D] border border-[#2E2E2E] hover:border-[#D6B58B] transition-all duration-300 cursor-pointer overflow-hidden flex flex-col justify-between rounded-none">
+            <div class="relative h-80 sm:h-96 overflow-hidden bg-black">
+              <img src="assets/portfolio/portfolio_05.png" alt="Inspeção e Entrega Técnica Premium" class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-103" />
+              <div class="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-[#0D0D0D] to-transparent pointer-events-none"></div>
+              <div class="absolute bottom-3 right-3">
+                <span class="text-[10px] font-mono tracking-widest text-[#E8C49F] uppercase bg-[#0D0D0D]/90 px-2 py-0.5 border border-[#2E2E2E]">Forros</span>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-base font-bold text-[#F7F7F7] uppercase tracking-wide group-hover:text-[#E8C49F] transition-colors mb-2">Inspeção e Entrega Técnica Premium</h3>
+              <p class="text-xs text-[#E8DED1]/70 line-clamp-2 font-light leading-relaxed mb-4">Controle meticuloso de planicidade sob luz rasante, conferência de cotas e entrega da obra pronta para pintura fina.</p>
+              <div class="pt-3 border-t border-[#2E2E2E] flex items-center justify-between text-[11px] font-semibold text-[#D6B58B]">
+                <span>AMPLIAR DETALHES</span><span class="transition-transform group-hover:translate-x-1">→</span>
+              </div>
+            </div>
+          </div>
+
+          <div data-cat="Corporativo" data-portfolio-id="p6" class="portfolio-item group relative bg-[#0D0D0D] border border-[#2E2E2E] hover:border-[#D6B58B] transition-all duration-300 cursor-pointer overflow-hidden flex flex-col justify-between rounded-none">
+            <div class="relative h-80 sm:h-96 overflow-hidden bg-black">
+              <img src="assets/portfolio/portfolio_06.png" alt="Ambientes Corporativos de Alto Padrão" class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-103" />
+              <div class="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-[#0D0D0D] to-transparent pointer-events-none"></div>
+              <div class="absolute bottom-3 right-3">
+                <span class="text-[10px] font-mono tracking-widest text-[#E8C49F] uppercase bg-[#0D0D0D]/90 px-2 py-0.5 border border-[#2E2E2E]">Corporativo</span>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-base font-bold text-[#F7F7F7] uppercase tracking-wide group-hover:text-[#E8C49F] transition-colors mb-2">Ambientes Corporativos de Alto Padrão</h3>
+              <p class="text-xs text-[#E8DED1]/70 line-clamp-2 font-light leading-relaxed mb-4">Recepção corporativa com forro monolítico, sanca invertida de luz difusa e integração perfeita com painéis de mármore e vidro.</p>
+              <div class="pt-3 border-t border-[#2E2E2E] flex items-center justify-between text-[11px] font-semibold text-[#D6B58B]">
+                <span>AMPLIAR DETALHES</span><span class="transition-transform group-hover:translate-x-1">→</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         11 // DIFERENCIAIS TÉCNICOS
+    ========================================================================= -->
+    <section id="diferenciais" class="py-28 px-6 md:px-12 bg-[#0D0D0D] relative border-t border-[#2E2E2E]">
+      <div class="max-w-7xl mx-auto">
+        
+        <!-- Cabeçalho da Seção -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 pb-6 border-b border-[#2E2E2E]">
+          <div>
+            <div class="flex items-center gap-2 mb-3">
+              <span class="text-xs font-mono text-[#D6B58B]">11 //</span>
+              <span class="text-xs font-medium tracking-[0.25em] text-[#E8C49F] uppercase">Rigor Construtivo</span>
+            </div>
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-light text-[#F7F7F7] tracking-tight">
+              O EXTRAORDINÁRIO ESTÁ <span class="font-bold text-[#E8C49F]">NOS DETALHES.</span>
+            </h2>
+          </div>
+          <p class="mt-4 md:mt-0 text-sm font-normal text-[#E8DED1] max-w-md leading-relaxed">
+            Princípios inegociáveis que diferenciam a MC Gesso em cada empreendimento e obra entregue.
+          </p>
+        </div>
+
+        <!-- Grade de 6 Diferenciais -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          <div class="p-8 bg-[#141414] border border-[#2E2E2E] hover:border-[#D6B58B] transition-all duration-300 relative group flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="text-xs font-mono text-[#D6B58B] bg-[#0D0D0D] px-2 py-1 border border-[#2E2E2E]">01</span>
+                <span class="text-[10px] font-mono tracking-widest text-[#F7F7F7]/40 uppercase">PADRÃO MC</span>
+              </div>
+              <h3 class="text-base font-bold text-[#F7F7F7] uppercase tracking-wide group-hover:text-[#E8C49F] transition-colors mb-3">ATENÇÃO AO ACABAMENTO</h3>
+              <p class="text-xs text-[#E8DED1]/80 leading-relaxed font-light">Nosso padrão de emassamento e calafetação suporta os projetos de iluminação mais exigentes, inclusive luz rasante de ponta a ponta.</p>
+            </div>
+            <div class="mt-8 pt-4 border-t border-[#2E2E2E]/60 flex items-center justify-between text-[10px] font-mono text-[#F7F7F7]/40">
+              <span>CONFORMIDADE TÉCNICA</span><span class="text-[#D6B58B]">✓ 100%</span>
+            </div>
+          </div>
+
+          <div class="p-8 bg-[#141414] border border-[#2E2E2E] hover:border-[#D6B58B] transition-all duration-300 relative group flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="text-xs font-mono text-[#D6B58B] bg-[#0D0D0D] px-2 py-1 border border-[#2E2E2E]">02</span>
+                <span class="text-[10px] font-mono tracking-widest text-[#F7F7F7]/40 uppercase">PADRÃO MC</span>
+              </div>
+              <h3 class="text-base font-bold text-[#F7F7F7] uppercase tracking-wide group-hover:text-[#E8C49F] transition-colors mb-3">SINTONIA COM ARQUITETURA</h3>
+              <p class="text-xs text-[#E8DED1]/80 leading-relaxed font-light">Dialogamos fluentemente com arquitetos e designers de interiores. Entendemos cada cota, detalhe e intenção do projeto.</p>
+            </div>
+            <div class="mt-8 pt-4 border-t border-[#2E2E2E]/60 flex items-center justify-between text-[10px] font-mono text-[#F7F7F7]/40">
+              <span>CONFORMIDADE TÉCNICA</span><span class="text-[#D6B58B]">✓ 100%</span>
+            </div>
+          </div>
+
+          <div class="p-8 bg-[#141414] border border-[#2E2E2E] hover:border-[#D6B58B] transition-all duration-300 relative group flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="text-xs font-mono text-[#D6B58B] bg-[#0D0D0D] px-2 py-1 border border-[#2E2E2E]">03</span>
+                <span class="text-[10px] font-mono tracking-widest text-[#F7F7F7]/40 uppercase">PADRÃO MC</span>
+              </div>
+              <h3 class="text-base font-bold text-[#F7F7F7] uppercase tracking-wide group-hover:text-[#E8C49F] transition-colors mb-3">CANTEIRO LIMPO E SEGURO</h3>
+              <p class="text-xs text-[#E8DED1]/80 leading-relaxed font-light">Trabalhamos com metodologia de canteiro organizado, descarte correto de sobras e respeito a horários e normas de condomínio.</p>
+            </div>
+            <div class="mt-8 pt-4 border-t border-[#2E2E2E]/60 flex items-center justify-between text-[10px] font-mono text-[#F7F7F7]/40">
+              <span>CONFORMIDADE TÉCNICA</span><span class="text-[#D6B58B]">✓ 100%</span>
+            </div>
+          </div>
+
+          <div class="p-8 bg-[#141414] border border-[#2E2E2E] hover:border-[#D6B58B] transition-all duration-300 relative group flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="text-xs font-mono text-[#D6B58B] bg-[#0D0D0D] px-2 py-1 border border-[#2E2E2E]">04</span>
+                <span class="text-[10px] font-mono tracking-widest text-[#F7F7F7]/40 uppercase">PADRÃO MC</span>
+              </div>
+              <h3 class="text-base font-bold text-[#F7F7F7] uppercase tracking-wide group-hover:text-[#E8C49F] transition-colors mb-3">SOLUÇÕES PERSONALIZADAS</h3>
+              <p class="text-xs text-[#E8DED1]/80 leading-relaxed font-light">Desde forros curvos e ilhas suspensas até fechamentos técnicos complexos. Resolvemos qualquer desafio geométrico.</p>
+            </div>
+            <div class="mt-8 pt-4 border-t border-[#2E2E2E]/60 flex items-center justify-between text-[10px] font-mono text-[#F7F7F7]/40">
+              <span>CONFORMIDADE TÉCNICA</span><span class="text-[#D6B58B]">✓ 100%</span>
+            </div>
+          </div>
+
+          <div class="p-8 bg-[#141414] border border-[#2E2E2E] hover:border-[#D6B58B] transition-all duration-300 relative group flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="text-xs font-mono text-[#D6B58B] bg-[#0D0D0D] px-2 py-1 border border-[#2E2E2E]">05</span>
+                <span class="text-[10px] font-mono tracking-widest text-[#F7F7F7]/40 uppercase">PADRÃO MC</span>
+              </div>
+              <h3 class="text-base font-bold text-[#F7F7F7] uppercase tracking-wide group-hover:text-[#E8C49F] transition-colors mb-3">PONTUALIDADE RIGOROSA</h3>
+              <p class="text-xs text-[#E8DED1]/80 leading-relaxed font-light">Sabemos que o gesso é etapa crítica na cadeia da obra. Garantimos cronogramas para que os outros profissionais entrem no prazo.</p>
+            </div>
+            <div class="mt-8 pt-4 border-t border-[#2E2E2E]/60 flex items-center justify-between text-[10px] font-mono text-[#F7F7F7]/40">
+              <span>CONFORMIDADE TÉCNICA</span><span class="text-[#D6B58B]">✓ 100%</span>
+            </div>
+          </div>
+
+          <div class="p-8 bg-[#141414] border border-[#2E2E2E] hover:border-[#D6B58B] transition-all duration-300 relative group flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="text-xs font-mono text-[#D6B58B] bg-[#0D0D0D] px-2 py-1 border border-[#2E2E2E]">06</span>
+                <span class="text-[10px] font-mono tracking-widest text-[#F7F7F7]/40 uppercase">PADRÃO MC</span>
+              </div>
+              <h3 class="text-base font-bold text-[#F7F7F7] uppercase tracking-wide group-hover:text-[#E8C49F] transition-colors mb-3">MÃO DE OBRA QUALIFICADA</h3>
+              <p class="text-xs text-[#E8DED1]/80 leading-relaxed font-light">Profissionais devidamente uniformizados, treinados nos padrões técnicos da MC Gesso e focados em excelência humana e técnica.</p>
+            </div>
+            <div class="mt-8 pt-4 border-t border-[#2E2E2E]/60 flex items-center justify-between text-[10px] font-mono text-[#F7F7F7]/40">
+              <span>CONFORMIDADE TÉCNICA</span><span class="text-[#D6B58B]">✓ 100%</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Faixa Arquitetônica de Síntese -->
+        <div class="mt-16 p-8 bg-gradient-to-r from-[#141414] via-[#1C1C1C] to-[#141414] border border-[#2E2E2E] flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+          <div>
+            <h4 class="text-lg font-bold text-[#F7F7F7] tracking-wider uppercase mb-1">
+              "ACABAMENTOS QUE VALORIZAM O SEU PROJETO."
+            </h4>
+            <p class="text-xs text-[#E8DED1]/70 font-light">
+              Do residencial contemporâneo à padronização de grandes redes comerciais e franquias.
+            </p>
+          </div>
+          <a
+            href="#orcamento"
+            class="px-8 py-3.5 bg-[#D6B58B] hover:bg-[#E8C49F] text-[#0D0D0D] font-bold text-xs uppercase tracking-widest whitespace-nowrap shrink-0 transition-colors inline-block"
+          >
+            Iniciar Projeto
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         12 // PERGUNTAS FREQUENTES (FAQ ACCORDION)
+    ========================================================================= -->
+    <section id="faq" class="py-28 px-6 md:px-12 bg-[#0D0D0D] border-t border-[#2E2E2E]">
+      <div class="max-w-3xl mx-auto">
+        
+        <div class="flex items-center gap-2 mb-6">
+          <span class="text-xs font-mono text-[#D6B58B]">12 //</span>
+          <span class="text-xs font-medium tracking-[0.25em] text-[#E8C49F] uppercase">
+            Perguntas Frequentes
+          </span>
+        </div>
+
+        <h2 class="text-3xl sm:text-4xl font-light text-[#F7F7F7] tracking-tight mb-12">
+          DÚVIDAS <span class="font-bold text-[#E8C49F]">TÉCNICAS.</span>
+        </h2>
+
+        <div class="space-y-4">
+          
+          <div class="faq-item border border-[#2E2E2E] bg-[#141414]">
+            <button class="faq-toggle-btn w-full flex items-center justify-between p-6 text-left cursor-pointer">
+              <span class="text-sm font-semibold text-[#F7F7F7] uppercase tracking-wide">
+                Qual é o prazo médio de execução para uma obra?
+              </span>
+              <span class="faq-icon text-[#D6B58B] transition-transform rotate-180">
+                ▼
+              </span>
+            </button>
+            <div class="faq-content p-6 pt-0 text-sm text-[#E8DED1] leading-relaxed border-t border-[#2E2E2E]">
+              O prazo varia conforme a complexidade e área. Projetos de drywall são ágeis e permitem inauguração rápida, muitas vezes em cronogramas noturnos para shoppings.
+            </div>
+          </div>
+
+          <div class="faq-item border border-[#2E2E2E] bg-[#141414]">
+            <button class="faq-toggle-btn w-full flex items-center justify-between p-6 text-left cursor-pointer">
+              <span class="text-sm font-semibold text-[#F7F7F7] uppercase tracking-wide">
+                Quais materiais vocês utilizam?
+              </span>
+              <span class="faq-icon text-[#D6B58B] transition-transform">
+                ▼
+              </span>
+            </button>
+            <div class="faq-content p-6 pt-0 text-sm text-[#E8DED1] leading-relaxed border-t border-[#2E2E2E] hidden">
+              Utilizamos apenas materiais certificados (placas ST/RU, perfis galvanizados de alta performance) e acessórios normatizados para garantir segurança e longevidade.
+            </div>
+          </div>
+
+          <div class="faq-item border border-[#2E2E2E] bg-[#141414]">
+            <button class="faq-toggle-btn w-full flex items-center justify-between p-6 text-left cursor-pointer">
+              <span class="text-sm font-semibold text-[#F7F7F7] uppercase tracking-wide">
+                Atendem fora da capital de São Paulo?
+              </span>
+              <span class="faq-icon text-[#D6B58B] transition-transform">
+                ▼
+              </span>
+            </button>
+            <div class="faq-content p-6 pt-0 text-sm text-[#E8DED1] leading-relaxed border-t border-[#2E2E2E] hidden">
+              Sim, atendemos operações em escala nacional, incluindo redes de franquias em diversos estados, com capacidade logística e técnica para obras em todo o Brasil.
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         13 // CANAL DIRETO & SOLICITAR ORÇAMENTO
+    ========================================================================= -->
+    <section id="orcamento" class="py-28 px-6 md:px-12 bg-[#141414] relative border-t border-[#2E2E2E]">
+      <div class="max-w-5xl mx-auto">
+        
+        <!-- Cabeçalho da Seção -->
+        <div class="text-center max-w-2xl mx-auto mb-16">
+          <div class="inline-flex items-center gap-2 mb-3">
+            <span class="text-xs font-mono text-[#D6B58B]">13 //</span>
+            <span class="text-xs font-medium tracking-[0.25em] text-[#E8C49F] uppercase">Canal Direto</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl md:text-5xl font-light text-[#F7F7F7] tracking-tight mb-4">
+            SEU PRÓXIMO PROJETO <span class="font-bold text-[#E8C49F]">COMEÇA AQUI.</span>
+          </h2>
+          <p class="text-sm font-normal text-[#E8DED1] leading-relaxed mb-6">
+            Preencha os dados do projeto para atendimento técnico consultivo. Geramos sua proposta analítica sem compromisso.
+          </p>
+
+          <!-- Atalho Direto para WhatsApp -->
+          <div class="inline-flex flex-col sm:flex-row items-center gap-3 p-3.5 bg-[#0D0D0D] border border-[#2E2E2E] shadow-lg">
+            <span class="text-xs text-[#E8DED1] font-light flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+              Prefere falar direto pelo WhatsApp agora?
+            </span>
+            <a
+              href="https://wa.me/5511986504178?text=Ol%C3%A1%2C%20equipe%20MC%20Gesso!%20Acessei%20o%20site%20oficial%20e%20gostaria%20de%20um%20atendimento%20exclusivo.%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20solu%C3%A7%C3%B5es%20em%20gesso%2C%20drywall%20e%20acabamentos%20arquitet%C3%B4nicos.%20Como%20podemos%20iniciar%3F"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="px-4 py-1.5 bg-[#25D366] hover:bg-[#1EBE5D] text-white text-xs font-bold uppercase tracking-wider transition-colors flex items-center gap-2 rounded-none cursor-pointer"
+            >
+              <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+              </svg>
+              <span>Abrir WhatsApp Direto</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Formulário de Orçamento -->
+        <form id="budget-form" class="bg-[#0D0D0D] border border-[#2E2E2E] p-8 sm:p-12 shadow-2xl">
+          
+          <div id="budget-form-error" class="mb-6 p-4 bg-red-950/40 border border-red-500/50 text-red-200 text-xs font-medium hidden"></div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+            <div>
+              <label class="block text-xs font-semibold tracking-wider text-[#F7F7F7] uppercase mb-2">
+                Nome Completo *
+              </label>
+              <input 
+                id="form-name"
+                type="text" 
+                placeholder="Ex.: Arq. Marina Carvalho / Construtora Silva"
+                class="w-full px-4 py-3 bg-[#141414] border border-[#2E2E2E] focus:border-[#D6B58B] text-[#F7F7F7] text-sm outline-none transition-colors"
+                required
+              />
+            </div>
+
+            <div>
+              <label class="block text-xs font-semibold tracking-wider text-[#F7F7F7] uppercase mb-2">
+                WhatsApp com DDD *
+              </label>
+              <input 
+                id="form-whatsapp"
+                type="tel" 
+                placeholder="(00) 00000-0000"
+                class="w-full px-4 py-3 bg-[#141414] border border-[#2E2E2E] focus:border-[#D6B58B] text-[#F7F7F7] text-sm outline-none transition-colors"
+                required
+              />
+            </div>
+
+            <div>
+              <label class="block text-xs font-semibold tracking-wider text-[#F7F7F7] uppercase mb-2">
+                Cidade e Estado da Obra *
+              </label>
+              <input 
+                id="form-city"
+                type="text" 
+                placeholder="Ex.: São Paulo - SP"
+                class="w-full px-4 py-3 bg-[#141414] border border-[#2E2E2E] focus:border-[#D6B58B] text-[#F7F7F7] text-sm outline-none transition-colors"
+                required
+              />
+            </div>
+
+            <div>
+              <label class="block text-xs font-semibold tracking-wider text-[#F7F7F7] uppercase mb-2">
+                Tipologia do Projeto
+              </label>
+              <select 
+                id="form-project-type"
+                class="w-full px-4 py-3 bg-[#141414] border border-[#2E2E2E] focus:border-[#D6B58B] text-[#F7F7F7] text-sm outline-none transition-colors"
+              >
+                <option value="Residencial Alto Padrão">Residencial Alto Padrão</option>
+                <option value="Comercial / Loja / Varejo">Comercial / Loja / Varejo</option>
+                <option value="Corporativo / Escritório">Corporativo / Escritório</option>
+                <option value="Construtora / Empreendimento">Construtora / Empreendimento</option>
+                <option value="Rede de Franquias">Rede de Franquias</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Serviços de Interesse -->
+          <div class="mb-6">
+            <label class="block text-xs font-semibold tracking-wider text-[#F7F7F7] uppercase mb-3">
+              Serviços de Interesse (Selecione um ou mais)
+            </label>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
+              <button type="button" data-service="Forros de Gesso Monolíticos" class="budget-service-btn p-3 text-left border text-xs font-medium transition-all bg-[#1C1C1C] border-[#D6B58B] text-[#E8C49F] cursor-pointer">
+                <span class="check-box mr-2 text-[#D6B58B]">☑</span>Forros de Gesso Monolíticos
+              </button>
+              <button type="button" data-service="Drywall e Paredes Acústicas" class="budget-service-btn p-3 text-left border text-xs font-medium transition-all bg-[#141414] border-[#2E2E2E] text-[#F7F7F7]/70 hover:border-[#2E2E2E]/80 cursor-pointer">
+                <span class="check-box mr-2 text-[#D6B58B]">☐</span>Drywall e Paredes Acústicas
+              </button>
+              <button type="button" data-service="Sancas e Iluminação Embutida" class="budget-service-btn p-3 text-left border text-xs font-medium transition-all bg-[#141414] border-[#2E2E2E] text-[#F7F7F7]/70 hover:border-[#2E2E2E]/80 cursor-pointer">
+                <span class="check-box mr-2 text-[#D6B58B]">☐</span>Sancas e Iluminação Embutida
+              </button>
+              <button type="button" data-service="Divisórias Corporativas" class="budget-service-btn p-3 text-left border text-xs font-medium transition-all bg-[#141414] border-[#2E2E2E] text-[#F7F7F7]/70 hover:border-[#2E2E2E]/80 cursor-pointer">
+                <span class="check-box mr-2 text-[#D6B58B]">☐</span>Divisórias Corporativas
+              </button>
+              <button type="button" data-service="Acabamento Fino e Emassamento" class="budget-service-btn p-3 text-left border text-xs font-medium transition-all bg-[#141414] border-[#2E2E2E] text-[#F7F7F7]/70 hover:border-[#2E2E2E]/80 cursor-pointer">
+                <span class="check-box mr-2 text-[#D6B58B]">☐</span>Acabamento Fino e Emassamento
+              </button>
+              <button type="button" data-service="Projeto Completo / Turnkey" class="budget-service-btn p-3 text-left border text-xs font-medium transition-all bg-[#141414] border-[#2E2E2E] text-[#F7F7F7]/70 hover:border-[#2E2E2E]/80 cursor-pointer">
+                <span class="check-box mr-2 text-[#D6B58B]">☐</span>Projeto Completo / Turnkey
+              </button>
+            </div>
+          </div>
+
+          <!-- Descrição da Obra -->
+          <div class="mb-6">
+            <label class="block text-xs font-semibold tracking-wider text-[#F7F7F7] uppercase mb-2">
+              Detalhes da Obra / Metragem Estimada
+            </label>
+            <textarea 
+              id="form-desc"
+              rows="4" 
+              placeholder="Descreva ambientes, pé-direito, metragem quadrada aproximada ou detalhes arquitetônicos específicos..."
+              class="w-full px-4 py-3 bg-[#141414] border border-[#2E2E2E] focus:border-[#D6B58B] text-[#F7F7F7] text-sm outline-none transition-colors"
+            ></textarea>
+          </div>
+
+          <!-- Consentimento de Dados -->
+          <div class="mb-8 flex items-start gap-3">
+            <input 
+              type="checkbox" 
+              id="form-consent"
+              class="mt-1 accent-[#D6B58B] w-4 h-4 rounded cursor-pointer"
+              required
+            />
+            <label for="form-consent" class="text-xs text-[#E8DED1]/70 leading-relaxed cursor-pointer font-light">
+              Autorizo o contato técnico da MC Gesso exclusivamente para envio do memorial de orçamento e alinhamento do projeto.
+            </label>
+          </div>
+
+          <!-- Botões -->
+          <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-6 border-t border-[#2E2E2E]">
+            <button 
+              type="submit"
+              class="w-full sm:w-auto px-6 py-3 bg-[#D6B58B] hover:bg-[#E8C49F] text-[#0D0D0D] font-bold text-xs tracking-wider uppercase rounded-none transition-all duration-200 border border-[#D6B58B] cursor-pointer"
+            >
+              Enviar pelo WhatsApp Oficial →
+            </button>
+
+            <button 
+              id="copy-budget-btn"
+              type="button"
+              class="w-full sm:w-auto px-5 py-3 border border-[#2E2E2E] hover:border-[#F7F7F7] text-[#F7F7F7] font-semibold text-xs tracking-wider uppercase transition-colors rounded-none bg-[#141414] cursor-pointer"
+            >
+              Copiar Dados do Orçamento
+            </button>
+          </div>
+
+          <p class="mt-4 text-[11px] font-mono text-[#F7F7F7]/40 text-center sm:text-left">
+            * Seus dados são tratados com sigilo profissional. Nunca simulamos envios automáticos sem canal direto.
+          </p>
+
+        </form>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       14 // RODAPÉ INSTITUCIONAL COM REDES SOCIAIS OFICIAIS
+  ========================================================================= -->
+  <footer class="bg-[#0D0D0D] border-t border-[#2E2E2E] pt-20 pb-12 px-6 md:px-12 text-[#F7F7F7]">
+    <div class="max-w-7xl mx-auto">
+      
+      <!-- Bloco Superior -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 pb-16 border-b border-[#2E2E2E]">
+        
+        <!-- Coluna de Marca Oficial -->
+        <div class="lg:col-span-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-4 mb-6">
+              <img 
+                src="assets/brand/logo_mc_gesso_white.png" 
+                alt="MC Gesso Oficial" 
+                class="h-16 w-auto object-contain"
+              />
+              <div>
+                <h3 class="text-xl font-bold tracking-widest text-[#F7F7F7]">MC GESSO</h3>
+                <span class="text-[10px] font-medium tracking-[0.25em] text-[#E8C49F] block">
+                  SOLUÇÕES ARQUITETÔNICAS
+                </span>
+              </div>
+            </div>
+
+            <p class="text-base font-light text-[#F7F7F7] max-w-sm mb-2">
+              "MAIS QUE GESSO, AMBIENTES QUE INSPIRAM."
+            </p>
+            <p class="text-xs font-normal text-[#E8C49F] max-w-sm mb-6">
+              Acabamentos que valorizam o seu projeto.
+            </p>
+
+            <div class="text-xs font-light text-[#E8DED1]/70 max-w-md leading-relaxed">
+              Especialistas em sistemas drywall, forros monolíticos, sancas luminotécnicas, divisórias corporativas e tratamentos de alta precisão.
+            </div>
+          </div>
+        </div>
+
+        <!-- Coluna de Navegação Rápida -->
+        <div class="lg:col-span-3">
+          <h4 class="text-xs font-semibold tracking-[0.2em] text-[#E8C49F] uppercase mb-6">
+            Navegação
+          </h4>
+          <ul class="space-y-3 text-xs font-medium text-[#E8DED1]/80">
+            <li><a href="#inicio" class="hover:text-[#E8C49F] transition-colors">Início</a></li>
+            <li><a href="#empresa" class="hover:text-[#E8C49F] transition-colors">Sobre a Empresa</a></li>
+            <li><a href="#solucoes" class="hover:text-[#E8C49F] transition-colors">Soluções Arquitetônicas</a></li>
+            <li><a href="#metodo" class="hover:text-[#E8C49F] transition-colors">Método Construtivo</a></li>
+            <li><a href="#segmentos" class="hover:text-[#E8C49F] transition-colors">Segmentos Atendidos</a></li>
+            <li><a href="#clientes" class="hover:text-[#E8C49F] transition-colors">Clientes & Redes</a></li>
+            <li><a href="#portfolio" class="hover:text-[#E8C49F] transition-colors">Portfólio de Obras</a></li>
+            <li><a href="#diferenciais" class="hover:text-[#E8C49F] transition-colors">Diferenciais Técnicos</a></li>
+            <li><a href="#orcamento" class="hover:text-[#E8C49F] transition-colors">Solicitar Orçamento</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna de Serviços Principais e Contato -->
+        <div class="lg:col-span-4">
+          <h4 class="text-xs font-semibold tracking-[0.2em] text-[#E8C49F] uppercase mb-6">
+            Soluções Construtivas
+          </h4>
+          <ul class="space-y-3 text-xs font-light text-[#E8DED1]/70 mb-8">
+            <li>▪ Forros de Gesso Tabicados e Acústicos</li>
+            <li>▪ Drywall e Paredes Estruturadas</li>
+            <li>▪ Sancas Invertidas e Iluminação Embutida</li>
+            <li>▪ Divisórias para Escritórios e Redes</li>
+            <li>▪ Emassamento Fino e Acabamento Nível Q4</li>
+          </ul>
+
+          <div class="pt-6 border-t border-[#2E2E2E]">
+            <p class="text-xs text-[#F7F7F7] font-medium">ADM.mcgesso@gmail.com</p>
+            <p class="text-xs text-[#E8DED1]/70 mb-6">São Paulo - SP & Obras Comerciais em Todo o Brasil</p>
+          </div>
+
+          <!-- Ícones Grandes das Redes Sociais no Canto Inferior Esquerdo -->
+          <div class="flex items-center gap-6 mt-8">
+            <!-- Facebook -->
+            <a 
+              href="https://www.facebook.com/profile.php?id=61595875121346" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              aria-label="Facebook Oficial MC Gesso" 
+              class="text-[#F7F7F7] hover:text-[#E8C49F] transition-all cursor-pointer"
+            >
+              <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+            </a>
+
+            <!-- WhatsApp -->
+            <a 
+              href="https://wa.me/5511986504178?text=Ol%C3%A1%2C%20equipe%20MC%20Gesso!%20Acessei%20o%20site%20oficial%20e%20gostaria%20de%20um%20atendimento%20exclusivo.%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20solu%C3%A7%C3%B5es%20em%20gesso%2C%20drywall%20e%20acabamentos%20arquitet%C3%B4nicos.%20Como%20podemos%20iniciar%3F" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              aria-label="WhatsApp Oficial MC Gesso" 
+              class="text-[#F7F7F7] hover:text-[#25D366] transition-all cursor-pointer"
+            >
+              <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+              </svg>
+            </a>
+            
+            <!-- Instagram -->
+            <a 
+              href="https://www.instagram.com/mc.gesso.ofc/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              aria-label="Instagram Oficial MC Gesso" 
+              class="text-[#F7F7F7] hover:text-[#E8C49F] transition-all cursor-pointer"
+            >
+              <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Linha Inferior com Assinatura -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-light text-[#F7F7F7]/50">
+        <div>© 2026 MC GESSO. Todos os direitos reservados.</div>
+        <div class="text-[11px] font-mono tracking-wider text-[#E8C49F]">QUALIDADE · PRECISÃO · CONFIANÇA</div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       BOTÃO FLUTUANTE DO WHATSAPP (CANTO INFERIOR DIREITO)
+  ========================================================================= -->
+  <div class="fixed bottom-6 right-6 z-40 flex items-center gap-3 select-none group">
+    <!-- Balão Informativo Flutuante -->
+    <div class="hidden sm:flex flex-col items-end transition-all duration-300 pointer-events-none opacity-0 group-hover:opacity-100 group-hover:translate-x-0 translate-x-2">
+      <div class="bg-[#141414] border border-[#D6B58B] px-4 py-2.5 shadow-2xl rounded-none text-right">
+        <div class="flex items-center justify-end gap-1.5 mb-0.5">
+          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+          <span class="text-[10px] font-mono tracking-widest text-[#E8C49F] uppercase">
+            CANAL DIRETO // ATENDIMENTO
+          </span>
+        </div>
+        <p class="text-xs font-bold text-[#F7F7F7] uppercase tracking-wide">
+          Solicitar Orçamento no WhatsApp
+        </p>
+        <p class="text-[10px] text-[#E8DED1]/70 font-light mt-0.5">
+          Resposta rápida da nossa equipe técnica
+        </p>
+      </div>
+    </div>
+
+    <!-- Botão Principal do WhatsApp -->
+    <a
+      href="https://wa.me/5511986504178?text=Ol%C3%A1%2C%20equipe%20MC%20Gesso!%20Acessei%20o%20site%20oficial%20e%20gostaria%20de%20um%20atendimento%20exclusivo.%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20solu%C3%A7%C3%B5es%20em%20gesso%2C%20drywall%20e%20acabamentos%20arquitet%C3%B4nicos.%20Como%20podemos%20iniciar%3F"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Falar no WhatsApp com a MC Gesso"
+      class="group relative flex items-center justify-center w-14 h-14 bg-[#25D366] hover:bg-[#1EBE5D] text-white shadow-[0_8px_30px_rgba(37,211,102,0.4)] hover:shadow-[0_12px_36px_rgba(37,211,102,0.6)] transition-all duration-300 border border-emerald-300/40 rounded-none active:scale-95"
+    >
+      <span class="absolute -top-1 -right-1 flex h-3.5 w-3.5">
+        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
+        <span class="relative inline-flex rounded-full h-3.5 w-3.5 bg-emerald-400 border-2 border-[#0D0D0D]"></span>
+      </span>
+
+      <svg class="w-7 h-7 fill-white transition-transform group-hover:scale-110" viewBox="0 0 24 24">
+        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+      </svg>
+    </a>
+  </div>
+
+  <!-- =========================================================================
+       MODAL 1: ESPECIFICAÇÃO DE SERVIÇO
+  ========================================================================= -->
+  <div id="service-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-[#0D0D0D]/90 backdrop-blur-md hidden">
+    <div id="service-modal-backdrop" class="fixed inset-0"></div>
+    <div class="bg-[#141414] border border-[#D6B58B]/40 max-w-2xl w-full p-6 sm:p-8 relative shadow-2xl overflow-y-auto max-h-[90vh] z-10">
+      <button id="service-modal-close" class="absolute top-6 right-6 text-[#F7F7F7]/60 hover:text-[#E8C49F] text-xl cursor-pointer" aria-label="Fechar">✕</button>
+
+      <div class="flex items-center gap-3 mb-2">
+        <span id="modal-service-num" class="text-sm font-mono text-[#D6B58B]">01 //</span>
+        <span class="text-xs font-medium tracking-widest text-[#E8C49F] uppercase">Especificação Arquitetônica</span>
+      </div>
+      
+      <h3 id="modal-service-title" class="text-2xl sm:text-3xl font-bold text-[#F7F7F7] uppercase tracking-tight mb-2"></h3>
+      <p id="modal-service-sub" class="text-sm text-[#E8DED1] mb-6"></p>
+
+      <div class="h-56 sm:h-64 overflow-hidden mb-6 border border-[#2E2E2E]">
+        <img id="modal-service-img" src="" alt="Serviço" class="w-full h-full object-cover" />
+      </div>
+
+      <div class="space-y-4 mb-6">
+        <p id="modal-service-desc" class="text-sm text-[#F7F7F7]/90 leading-relaxed font-normal"></p>
+        
+        <div class="bg-[#0D0D0D] p-4 border border-[#2E2E2E]">
+          <span class="text-[10px] font-mono tracking-widest text-[#D6B58B] uppercase block mb-2">
+            DIFERENCIAIS EXECUTIVOS
+          </span>
+          <ul id="modal-service-highlights" class="space-y-2"></ul>
+        </div>
+
+        <div class="text-xs text-[#F7F7F7]/70 font-mono">
+          <span class="text-[#E8C49F]">ESPECIFICAÇÕES:</span> <span id="modal-service-specs"></span>
+        </div>
+      </div>
+
+      <div class="flex flex-col sm:flex-row items-center justify-end gap-3 pt-4 border-t border-[#2E2E2E]">
+        <button id="service-modal-back" class="w-full sm:w-auto px-6 py-2.5 border border-[#2E2E2E] text-[#F7F7F7] text-xs font-medium tracking-wider uppercase hover:border-[#F7F7F7] cursor-pointer">
+          Voltar
+        </button>
+        <button id="service-modal-quote" class="w-full sm:w-auto px-6 py-2.5 bg-[#D6B58B] text-[#0D0D0D] text-xs font-bold tracking-wider uppercase hover:bg-[#E8C49F] cursor-pointer">
+          Orçar Este Serviço
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       MODAL 2: ESCOPO EXECUTIVO DO CLIENTE
+  ========================================================================= -->
+  <div id="client-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-[#0D0D0D]/90 backdrop-blur-md hidden">
+    <div id="client-modal-backdrop" class="fixed inset-0"></div>
+    <div class="bg-[#141414] border border-[#D6B58B]/50 max-w-2xl w-full p-6 sm:p-8 relative shadow-2xl rounded-none z-10">
+      <button id="client-modal-close" class="absolute top-6 right-6 text-2xl text-[#F7F7F7]/70 hover:text-[#E8C49F] cursor-pointer" aria-label="Fechar">✕</button>
+
+      <span id="modal-client-badge" class="text-[10px] font-mono tracking-widest text-[#D6B58B] uppercase block mb-1"></span>
+      <h3 id="modal-client-name" class="text-2xl sm:text-3xl font-bold text-[#F7F7F7] uppercase tracking-tight mb-1"></h3>
+      <p id="modal-client-sub" class="text-xs font-medium text-[#E8C49F] mb-6"></p>
+
+      <div class="bg-[#0D0D0D] p-5 border border-[#2E2E2E] mb-6">
+        <span class="text-[10px] font-mono text-[#D6B58B] uppercase tracking-widest block mb-2">
+          ESCOPO TÉCNICO EXECUTADO
+        </span>
+        <p id="modal-client-scope" class="text-sm text-[#F7F7F7] leading-relaxed font-light mb-4"></p>
+
+        <span class="text-[10px] font-mono text-[#E8C49F] uppercase tracking-widest block mb-2">
+          CRITÉRIOS DE QUALIDADE ATENDIDOS
+        </span>
+        <ul id="modal-client-highlights" class="space-y-2"></ul>
+      </div>
+
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-4 border-t border-[#2E2E2E]">
+        <span class="text-xs text-[#E8DED1]/70 font-light">
+          Precisão executiva homologada para grandes operações comerciais.
+        </span>
+
+        <a
+          id="modal-client-budget-link"
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="w-full sm:w-auto px-6 py-2.5 bg-[#D6B58B] hover:bg-[#E8C49F] text-[#0D0D0D] text-xs font-bold uppercase tracking-wider text-center rounded-none border border-[#D6B58B] shrink-0 inline-block"
+        >
+          Orçar Projeto Semelhante
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       MODAL 3: LIGHTBOX DE PORTFÓLIO
+  ========================================================================= -->
+  <div id="portfolio-lightbox" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-[#0D0D0D]/95 backdrop-blur-md hidden">
+    <div id="lightbox-backdrop" class="fixed inset-0"></div>
+    <div class="bg-[#141414] border border-[#D6B58B]/50 max-w-4xl w-full p-6 sm:p-8 relative shadow-2xl rounded-none z-10">
+      <button id="lightbox-close" class="absolute top-4 right-5 text-2xl text-[#F7F7F7]/70 hover:text-[#E8C49F] cursor-pointer" aria-label="Fechar">✕</button>
+
+      <div class="mb-4">
+        <span id="lightbox-tag" class="text-xs font-mono text-[#D6B58B] uppercase tracking-widest block mb-1"></span>
+        <h3 id="lightbox-title" class="text-2xl sm:text-3xl font-bold text-[#F7F7F7] uppercase tracking-tight"></h3>
+      </div>
+
+      <div class="h-[420px] sm:h-[520px] overflow-hidden mb-6 border border-[#2E2E2E] bg-black">
+        <img id="lightbox-img" src="" alt="Projeto Portfólio" class="w-full h-full object-contain" />
+      </div>
+
+      <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pt-4 border-t border-[#2E2E2E]">
+        <div>
+          <p id="lightbox-desc" class="text-sm text-[#F7F7F7]"></p>
+          <p id="lightbox-details" class="text-xs text-[#E8DED1]/70 font-light mt-1"></p>
+        </div>
+
+        <a 
+          href="#orcamento"
+          onclick="document.getElementById('portfolio-lightbox').classList.add('hidden'); document.body.style.overflow = 'unset';"
+          class="px-6 py-2.5 bg-[#D6B58B] hover:bg-[#E8C49F] text-[#0D0D0D] text-xs font-bold uppercase tracking-wider whitespace-nowrap shrink-0 rounded-none border border-[#D6B58B] inline-block"
+        >
+          Consultar Projeto Similar
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       MODAL 4: GUIA DE IDENTIDADE TIPOGRÁFICA & BRANDING
+  ========================================================================= -->
+  <div id="brand-guide-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-[#0D0D0D]/95 backdrop-blur-md overflow-y-auto hidden">
+    <div id="brand-guide-backdrop" class="fixed inset-0"></div>
+    <div class="bg-[#141414] border border-[#D6B58B]/50 max-w-4xl w-full p-6 sm:p-10 relative shadow-2xl my-8 max-h-[90vh] overflow-y-auto z-10">
+      
+      <!-- Botão Fechar -->
+      <button id="close-brand-guide-btn" class="absolute top-6 right-6 text-2xl text-[#F7F7F7]/60 hover:text-[#E8C49F] transition-colors cursor-pointer" aria-label="Fechar">✕</button>
+
+      <!-- Cabeçalho -->
+      <div class="border-b border-[#2E2E2E] pb-6 mb-8">
+        <div class="flex items-center gap-2 mb-2">
+          <span class="text-xs font-mono text-[#D6B58B]">MANUAL DE IDENTIDADE //</span>
+          <span class="text-xs font-medium tracking-widest text-[#E8C49F] uppercase">Tipografia Oficial</span>
+        </div>
+        <h2 class="text-2xl sm:text-3xl font-light text-[#F7F7F7]">
+          FAMÍLIA TIPOGRÁFICA <span class="font-bold text-[#E8C49F]">MONTSERRAT</span>
+        </h2>
+        <p class="text-xs sm:text-sm text-[#E8DED1] mt-2 font-light">
+          Padronização oficial aplicada no website e nos criativos da MC Gesso, combinando letras finas, títulos robustos, caixa alta e espaçamentos arquitetônicos.
+        </p>
+      </div>
+
+      <!-- Exemplo Monumental -->
+      <div class="bg-[#0D0D0D] border border-[#2E2E2E] p-8 mb-8 text-center">
+        <span class="text-[10px] font-mono tracking-widest text-[#D6B58B] uppercase block mb-4">
+          EXEMPLO DE PADRÃO OFICIAL APLICADO
+        </span>
+        <div class="text-3xl sm:text-5xl tracking-tight leading-tight mb-4">
+          <span class="block font-light text-[#F7F7F7]">MAIS QUE GESSO,</span>
+          <span class="block font-semibold text-[#E8C49F]">AMBIENTES QUE</span>
+          <span class="block font-extrabold text-[#D6B58B]">INSPIRAM.</span>
+        </div>
+        <p class="text-sm font-normal text-[#E8DED1] max-w-lg mx-auto mb-4">
+          Soluções arquitetônicas em forros, drywall, sancas e acabamentos.
+        </p>
+        <div class="inline-block border-t border-[#2E2E2E] pt-3 text-xs font-medium tracking-[0.25em] text-[#F7F7F7]">
+          QUALIDADE <span class="text-[#D6B58B]">|</span> PRECISÃO <span class="text-[#D6B58B]">|</span> CONFIANÇA
+        </div>
+      </div>
+
+      <!-- Tabela de Pesos -->
+      <div class="mb-8">
+        <h3 class="text-sm font-semibold tracking-wider text-[#F7F7F7] uppercase mb-4">
+          Pesos & Aplicações no Sistema
+        </h3>
+        <div class="border border-[#2E2E2E] divide-y divide-[#2E2E2E]">
+          <div class="p-4 bg-[#141414] hover:bg-[#1C1C1C] transition-colors grid grid-cols-1 md:grid-cols-12 gap-3 items-center">
+            <div class="md:col-span-3">
+              <span class="text-xs font-bold text-[#E8C49F] uppercase block">Títulos Principais</span>
+              <span class="text-[11px] font-mono text-[#D6B58B]">Montserrat Light (300) + Bold (700)</span>
+            </div>
+            <div class="md:col-span-5">
+              <span class="text-xs text-[#F7F7F7] block tracking-wide truncate">MAIS QUE GESSO, AMBIENTES QUE INSPIRAM</span>
+            </div>
+            <div class="md:col-span-4 text-right">
+              <span class="text-[11px] text-[#E8DED1]/70 font-light">Impacto monumental e elegância arquitetônica</span>
+            </div>
+          </div>
+          <div class="p-4 bg-[#141414] hover:bg-[#1C1C1C] transition-colors grid grid-cols-1 md:grid-cols-12 gap-3 items-center">
+            <div class="md:col-span-3">
+              <span class="text-xs font-bold text-[#E8C49F] uppercase block">Títulos de Seções</span>
+              <span class="text-[11px] font-mono text-[#D6B58B]">Montserrat SemiBold (600)</span>
+            </div>
+            <div class="md:col-span-5">
+              <span class="text-xs text-[#F7F7F7] block tracking-wide truncate">PRECISÃO QUE TRANSFORMA ESPAÇOS</span>
+            </div>
+            <div class="md:col-span-4 text-right">
+              <span class="text-[11px] text-[#E8DED1]/70 font-light">Hierarquia clara e presença sóbria</span>
+            </div>
+          </div>
+          <div class="p-4 bg-[#141414] hover:bg-[#1C1C1C] transition-colors grid grid-cols-1 md:grid-cols-12 gap-3 items-center">
+            <div class="md:col-span-3">
+              <span class="text-xs font-bold text-[#E8C49F] uppercase block">Parágrafos e Descrições</span>
+              <span class="text-[11px] font-mono text-[#D6B58B]">Montserrat Regular (400)</span>
+            </div>
+            <div class="md:col-span-5">
+              <span class="text-xs text-[#F7F7F7] block tracking-wide truncate">Soluções em gesso e drywall projetadas para valorizar a arquitetura.</span>
+            </div>
+            <div class="md:col-span-4 text-right">
+              <span class="text-[11px] text-[#E8DED1]/70 font-light">Leitura fluida com máximo conforto visual</span>
+            </div>
+          </div>
+          <div class="p-4 bg-[#141414] hover:bg-[#1C1C1C] transition-colors grid grid-cols-1 md:grid-cols-12 gap-3 items-center">
+            <div class="md:col-span-3">
+              <span class="text-xs font-bold text-[#E8C49F] uppercase block">Botões de Ação (CTAs)</span>
+              <span class="text-[11px] font-mono text-[#D6B58B]">Montserrat Bold (700)</span>
+            </div>
+            <div class="md:col-span-5">
+              <span class="text-xs text-[#F7F7F7] block tracking-wide truncate">SOLICITAR ORÇAMENTO</span>
+            </div>
+            <div class="md:col-span-4 text-right">
+              <span class="text-[11px] text-[#E8DED1]/70 font-light">Destaque e clareza de conversão</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Paleta de Cores -->
+      <div class="mb-8">
+        <h3 class="text-sm font-semibold tracking-wider text-[#F7F7F7] uppercase mb-4">
+          Paleta Oficial da Marca MC Gesso
+        </h3>
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+          <div class="p-3 bg-[#0D0D0D] border border-[#2E2E2E] flex flex-col justify-between">
+            <div class="flex items-center gap-2 mb-2">
+              <div class="w-5 h-5 rounded-sm border border-white/20 bg-[#0D0D0D]"></div>
+              <span class="text-xs font-semibold text-[#F7F7F7]">Preto Profundo</span>
+            </div>
+            <div>
+              <span class="text-[11px] font-mono text-[#E8C49F] block">#0D0D0D</span>
+              <span class="text-[9px] text-[#E8DED1]/60 font-light">Fundo principal (60%)</span>
+            </div>
+          </div>
+
+          <div class="p-3 bg-[#0D0D0D] border border-[#2E2E2E] flex flex-col justify-between">
+            <div class="flex items-center gap-2 mb-2">
+              <div class="w-5 h-5 rounded-sm border border-white/20 bg-[#141414]"></div>
+              <span class="text-xs font-semibold text-[#F7F7F7]">Preto Arquitetônico</span>
+            </div>
+            <div>
+              <span class="text-[11px] font-mono text-[#E8C49F] block">#141414</span>
+              <span class="text-[9px] text-[#E8DED1]/60 font-light">Superfícies secundárias</span>
+            </div>
+          </div>
+
+          <div class="p-3 bg-[#0D0D0D] border border-[#2E2E2E] flex flex-col justify-between">
+            <div class="flex items-center gap-2 mb-2">
+              <div class="w-5 h-5 rounded-sm border border-white/20 bg-[#D6B58B]"></div>
+              <span class="text-xs font-semibold text-[#F7F7F7]">Champagne Dourado</span>
+            </div>
+            <div>
+              <span class="text-[11px] font-mono text-[#E8C49F] block">#D6B58B</span>
+              <span class="text-[9px] text-[#E8DED1]/60 font-light">Acentos e botões (10%)</span>
+            </div>
+          </div>
+
+          <div class="p-3 bg-[#0D0D0D] border border-[#2E2E2E] flex flex-col justify-between">
+            <div class="flex items-center gap-2 mb-2">
+              <div class="w-5 h-5 rounded-sm border border-white/20 bg-[#F7F7F7]"></div>
+              <span class="text-xs font-semibold text-[#F7F7F7]">Branco Sofisticado</span>
+            </div>
+            <div>
+              <span class="text-[11px] font-mono text-[#E8C49F] block">#F7F7F7</span>
+              <span class="text-[9px] text-[#E8DED1]/60 font-light">Tipografia e contraste (20%)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Download da Logo Oficial -->
+      <div class="p-6 bg-[#0D0D0D] border border-[#D6B58B]/40 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div class="flex items-center gap-4">
+          <div class="w-14 h-14 bg-[#141414] border border-[#2E2E2E] p-2 flex items-center justify-center">
+            <img src="assets/brand/logo_mc_gesso_white.png" alt="Logo MC Gesso" class="max-h-full max-w-full object-contain" />
+          </div>
+          <div>
+            <span class="text-xs font-bold text-[#F7F7F7] uppercase block">
+              Logomarca Oficial Extraída (PNG Sem Fundo)
+            </span>
+            <span class="text-[11px] text-[#E8DED1]/70 font-light">
+              Versão branca e preta em alta resolução transparentes.
+            </span>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-2 w-full sm:w-auto">
+          <a 
+            href="assets/brand/logo_mc_gesso_white.png" 
+            download="MC_GESSO_Logo_Branca_Transparente.png"
+            class="flex-1 sm:flex-initial px-4 py-2 bg-[#F7F7F7] hover:bg-[#E8C49F] text-[#0D0D0D] font-bold text-[11px] uppercase tracking-wider text-center"
+          >
+            Baixar Branca
+          </a>
+          <a 
+            href="assets/brand/logo_mc_gesso_black.png" 
+            download="MC_GESSO_Logo_Preta_Transparente.png"
+            class="flex-1 sm:flex-initial px-4 py-2 border border-[#F7F7F7] hover:bg-[#F7F7F7] hover:text-[#0D0D0D] text-[#F7F7F7] font-bold text-[11px] uppercase tracking-wider text-center"
+          >
+            Baixar Preta
+          </a>
+        </div>
+      </div>
+
+      <div class="mt-8 pt-4 border-t border-[#2E2E2E] flex justify-end">
+        <button 
+          id="close-brand-guide-bottom-btn"
+          class="px-6 py-2 border border-[#2E2E2E] text-xs font-semibold text-[#F7F7F7] uppercase tracking-wider hover:border-[#F7F7F7] cursor-pointer"
+        >
+          Fechar Manual
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- JavaScript Puro Vanilla -->
+  <script defer src="assets/js/main.js"></script>
+</body>
+</html>
