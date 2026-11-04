@@ -1,0 +1,4 @@
+# Consolidate the public hostname without changing page paths.
+https://www.mcgesso.com.br/* https://mcgesso.com.br/:splat 301!
+http://www.mcgesso.com.br/* https://mcgesso.com.br/:splat 301!
+http://mcgesso.com.br/* https://mcgesso.com.br/:splat 301!

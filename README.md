@@ -51,3 +51,26 @@ Confira o menu no celular, os filtros, os modais, a galeria, o vídeo, os downlo
 ## Histórico
 
 Mantenha commits separados por finalidade, usando prefixos como `feat:`, `fix:`, `chore:` e `docs:`. Não versione segredos, arquivos temporários do editor ou cópias duplicadas dos arquivos de mídia.
+
+## SEO e páginas locais
+
+Domínio canônico: `https://mcgesso.com.br/`. Todas as páginas são HTML estático, com título e descrição próprios, canonical absoluto, Open Graph, Twitter Card e links rastreáveis sem JavaScript.
+
+- `/servicos/`: frente genérica — gesseiro, drywall, forro e sanca em São Paulo.
+- `/solucoes/`: frente específica — apartamento, forro tabicado, cortineiro com LED, escritório, loja e isolamento acústico.
+- `scripts/seo_content.py`: conteúdo editorial de cada página; mantenha informações técnicas e ofertas coerentes com os serviços reais.
+- `scripts/seo_common.py`: domínio, identidade e metadados compartilhados.
+- `scripts/generate_seo.py`: gera as 10 páginas, os 2 índices e o sitemap. Execute `python3 scripts/generate_seo.py` ao editar essas fontes. Os arquivos gerados são versionados; a hospedagem continua sem build.
+- `scripts/check_seo.py`: verifica páginas, canonical, metadados, links, FAQ visível e cobertura do sitemap. Execute `python3 scripts/check_seo.py` antes de publicar.
+
+Os diretórios precisam ser publicados integralmente, junto com `assets/`, `robots.txt`, `sitemap.xml`, `_redirects` e `_headers`. Na Netlify, use a raiz do repositório como diretório de publicação e sem build. As regras `_redirects` consolidam HTTP e www no endereço HTTPS sem www; a Netlify normaliza URLs de diretórios. Não adicione fallback de SPA (`/* /index.html 200`), que transformaria URLs inexistentes em cópias da home. Em outra hospedagem, configure regras equivalentes.
+
+O sitemap contém somente URLs canônicas das páginas existentes; sem datas de modificação artificiais. A navegação da home e os índices permitem descobrir todas as páginas.
+
+### Search Console
+
+A tag `google-site-verification` fornecida está no `<head>` da home. Após a publicação, confirme a propriedade de **prefixo de URL** `https://mcgesso.com.br/` pelo método Tag HTML. A propriedade do tipo **Domínio** `mcgesso.com.br` requer um registro DNS; a tag HTML não substitui esse processo. O código não confirma a propriedade nem envia o sitemap automaticamente. Depois de verificar, envie `https://mcgesso.com.br/sitemap.xml` no Search Console.
+
+Dados estruturados: negócio e site na home; serviços, breadcrumbs e FAQ nas páginas de serviço. Perguntas e respostas marcadas correspondem ao conteúdo visível. FAQPage não garante resultados enriquecidos: o Google restringe essa apresentação principalmente a sites governamentais e de saúde reconhecidos. Não foram inventados endereço, avaliações ou preços para completar o schema.
+
+As palavras-chave foram selecionadas por serviço e intenção de projeto; não representam um ranking comprovado de volume. Não crie páginas iguais trocando apenas palavras ou localidades.
