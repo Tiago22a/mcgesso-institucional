@@ -75,16 +75,20 @@
     }
 
     .mc-hero-shade {
-      background: radial-gradient(ellipse at center, rgba(13, 13, 13, .68) 0%, rgba(13, 13, 13, .26) 73%);
+      background: radial-gradient(ellipse at center, rgba(13, 13, 13, .62) 0%, rgba(13, 13, 13, .54) 38%, rgba(13, 13, 13, .21) 88%);
     }
 
-    .mc-hero-actions a, .mc-hero-controls button { min-height: 44px; }
-    .mc-hero-actions a:focus-visible, .mc-hero-controls button:focus-visible {
+    .mc-hero-actions a { min-height: 44px; }
+    .mc-hero-actions a:focus-visible {
       outline: 2px solid #E8C49F;
       outline-offset: 4px;
     }
 
     @media (max-width: 639px) {
+      .mc-hero h1 {
+        font-size: clamp(2rem, 9.6vw, 2.85rem);
+        letter-spacing: -.04em;
+      }
       #main-header > div { padding-inline: 1rem; gap: .5rem; }
       #main-header > div > a { gap: .45rem; min-width: 0; }
       #main-header > div > a img { height: 2rem; flex-shrink: 0; }
@@ -101,6 +105,10 @@
       #clients-grid .client-card > div:first-child { padding-inline: .35rem; }
       #clients-grid .client-card > div:first-child span { overflow-wrap: anywhere; }
       #clients-grid .client-card > div:first-child .text-2xl { font-size: .95rem; line-height: 1.28; }
+    }
+
+    @media (max-width: 359px) {
+      .mc-hero { padding-inline: .625rem; }
     }
 
     @media (prefers-reduced-motion: reduce) {
@@ -251,7 +259,7 @@
     <section id="inicio" class="mc-hero relative w-full flex items-center justify-center pt-28 pb-12 sm:pb-20 px-5 md:px-12 overflow-hidden bg-[#0D0D0D]">
       <div class="absolute inset-0 w-full h-full z-0 overflow-hidden">
         <video id="hero-video" data-src="assets/videos/hero_video.mp4" poster="assets/portfolio/hero-poster.webp"
-          preload="none" loop muted playsinline aria-label="Vídeo institucional da MC Gesso"
+          preload="none" muted playsinline aria-hidden="true"
           class="w-full h-full object-cover object-center brightness-105 contrast-105 saturate-105"></video>
         <div class="mc-hero-shade absolute inset-0 pointer-events-none"></div>
         <div class="absolute top-0 left-0 right-0 h-28 bg-gradient-to-b from-[#0D0D0D]/75 to-transparent pointer-events-none"></div>
@@ -278,13 +286,6 @@
             class="px-5 sm:px-7 py-3 border border-[#E8DED1]/70 hover:border-[#E8C49F] text-[#F7F7F7] font-semibold text-xs tracking-wider uppercase bg-[#0D0D0D]/70 transition-colors inline-flex items-center justify-center">
             Ver serviços
           </a>
-        </div>
-
-        <div class="mc-hero-controls flex flex-wrap justify-center items-center gap-2 mt-3" aria-label="Controles do vídeo">
-          <button id="video-toggle-play" type="button" aria-controls="hero-video"
-            class="px-3 bg-[#0D0D0D]/80 border border-[#2E2E2E] hover:border-[#D6B58B] text-xs text-[#E8C49F] cursor-pointer">Reproduzir vídeo</button>
-          <button id="video-toggle-mute" type="button" aria-controls="hero-video" aria-pressed="false"
-            class="hidden px-3 bg-[#0D0D0D]/80 border border-[#2E2E2E] hover:border-[#D6B58B] text-xs text-[#F7F7F7] cursor-pointer">Ativar som</button>
         </div>
       </div>
     </section>

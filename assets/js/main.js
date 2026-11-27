@@ -401,40 +401,14 @@ function initHeader() {
 // 2. Hero Video Controls
 function initHeroVideo() {
   const video = document.getElementById('hero-video');
-  const playButton = document.getElementById('video-toggle-play');
-  const muteButton = document.getElementById('video-toggle-mute');
-  if (!video || !playButton || !muteButton) return;
+  if (!video || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
-  function playVideo() {
-    if (!video.hasAttribute('src')) video.src = video.dataset.src;
-    video.play().catch(() => {
-      playButton.textContent = 'Reproduzir vídeo';
-    });
-  }
-
-  video.addEventListener('play', () => {
-    playButton.textContent = 'Pausar vídeo';
-    muteButton.classList.remove('hidden');
-  });
-  video.addEventListener('pause', () => {
-    playButton.textContent = 'Reproduzir vídeo';
-  });
-  video.addEventListener('volumechange', () => {
-    muteButton.textContent = video.muted ? 'Ativar som' : 'Silenciar';
-    muteButton.setAttribute('aria-pressed', String(!video.muted));
-  });
-
-  playButton.addEventListener('click', () => {
-    if (video.paused) playVideo();
-    else video.pause();
-  });
-  muteButton.addEventListener('click', () => {
-    video.muted = !video.muted;
-  });
-
-  if (window.matchMedia('(min-width: 768px) and (prefers-reduced-motion: no-preference)').matches) {
-    playVideo();
-  }
+  // Keep this decorative movement brief when there are no visible controls.
+  video.addEventListener('playing', () => {
+    window.setTimeout(() => video.pause(), 4700);
+  }, { once: true });
+  video.src = video.dataset.src;
+  video.play().catch(() => {});
 }
 
 // 3. Process Steps Switcher
