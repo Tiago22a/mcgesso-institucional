@@ -4,6 +4,7 @@
 // Dados de Serviços para o Modal
 const servicesData = {
   forros: {
+    budgetService: "Forros de Gesso Monolíticos",
     number: "01",
     title: "FORROS DE GESSO",
     subtitle: "Rebaixamento monolítico e forros acústicos",
@@ -17,6 +18,7 @@ const servicesData = {
     image: "assets/portfolio/portfolio_06.png"
   },
   drywall: {
+    budgetService: "Drywall e Paredes Acústicas",
     number: "02",
     title: "DRYWALL E PAREDES",
     subtitle: "Estruturas leves, versáteis e resistentes",
@@ -30,6 +32,7 @@ const servicesData = {
     image: "assets/portfolio/portfolio_04.png"
   },
   sancas: {
+    budgetService: "Sancas e Iluminação Embutida",
     number: "03",
     title: "SANCAS E ILUMINAÇÃO",
     subtitle: "Rasgos de luz, sancas invertidas e perfis LED",
@@ -43,6 +46,7 @@ const servicesData = {
     image: "assets/portfolio/portfolio_05.png"
   },
   divisorias: {
+    budgetService: "Divisórias Corporativas",
     number: "04",
     title: "DIVISÓRIAS CORPORATIVAS",
     subtitle: "Otimização espacial e privacidade acústica",
@@ -56,6 +60,7 @@ const servicesData = {
     image: "assets/portfolio/portfolio_02.png"
   },
   acabamentos: {
+    budgetService: "Acabamento Fino e Emassamento",
     number: "05",
     title: "ACABAMENTOS ESPECIAIS",
     subtitle: "Superfícies de alto padrão preparadas para pintura fina",
@@ -79,7 +84,7 @@ const processSteps = [
     description: "Reunião técnica inicial com arquiteto, engenheiro ou cliente. Análise rigorosa das pranchas arquitetônicas, projetos de elétrica, hidráulica e ar-condicionado.",
     technicalAnnotation: "LEVANTAMENTO TÉCNICO IN LOCO",
     annotation: "COMPATIBILIZAÇÃO // GESSO + ELÉTRICA + CLIMATIZAÇÃO",
-    specs: "Tolerância: 0mm na modulação",
+    specs: "Conferência de prumo e nível",
     image: "assets/portfolio/portfolio_03.png",
     details: [
       "Verificação de prumo e nível do suporte estrutural",
@@ -138,8 +143,8 @@ const processSteps = [
 const segmentsData = {
   residencial: {
     title: "RESIDENCIAL",
-    subtitle: "Casas contemporâneas & Apartamentos de alto padrão",
-    description: "Projetos personalizados que exigem acabamento refinado, detalhes esculturais de forro, sancas orgânicas ou minimalistas e conforto acústico em dormitórios e home theaters.",
+    subtitle: "Casas e apartamentos",
+    description: "Forros, sancas e divisórias planejados para o pé-direito, a iluminação e a acústica de cada ambiente.",
     focus: [
       "Forros contínuos com cortineiros iluminados",
       "Isolamento acústico para suítes",
@@ -148,8 +153,8 @@ const segmentsData = {
   },
   comercial: {
     title: "COMERCIAL",
-    subtitle: "Lojas, Boutiques, Showrooms & Restaurantes",
-    description: "Velocidade na execução para abertura pontual do ponto comercial, com soluções de forros e divisórias que traduzem a identidade visual da marca.",
+    subtitle: "Lojas, showrooms e restaurantes",
+    description: "Forros e paredes de drywall alinhados ao projeto da marca e à data prevista de abertura.",
     focus: [
       "Cumprimento estrito de prazos de inauguração",
       "Forros com design cenográfico para varejo",
@@ -158,8 +163,8 @@ const segmentsData = {
   },
   corporativo: {
     title: "CORPORATIVO",
-    subtitle: "Sedes de Empresas, Coworkings & Consultórios",
-    description: "Ambientes de trabalho que combinam produtividade, acústica impecável e estética profissional moderna. Divisórias modulares e forros técnicos de alta performance.",
+    subtitle: "Escritórios, coworkings e consultórios",
+    description: "Divisórias e forros para organizar o layout, prever passagem de instalações e tratar a acústica de salas.",
     focus: [
       "Atenuação sonora entre salas de reunião",
       "Integração com sistemas de cabeamento e HVAC",
@@ -168,8 +173,8 @@ const segmentsData = {
   },
   construtoras: {
     title: "CONSTRUTORAS & FRANQUIAS",
-    subtitle: "Obras em Escala & Padronização de Redes",
-    description: "Capacidade operacional para atender empreendimentos imobiliários e redes de franquias que demandam rigoroso controle de qualidade, segurança e entrega sistemática.",
+    subtitle: "Obras de construtoras e redes",
+    description: "Instalação alinhada ao padrão de acabamento da rede e ao cronograma de cada unidade.",
     focus: [
       "Padronização construtiva conforme manual da franquia",
       "Capacidade de volume com consistência técnica",
@@ -310,28 +315,6 @@ const clientsData = {
   }
 };
 
-// Dados de Depoimentos
-const testimonials = [
-  {
-    name: "Ana Beatriz",
-    role: "Arquiteta Sênior",
-    company: "Estúdio Arquitetura & Design",
-    text: "A precisão da MC Gesso é um diferencial fundamental para nossos projetos de alto padrão. O nível de acabamento, especialmente na preparação para iluminação, é impecável."
-  },
-  {
-    name: "Ricardo Mendes",
-    role: "Gerente de Expansão",
-    company: "Rede Farmacêutica Nacional",
-    text: "Atender prazos de inauguração de lojas exige parceria e velocidade. A MC Gesso provou ser nossa parceira mais confiável na expansão pelo Brasil, mantendo o padrão mesmo em turnos noturnos."
-  },
-  {
-    name: "Fernanda Costa",
-    role: "Diretora de Operações",
-    company: "Grupo Varejo Premium",
-    text: "Trabalhar com a MC Gesso é ter a garantia de que o projeto será executado exatamente como concebido. Organização impecável e um respeito inabalável pelas normas de canteiro."
-  }
-];
-
 // Dados de Portfólio para Lightbox
 const portfolioData = {
   p1: {
@@ -384,7 +367,6 @@ const portfolioData = {
   }
 };
 
-let currentTestimonialIndex = 0;
 let currentProcessIndex = 0;
 
 // Inicialização após carregamento do DOM
@@ -394,8 +376,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initProcess();
   initSegments();
   initClientsFilter();
-  initTestimonials();
-  initCounters();
   initPortfolioFilter();
   initFaqAccordion();
   initBudgetForm();
@@ -421,32 +401,39 @@ function initHeader() {
 // 2. Hero Video Controls
 function initHeroVideo() {
   const video = document.getElementById('hero-video');
-  const playBtn = document.getElementById('video-toggle-play');
-  const muteBtn = document.getElementById('video-toggle-mute');
+  const playButton = document.getElementById('video-toggle-play');
+  const muteButton = document.getElementById('video-toggle-mute');
+  if (!video || !playButton || !muteButton) return;
 
-  if (!video) return;
-
-  // Autoplay garantido com mudo
-  video.muted = true;
-  video.play().catch(e => console.warn("Autoplay aguardando interação:", e));
-
-  if (playBtn) {
-    playBtn.addEventListener('click', () => {
-      if (video.paused) {
-        video.play();
-        playBtn.textContent = 'PAUSAR ❚❚';
-      } else {
-        video.pause();
-        playBtn.textContent = 'REPRODUZIR ▶';
-      }
+  function playVideo() {
+    if (!video.hasAttribute('src')) video.src = video.dataset.src;
+    video.play().catch(() => {
+      playButton.textContent = 'Reproduzir vídeo';
     });
   }
 
-  if (muteBtn) {
-    muteBtn.addEventListener('click', () => {
-      video.muted = !video.muted;
-      muteBtn.textContent = video.muted ? 'ÁUDIO: OFF' : 'ÁUDIO: ON';
-    });
+  video.addEventListener('play', () => {
+    playButton.textContent = 'Pausar vídeo';
+    muteButton.classList.remove('hidden');
+  });
+  video.addEventListener('pause', () => {
+    playButton.textContent = 'Reproduzir vídeo';
+  });
+  video.addEventListener('volumechange', () => {
+    muteButton.textContent = video.muted ? 'Ativar som' : 'Silenciar';
+    muteButton.setAttribute('aria-pressed', String(!video.muted));
+  });
+
+  playButton.addEventListener('click', () => {
+    if (video.paused) playVideo();
+    else video.pause();
+  });
+  muteButton.addEventListener('click', () => {
+    video.muted = !video.muted;
+  });
+
+  if (window.matchMedia('(min-width: 768px) and (prefers-reduced-motion: no-preference)').matches) {
+    playVideo();
   }
 }
 
@@ -513,7 +500,6 @@ function renderProcessStep(index) {
   const descEl = document.getElementById('process-description');
   const detailsEl = document.getElementById('process-details');
   const countEl = document.getElementById('process-counter');
-  const bgNote = document.getElementById('process-bg-note');
 
   if (imgEl) imgEl.src = step.image;
   if (tagEl) tagEl.textContent = step.technicalAnnotation;
@@ -524,7 +510,6 @@ function renderProcessStep(index) {
   if (titleEl) titleEl.textContent = step.title;
   if (descEl) descEl.textContent = step.description;
   if (countEl) countEl.textContent = `0${index + 1} / 04`;
-  if (bgNote) bgNote.textContent = `MC_METROLOGIA_ETAPA_0${index + 1}`;
 
   if (detailsEl) {
     detailsEl.innerHTML = step.details.map((d, i) => `
@@ -552,19 +537,17 @@ function selectSegment(segId) {
 
   document.querySelectorAll('.segment-btn').forEach(btn => {
     const isCurrent = btn.getAttribute('data-segment') === segId;
+    btn.setAttribute('aria-pressed', String(isCurrent));
     const title = btn.querySelector('.seg-title');
-    const status = btn.querySelector('.seg-status');
     const indicator = btn.querySelector('.seg-indicator');
 
     if (isCurrent) {
-      btn.className = "segment-btn p-6 text-left border transition-all duration-300 relative flex flex-col justify-between min-h-[160px] bg-[#141414] border-[#D6B58B] shadow-xl cursor-pointer";
+      btn.className = "segment-btn p-3 sm:p-6 text-left border transition-all duration-300 relative flex flex-col justify-between min-h-[92px] sm:min-h-[138px] bg-[#141414] border-[#D6B58B] shadow-xl cursor-pointer";
       if (title) title.className = "seg-title text-base font-bold uppercase tracking-wider text-[#E8C49F]";
-      if (status) status.innerHTML = "<span>SELECIONADO</span><span>●</span>";
       if (indicator) indicator.classList.remove('hidden');
     } else {
-      btn.className = "segment-btn p-6 text-left border transition-all duration-300 relative flex flex-col justify-between min-h-[160px] bg-[#141414]/50 border-[#2E2E2E] hover:border-[#D6B58B]/50 cursor-pointer";
+      btn.className = "segment-btn p-3 sm:p-6 text-left border transition-all duration-300 relative flex flex-col justify-between min-h-[92px] sm:min-h-[138px] bg-[#141414]/50 border-[#2E2E2E] hover:border-[#D6B58B]/50 cursor-pointer";
       if (title) title.className = "seg-title text-base font-bold uppercase tracking-wider text-[#F7F7F7]";
-      if (status) status.innerHTML = "<span>EXPLORAR</span><span>→</span>";
       if (indicator) indicator.classList.add('hidden');
     }
   });
@@ -576,10 +559,9 @@ function selectSegment(segId) {
   const ctaEl = document.getElementById('segment-detail-cta');
 
   if (titleEl) titleEl.textContent = seg.subtitle;
-  if (tagEl) tagEl.textContent = `SOLUÇÃO TAILOR-MADE // ${seg.title}`;
+  if (tagEl) tagEl.textContent = seg.title;
   if (descEl) descEl.textContent = seg.description;
   if (ctaEl) {
-    ctaEl.textContent = `Solicitar Proposta para ${seg.title}`;
     ctaEl.href = "#orcamento";
   }
 
@@ -595,12 +577,36 @@ function selectSegment(segId) {
 
 // 5. Clients Filter & Detail Modal
 function initClientsFilter() {
-  document.querySelectorAll('.client-filter-btn').forEach(btn => {
+  const filters = document.querySelectorAll('.client-filter-btn');
+  const cards = document.querySelectorAll('.client-card');
+  const moreButton = document.getElementById('clients-more');
+  const featured = new Set([...cards].filter(card => !card.classList.contains('hidden')));
+  let category = 'Todos';
+  let showAll = false;
+
+  function updateCards() {
+    const anyCategory = category === 'Todos';
+    cards.forEach(card => {
+      const visible = anyCategory ? showAll || featured.has(card) : category === card.dataset.cat;
+      card.classList.toggle('hidden', !visible);
+    });
+    if (moreButton) moreButton.classList.toggle('hidden', !anyCategory);
+  }
+
+  moreButton?.addEventListener('click', () => {
+    showAll = !showAll;
+    moreButton.setAttribute('aria-expanded', String(showAll));
+    moreButton.textContent = showAll ? 'Mostrar menos redes' : 'Ver todas as redes';
+    updateCards();
+    if (!showAll) moreButton.scrollIntoView({ block: 'nearest' });
+  });
+
+  filters.forEach(btn => {
     btn.addEventListener('click', () => {
-      const cat = btn.getAttribute('data-cat');
-      
-      // Estilo do botão ativo
-      document.querySelectorAll('.client-filter-btn').forEach(b => {
+      category = btn.dataset.cat;
+
+      filters.forEach(b => {
+        b.setAttribute('aria-pressed', String(b === btn));
         if (b === btn) {
           b.className = "client-filter-btn px-5 py-2 text-xs font-medium tracking-wider uppercase transition-all duration-200 border rounded-none cursor-pointer bg-[#D6B58B] text-[#0D0D0D] border-[#D6B58B] font-bold shadow-md";
         } else {
@@ -608,20 +614,12 @@ function initClientsFilter() {
         }
       });
 
-      // Filtragem dos cards
-      document.querySelectorAll('.client-card').forEach(card => {
-        const cardCat = card.getAttribute('data-cat');
-        if (cat === 'Todos' || cardCat === cat) {
-          card.classList.remove('hidden');
-        } else {
-          card.classList.add('hidden');
-        }
-      });
+      updateCards();
     });
   });
 
   // Abrir modal ao clicar em qualquer card de cliente
-  document.querySelectorAll('.client-card').forEach(card => {
+  cards.forEach(card => {
     card.addEventListener('click', () => {
       const clientId = card.getAttribute('data-client-id');
       openClientModal(clientId);
@@ -668,87 +666,6 @@ function closeClientModal() {
     modal.classList.add('hidden');
     document.body.style.overflow = 'unset';
   }
-}
-
-// 6. Testimonials Carousel
-function initTestimonials() {
-  renderTestimonial(0);
-
-  const prevBtn = document.getElementById('testimonial-prev');
-  const nextBtn = document.getElementById('testimonial-next');
-
-  if (prevBtn) {
-    prevBtn.addEventListener('click', () => {
-      currentTestimonialIndex = currentTestimonialIndex > 0 ? currentTestimonialIndex - 1 : testimonials.length - 1;
-      renderTestimonial(currentTestimonialIndex);
-    });
-  }
-
-  if (nextBtn) {
-    nextBtn.addEventListener('click', () => {
-      currentTestimonialIndex = currentTestimonialIndex < testimonials.length - 1 ? currentTestimonialIndex + 1 : 0;
-      renderTestimonial(currentTestimonialIndex);
-    });
-  }
-}
-
-function renderTestimonial(index) {
-  const t = testimonials[index];
-  if (!t) return;
-
-  const textEl = document.getElementById('testimonial-text');
-  const nameEl = document.getElementById('testimonial-name');
-  const roleEl = document.getElementById('testimonial-role');
-
-  if (textEl) textEl.textContent = `"${t.text}"`;
-  if (nameEl) nameEl.textContent = t.name;
-  if (roleEl) roleEl.textContent = `${t.role} · ${t.company}`;
-}
-
-// 7. Counters Animated on Scroll
-function initCounters() {
-  const countersSection = document.getElementById('counters-section');
-  if (!countersSection) return;
-
-  let triggered = false;
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting && !triggered) {
-        triggered = true;
-        animateCounter('counter-years', 15, 1800);
-        animateCounter('counter-projects', 850, 2000);
-        animateCounter('counter-clients', 420, 2000);
-      }
-    });
-  }, { threshold: 0.3 });
-
-  observer.observe(countersSection);
-}
-
-function animateCounter(id, target, duration) {
-  const el = document.getElementById(id);
-  if (!el) return;
-
-  const startTime = performance.now();
-
-  function update(currentTime) {
-    const elapsed = currentTime - startTime;
-    const progress = Math.min(elapsed / duration, 1);
-    // Ease-out cubic curve
-    const easeProgress = 1 - Math.pow(1 - progress, 3);
-    const currentValue = Math.floor(easeProgress * target);
-
-    el.textContent = currentValue.toLocaleString('pt-BR');
-
-    if (progress < 1) {
-      requestAnimationFrame(update);
-    } else {
-      el.textContent = target.toLocaleString('pt-BR');
-    }
-  }
-
-  requestAnimationFrame(update);
 }
 
 // 8. Portfolio Filter & Lightbox
@@ -821,11 +738,13 @@ function initFaqAccordion() {
 
       // Fecha todos os outros
       document.querySelectorAll('.faq-item').forEach(other => {
+        other.querySelector('.faq-toggle-btn').setAttribute('aria-expanded', 'false');
         other.querySelector('.faq-content').classList.add('hidden');
         other.querySelector('.faq-icon').classList.remove('rotate-180');
       });
 
       if (isHidden) {
+        btn.setAttribute('aria-expanded', 'true');
         content.classList.remove('hidden');
         icon.classList.add('rotate-180');
       }
@@ -834,13 +753,13 @@ function initFaqAccordion() {
 }
 
 // 10. Budget Form
-let selectedServices = ["Forros de Gesso Monolíticos"];
+let selectedServices = [];
 
 function initBudgetForm() {
   document.querySelectorAll('.budget-service-btn').forEach(btn => {
     btn.addEventListener('click', () => {
       const srvName = btn.getAttribute('data-service');
-      toggleBudgetService(srvName, btn);
+      toggleBudgetService(srvName);
     });
   });
 
@@ -860,12 +779,10 @@ function initBudgetForm() {
   }
 }
 
-function toggleBudgetService(srvName, btn) {
+function toggleBudgetService(srvName) {
   const idx = selectedServices.indexOf(srvName);
   if (idx > -1) {
-    if (selectedServices.length > 1) {
-      selectedServices.splice(idx, 1);
-    }
+    selectedServices.splice(idx, 1);
   } else {
     selectedServices.push(srvName);
   }
@@ -877,6 +794,7 @@ function updateServiceButtonsUI() {
     const srvName = btn.getAttribute('data-service');
     const isSelected = selectedServices.includes(srvName);
     const box = btn.querySelector('.check-box');
+    btn.setAttribute('aria-pressed', String(isSelected));
 
     if (isSelected) {
       btn.className = "budget-service-btn p-3 text-left border text-xs font-medium transition-all bg-[#1C1C1C] border-[#D6B58B] text-[#E8C49F] cursor-pointer";
@@ -900,7 +818,7 @@ function generateSummaryText() {
     `*WhatsApp:* ${whatsapp}\n` +
     `*Cidade/UF:* ${cityState}\n` +
     `*Tipo de Projeto:* ${projectType}\n` +
-    `*Serviços Desejados:* ${selectedServices.join(', ')}\n` +
+    `*Serviços Desejados:* ${selectedServices.join(', ') || 'A definir'}\n` +
     `*Descrição da Obra:* ${description}\n\n` +
     `_Enviado através do site oficial MC Gesso_`;
 }
@@ -932,7 +850,7 @@ function handleSendWhatsApp() {
 
   const text = generateSummaryText();
   const url = `https://wa.me/5511986504178?text=${encodeURIComponent(text)}`;
-  window.open(url, '_blank');
+  window.open(url, '_blank', 'noopener,noreferrer');
 }
 
 function handleCopyBudget() {
@@ -972,11 +890,16 @@ function initModals() {
 
   function openMenu() {
     if (menuDrawer) menuDrawer.classList.remove('hidden');
+    menuBtn?.setAttribute('aria-expanded', 'true');
+    closeMenuBtn?.focus();
     document.body.style.overflow = 'hidden';
   }
 
   function closeMenu() {
+    const wasOpen = menuDrawer && !menuDrawer.classList.contains('hidden');
     if (menuDrawer) menuDrawer.classList.add('hidden');
+    menuBtn?.setAttribute('aria-expanded', 'false');
+    if (wasOpen) menuBtn?.focus({ preventScroll: true });
     document.body.style.overflow = 'unset';
   }
 
@@ -1001,15 +924,14 @@ function initModals() {
   document.getElementById('service-modal-backdrop')?.addEventListener('click', closeServiceModal);
 
   document.getElementById('service-modal-quote')?.addEventListener('click', () => {
-    const srvTitle = document.getElementById('modal-service-title')?.textContent;
+    const serviceId = document.getElementById('service-modal')?.dataset.serviceId;
+    const service = servicesData[serviceId]?.budgetService;
     closeServiceModal();
-    if (srvTitle) {
-      if (!selectedServices.includes(srvTitle)) {
-        selectedServices = [srvTitle];
-        updateServiceButtonsUI();
-      }
+    if (service && !selectedServices.includes(service)) {
+      selectedServices.push(service);
+      updateServiceButtonsUI();
     }
-    document.getElementById('orcamento')?.scrollIntoView({ behavior: 'smooth' });
+    document.getElementById('orcamento')?.scrollIntoView();
   });
 
   // Client Modal close
@@ -1062,6 +984,7 @@ function openServiceModal(srvId) {
   const modal = document.getElementById('service-modal');
   if (!modal) return;
 
+  modal.dataset.serviceId = srvId;
   document.getElementById('modal-service-num').textContent = `${srv.number} //`;
   document.getElementById('modal-service-title').textContent = srv.title;
   document.getElementById('modal-service-sub').textContent = srv.subtitle;
