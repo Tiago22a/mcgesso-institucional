@@ -23,8 +23,10 @@ Os caminhos locais são relativos, permitindo hospedar na raiz do domínio ou em
 ## Estrutura
 
 ```text
-index.html              Conteúdo, estilos personalizados, SEO e interface
-assets/js/main.js       Dados e interações em JavaScript puro
+index.html              Conteúdo, metadados e estrutura da home
+assets/css/home.css     Layout responsivo da home
+assets/js/main.js       Menu, galeria e formulário de orçamento
+assets/home/            Imagens otimizadas e fonte local da home
 assets/brand/           Logotipos
 assets/portfolio/       Imagens dos projetos
 assets/about/           Fotos institucionais
@@ -33,12 +35,12 @@ assets/videos/          Vídeo de apresentação
 
 ## Tecnologias e dependências externas
 
-HTML5, CSS e JavaScript puro. O navegador carrega Tailwind CSS pelo CDN e a fonte Montserrat pelo Google Fonts. É necessário acesso à internet para carregar esses recursos e acessar os links externos. Não há React, Vite, backend, banco de dados ou chaves de API.
+HTML5, CSS e JavaScript puro. A home usa CSS próprio, imagens WebP e a fonte Montserrat hospedada no site. A conexão à internet é necessária para abrir canais externos, como o WhatsApp.
 
 ## Manutenção
 
-- Conteúdo, estilos, metadados e links sociais: `index.html`.
-- Dados dos serviços e projetos, menu, modais, filtros e formulário: `assets/js/main.js`.
+- Conteúdo, metadados e links sociais: `index.html`.
+- Layout da home: `assets/css/home.css`. Menu mobile, galeria e formulário: `assets/js/main.js`.
 - Imagens, logotipos e vídeo: suas respectivas pastas em `assets/`.
 - WhatsApp: procure `5511986504178` no HTML e no JavaScript e atualize todas as ocorrências juntas.
 
@@ -46,7 +48,7 @@ O formulário monta uma mensagem e abre o WhatsApp. O visitante conclui o envio 
 
 ## Conferência após alterações
 
-Confira o menu no celular, os filtros, os modais, a galeria, o vídeo, os downloads dos logotipos e o formulário de orçamento. Verifique também a apresentação em desktop e os links de contato.
+Confira o menu no celular, a galeria, as seções expansíveis, o vídeo, os downloads dos logotipos e o formulário de orçamento. Verifique também a apresentação em desktop e os links de contato.
 
 ## Histórico
 
